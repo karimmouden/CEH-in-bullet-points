@@ -159,17 +159,11 @@
 
 ## Firewall vs IPS vs IDS
 
-| | [Firewall](./firewall-overview.md) | IPS | IDS |
-| |--------- | ------- | ------ |
-
+|- | [Firewall](./firewall-overview.md) | IPS | IDS |
+|- |--------- | ------- | ------ |
 |**Abbreviation for**|Firewall | Intrusion Prevention System | Intrusion Detection System |
-
 | **Firewall** |Filters incoming and outgoing network traffic based on predetermined rules | Inspects traffic, detects it, classifies and then proactively stops malicious traffic from attack. | Monitors a traffic for malicious activity or policy violations and sends alert on detection. |
-
 | **Working principle** | Filters traffic based on IP address and port numbers (layer 3), state of the connection (layer 4), or contents of packet (layer 7) | Inspects real time traffic and looks for traffic patterns or signatures of attack and then prevents the attacks on detection | Detects real time traffic and looks for traffic patterns or signatures of attack and them generates alerts |
-
 | **Configuration mode** | Layer 2 to 7 | Layer 3 and 4 |  Layer 2 to 7 |
-
 | **Usual placement** | First line of defense | After firewall | After firewall |
-
 | **Action on unauthorized traffic detection** | Block the traffic | Block the traffic |  Alerts/alarms |
