@@ -114,7 +114,7 @@
 #### Signature recognition
 
 - Also known as ***misuse detection***, ***signature based IDS*** or ***signature-based IDS***
-- 📝 Compares incoming and outgoing traffic to the signatures of already known attacks
+- 📝 Compares **incoming and outgoing traffic** to the **signatures** of already **known attacks**
 - Based on a database of previous attack signatures and known system vulnerabilities.
 - A signature is a recorded evidence of an intrusion or attack
 - 📝 **Pros**
@@ -128,7 +128,7 @@
 #### Anomaly detection
 
 - Also known as ***not-use detection***, ***behavior based IDS*** or ***behavior-based IDS***.
-- 📝 Analyzes characteristics of the system's users and components and looks for deviations.
+- 📝 Analyzes **characteristics of the system's users** and components and looks for deviations.
 - Learns pattern of normal system activity to identify active intrusion attempts.
 - Deviations from this baseline or pattern cause an alarm to be triggered.
 - Can use artificial intelligence or can be based on heuristics or rules
