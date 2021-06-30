@@ -3,13 +3,17 @@
 - See also [SQL evasion](./../14-sql-injection/sql-injection-overview.md#sql-evasion)
 - See also [bypassing IDS and firewall when scanning](../03-scanning-networks/bypassing-ids-and-firewall.md), [evading firewalls](evading-firewalls.md)
 
-Obfuscation : - Path Obfuscation of following "clear text" Attacks:
+1- Obfuscation : 
+  - Path Obfuscation 
+  - URL Encoding
+  - Unicode Encoding
+  - Encryption
+  - Polymorphism
 
-                  - Self-referencing directories
-                  - Double Slashes "//"
-                  - Directory Traversal "/../"
-                  - Windows Folder Separator "../cmd.exe"
-                  - IFS Unix Shells
+2- Dos
+3- Insertion Attack (TTL flaw)
+4- Session Splicing
+
 
 ## Obfuscation
 
