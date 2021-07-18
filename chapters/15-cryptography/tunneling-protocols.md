@@ -27,6 +27,39 @@
 
 ## IPSec
 
+  - suite of protocols 
+  - provide security services at IP layer of TCP/IP stack  =>  Network Layer in OSI model.
+  - composed by 3 protocols to offer security :
+  
+      1. **AH** - Authentication Header Protocol.
+      2. **ESP** - Encapsulation of security payload Protocol. 
+      3. **IKE** - Internet Key Exchange Protocol
+
+      1. **AH** provides  : @ **network layer** & above :
+      
+          -  authentication 
+          -  integrity 
+          -  anti-replay  
+      
+      2. **ESP** provides @ **Transport Layer** and above :
+      
+          - confidentiality ( Encryption)
+      
+      Hence, we can say, IPSec(AH+ESP) operates at Network Layer and provide security services at Network and above layers.
+
+      3. **IKE** : IPSec implementations also use a **Key exchange & management** protocol ( **Internet Key Exchange** protocol)
+          
+          - required if 2 entities want to communicate securely (they sould share secret keys)
+          - secure connection 
+          - encrypt & decrypt messages
+              - generate secret keys
+              - negotiate secret keys
+              - manage secret keys
+          
+
+
+
+
 - IPsec is an end-to-end security scheme
 - 📝 Part of IPv4 suite so it runs on layer 3 (internet layer) in [TCP/IP model](./../03-scanning-networks/tcpip-basics.md#tcpip-model) or layer 3 (transport) in [OSI model](./../03-scanning-networks/tcpip-basics.md#osi-model)
 - 📝 Provides security through
