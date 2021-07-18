@@ -35,27 +35,27 @@
       2. **ESP** - Encapsulation of security payload Protocol. 
       3. **IKE** - Internet Key Exchange Protocol
 
-      1. **AH** provides  : @ **network layer** & above :
-      
-          -  authentication 
-          -  integrity 
-          -  anti-replay  
-      
-      2. **ESP** provides @ **Transport Layer** and above :
-      
-          - confidentiality ( Encryption)
-      
-      Hence, we can say, IPSec(AH+ESP) operates at Network Layer and provide security services at Network and above layers.
+    1- **AH** provides  : @ **network layer** & above :
 
-      3. **IKE** : IPSec implementations also use a **Key exchange & management** protocol ( **Internet Key Exchange** protocol)
-          
-          - required if 2 entities want to communicate securely (they sould share secret keys)
-          - secure connection 
-          - encrypt & decrypt messages
-              - generate secret keys
-              - negotiate secret keys
-              - manage secret keys
-          
+        -  authentication 
+        -  integrity 
+        -  anti-replay  
+
+    2- **ESP** provides @ **Transport Layer** and above :
+
+        - confidentiality ( Encryption)
+
+    Hence, we can say, IPSec(AH+ESP) operates at Network Layer and provide security services at Network and above layers.
+
+    3- **IKE** : IPSec implementations also use a **Key exchange & management** protocol ( **Internet Key Exchange** protocol)
+
+        - required if 2 entities want to communicate securely (they sould share secret keys)
+        - secure connection 
+        - encrypt & decrypt messages
+            - generate secret keys
+            - negotiate secret keys
+            - manage secret keys
+
 
 
 
