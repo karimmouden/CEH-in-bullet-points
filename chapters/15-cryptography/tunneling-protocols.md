@@ -63,10 +63,10 @@
 - IPsec is an end-to-end security scheme
 - 📝 Part of IPv4 suite so it runs on layer 3 (internet layer) in [TCP/IP model](./../03-scanning-networks/tcpip-basics.md#tcpip-model) or layer 3 (transport) in [OSI model](./../03-scanning-networks/tcpip-basics.md#osi-model)
 - 📝 Provides security through
-  - **Authentication** through authenticating both parts
-  - **Integrity** through using ahash algorithm to ensure that data is not tampered with.
-  - **Nonrepudiation** through using public key digital signatures to prove message origin.
-  - **Confidentiality** through encryption
+  - **Authentication** through **authenticating both parts**
+  - **Integrity** through using a **hash** algorithm to ensure that data is not tampered with.
+  - **Nonrepudiation** through using **public key digital signatures** to prove message origin.
+  - **Confidentiality** through **encryption**
 
 ### IKE (Internet Key Exchange)
 
@@ -101,21 +101,21 @@
 #### Transport mode
 
 - Usually authenticated
-- Only payload is optionally encrypted.
+- **Only payload** is optionally **encrypted**.
 - Not compatible with NAT when authenticated.
 - 📝 Used within same network
 
 #### Tunnel mode
 
-- Entire packet is encrypted and authenticated.
+- **Entire packet** is **encrypted & authenticated**.
 - Compatible with NAT
-- 📝 Used to create virtual private networks between different networks.
+- 📝 Used **to create VPN** between different networks.
 
 ## PPP (Point-to-Point Protocol)
 
 - Provide connection authentication, transmission encryption and compression.
 - Provides router-to-router or host-to-network connections over asynchronous and synchronous circuits.
-- Can be used to create e.g. SSH tunnels
+- Can be used to create e.g. **SSH tunnels**
 - OSI Layer: 2 - Data link | Internet protocol suite layer: 1 - Link layer
 
 ### Point-to-Point Tunneling Protocol (PPTP)
