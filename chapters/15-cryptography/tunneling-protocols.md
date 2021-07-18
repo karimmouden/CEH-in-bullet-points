@@ -95,8 +95,11 @@
   - Provides the bundle of algorithms and data to provide the parameters necessary for AH and/or ESP
 
 ### IPSec modes of operation
+    
+    - Transport Mode
+    - Tunnel Mode
 
-- AH and ESP can be implemented in both modes
+- AH & ESP can be implemented in **both modes**
 
 #### Transport mode
 
@@ -114,16 +117,23 @@
 ## PPP (Point-to-Point Protocol)
 
 - Provides  :
-      - **connection** 
-      - **authentication**, 
-      - **transmission encryption** and **compression**.
+
+    - **connection** 
+    
+    - **authentication**, 
+    
+    - **transmission encryption** and **compression**.
       
-- Provides : 
-      - router-to-router 
-    or 
-      - host-to-network connections over asynchronous and synchronous circuits.
+- Provides  connections over asynchronous & synchronous circuits : 
+
+   - **router-to-router** 
+
+or 
+
+   - **host-to-network**
+   
 - Can be used to **create**  **SSH tunnels**
-- **OSI Layer 2** -> **Data link** 
+- operate in **OSI Layer 2** -> **Data link** 
 - | Internet protocol suite layer: 1 - Link layer
 
 ### Point-to-Point Tunneling Protocol (PPTP)
