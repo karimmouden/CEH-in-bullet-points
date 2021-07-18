@@ -113,12 +113,20 @@
 
 ## PPP (Point-to-Point Protocol)
 
-- Provide connection authentication, transmission encryption and compression.
-- Provides router-to-router or host-to-network connections over asynchronous and synchronous circuits.
-- Can be used to create e.g. **SSH tunnels**
-- OSI Layer: 2 - Data link | Internet protocol suite layer: 1 - Link layer
+- Provides  :
+      - **connection** 
+      - **authentication**, 
+      - **transmission encryption** and **compression**.
+      
+- Provides : 
+      - router-to-router 
+    or 
+      - host-to-network connections over asynchronous and synchronous circuits.
+- Can be used to **create**  **SSH tunnels**
+- **OSI Layer 2** -> **Data link** 
+- | Internet protocol suite layer: 1 - Link layer
 
 ### Point-to-Point Tunneling Protocol (PPTP)
 
-- Insecure/obselete method for implementing virtual private networks
+- **Insecure/obselete** method for implementing virtual private networks
 - Uses a TCP control channel and a Generic Routing Encapsulation tunnel to encapsulate PPP packets.
