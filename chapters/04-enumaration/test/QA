@@ -1,0 +1,693 @@
+Which command lets a tester enumerate live systems in a class C network via ICMP using native Windows tools?
+
+
+            ping 192.168.2.255
+
+  TRUE      for /L %V in (1 1 254) do PING -n 1 192.168.2.%V | FIND /I "Reply"
+
+            ping 192.168.2.
+
+            for %V in (1 1 255) do PING 192.168.2.%V
+
+explanation :
+
+The command below will
+
+              ping all IP addresses on the 192.168.2.0 network
+and
+              help the tester to determine live systems in the network along with replies.
+
+                      for /L %V in (1 1 254) do PING -n 1 192.168.2.%V | FIND /I "Reply"
+Whereas :
+"Ping 192.168.2." and "ping 192.168.2.255" will just ping the target IPs
+"for %V in (1 1 255) do PING 192.168.2.%V" command does not consist of reply from the host machines
+
+-----------
+
+Which of the following command is used by the attackers to query the ntpd daemon about its current state?
+
+          ntpdate: collects the number of time samples
+                            from a number of time sources
+
+          ntptrace: determines
+                        from where  NTP server gets time
+                    & follows
+                        the chain of NTP servers back
+                            to its prime time source
+
+          ntpdc: queries ntpd DAEMON  about
+                                  its current state
+                & requests changes in that state (TRUE)
+
+          ntpq: monitors NTP daemon ntpd operations and determine performance
+
+----------
+
+At a Windows server command prompt, which command could be used
+
+to list the running services?
+
+          Sc query type= running
+
+          Sc query \\servername
+
+          Sc query :  TRUE
+
+              Obtains and displays information about the specified :
+                              - service,
+                              - driver,
+                              - type of service,
+                              - type of driver.
+          Sc config
+
+-----------
+
+Which of the following information is collected using enumeration?
+
+          Operating systems, location of web servers, users and passwords.
+
+          Network resources, network shares, and machine names. :             True
+
+          Email Recipient's system IP address and geolocation.
+
+          Open ports and services.
+
+Explanation:
+Enumeration is the process of extracting
+            user names, machine names, network resources, shares, & services
+  from a system or network.
+
+Enumeration allows you to collect following information:
+?        Network resources
+?        Network shares
+?        Routing tables
+?        Audit and service settings
+?        SNMP and FQDN details
+?        Machine names
+?        Users and groups
+?        Applications and banners
+
+---------------
+
+Which of the following enumeration techniques is used by a network administrator
+to replicate
+    domain name system (DNS) data
+    across many DNS servers,
+     or to backup DNS files?
+
+      Extract user names using email IDs
+
+      Extract information using "DNS Zone Transfer" :
+
+              use "DNS zone transfer"
+
+                    to REPLICATE
+                          DNS DATA across many DNS servers
+
+                  or
+
+                    to BACKUP
+                          DNS files.
+
+                The administrator needs to execute a
+                      specific zone transfer request
+                                    to the name server.
+
+      Extract information using default passwords
+
+      Brute force Active Directory
+
+---------------
+
+What is the port number used by DNS servers to perform DNS zone transfer?
+
+TCP/UDP 135: Microsoft RPC Endpoint Mapper listens on TCP/IP port 135.
+
+UDP 137: NetBIOS Name Service (NBNS) uses UDP 137 as its transport protocol.
+
+TCP 139: NetBIOS Session Service (SMB over NetBIOS) uses TCP 139 as its transport protocol.
+
+TCP/UDP 53:
+        DNS Zone Transfer - DNS clients send DNS messages to DNS servers listening on UDP port 53.
+
+----------
+
+Which of the following protocols uses TCP or UDP as its transport protocol over port 389?
+
+
+SMTP :
+       Port 25
+       Simple Mail Transfer Protocol SMTP
+
+       TCP/IP mail delivery protocol.
+       Transfers e-mail across
+              Internet &  local network.
+       Runs on the connection-oriented service provided by transmission control protocol (TCP),
+       Port number 25.
+
+SNMP :
+        Port 162
+        Simple network management protocol (SNMP) is
+                  widely used in network management systems to
+                          monitor network-attached devices such as
+                                routers,
+                                switches,
+                                firewalls,
+                                printers,
+                                servers.
+
+        Consists of a manager & agents.
+
+            The AGENT receives requests on Port 161 from the MANAGER
+                      responds to the MANAGER on Port 162.
+
+LDAP : True
+
+      Port 389
+      protocol for
+      access & maintain
+
+          distributed directory information services
+
+                        over an Internet protocol (IP) network.
+
+       By default, LDAP uses
+
+                TCP or UDP
+
+                as its transport protocol over port 389.
+
+SIP :
+
+      Session initiation protocol (SIP)
+
+      used in the applications of Internet telephony for
+
+            - voice calls
+            - video calls.
+
+      It typically uses
+
+                    TCP/UDP port  5060 (nonencrypted signaling traffic)
+                    or
+                    TCP/UDP  port 5061 (encrypted traffic with TLS)
+
+
+------------
+
+Which of the following steps in
+
+        enumeration penetration testing
+
+                serves as an input to
+
+                           - many of the ping sweep tools
+                          &
+                           - port scanning tools
+for further enumeration?
+
+
+        - Perform ARP poisoning
+
+        - Calculate the subnet mask : TRUE
+
+                  This mask is required for
+
+                                    IP range
+
+                    used tools : "Subnet Mask Calculator".
+
+                    The calculated subnet mask can serve as
+                                  an input to many of the
+
+                                    - ping sweep tools
+                                    - port scanning tools
+
+                                  for further enumeration,
+                                      which includes discovering
+                                            hosts & open ports.
+
+        - Perform competitive intelligence
+
+        - Perform email footprinting
+
+-------
+
+Which of the following steps in enumeration penetration testing extracts information about
+  encryption & hashing algorithms,
+  authentication type,
+  key distribution algorithms,
+  SA LifeDuration, etc.?
+
+
+    Perform NTP enumeration
+
+    Perform SMTP enumeration
+
+    Perform IPsec enumeration :  True
+
+    Perform DNS enumeration
+
+Explanation:
+
+IPsec provides DATA SECURITY
+
+          by employing various components like
+
+                  ESP (Encapsulation Security Payload),
+                  AH (Authentication Header),
+                  IKE (Internet Key Exchange)
+
+   to secure communication between VPN end-points.
+
+Attacker use tools like "nmap" to perform
+
+        a simple direct scanning for ISAKMP
+
+                            at UDP port 500
+
+  to acquire  information related to the
+
+                            presence of a VPN gateway.
+
+You can enter the following command to perform Nmap scan
+
+                        for checking the status of ISAKMP over port 500:
+
+            # nmap –sU –p 500 <target IP address>
+
+
+Attackers can probe further using
+
+      fingerprinting tools such as
+
+                      "ike-scan"
+
+to enumerate the sensitive information including  :
+
+                - encryption
+                - hashing algorithm,
+                - authentication type,
+                - key distribution algorithm,
+                - SA LifeDuration, etc.
+
+In this type of scan,
+
+        specially
+
+                crafted IKE packets
+
+                       with ISAKMP header
+
+        are sent to the target Gateway
+            and
+        responses are recorded.
+
+--------------
+
+Which of the following protocols provides
+
+        reliable multiprocess communication service
+
+                in a multinetwork environment?
+
+
+          UDP
+
+          TCP : true
+
+          SMTP
+
+          SNMP
+
+Explanation:
+
+//////////
+TCP :     Transmission control protocol (TCP)
+
+          Connection-oriented protocol.
+
+          capable of carrying messages or e-mail over the Internet.
+
+          provides reliable multiprocess communication service in a multinetwork environment.
+
+/////////////
+UDP :     User Datagram Protocol (UDP)
+
+          Connectionless protocol,
+
+          Provides unreliable service.
+
+          Carries short messages over a computer network.
+
+SMTP :
+      Simple Mail Transfer Protocol (SMTP)
+
+      TCP/IP mail delivery protocol.
+
+      Transfers e-mail across  Internet & local network.
+
+      Runs on connection-oriented service provided by TCP.
+
+SNMP :
+      Simple network management protocol (SNMP)
+
+      widely used in Network Management Systems
+
+      Monitor network-attached devices such as :
+
+          - routers,
+          - switches,
+          - firewalls,
+          - printers,
+          - servers, and so on.
+
+
+--------------
+--------------
+An attacker identified that port 139 on the victim’s Windows machine is open
+and he used that port to
+      identify  resources that can be accessed or viewed on  remote system.
+
+What is the protocol that allowed the attacker to perform this enumeration?
+
+
+      SMTP
+
+      NetBIOS :
+                An attacker who finds a
+
+                        Windows OS with port 139 open
+
+                              can check to see what resources
+
+                                          can be accessed or viewed
+
+                              on  remote system.
+
+                However, to enumerate the NetBIOS names,
+
+                           remote system must have enabled
+
+                                    "file and printer sharing".
+
+      SNMP
+
+      LDAP
+
+---------
+
+Which of the following windows utilities allow an attacker to perform NetBIOS enumeration?
+
+
+          ntpdate
+
+          nbtstat : True
+
+          GetRequest
+
+          SetRequest
+
+Explanation:
+
+nbtstat
+
+      Windows utility
+      displays
+                - NetBIOS over TCP/IP  protocol statistics,
+
+                - NetBIOS names tables for both
+                              local & remote computers,
+
+                - NetBIOS name cache.
+
+An attacker can run the nbtstat command,
+
+              “nbtstat.exe –c”
+
+    to get the contents of  :
+
+          -  NetBIOS name cache,
+          -  table of NetBIOS names,
+          -  their resolved IP addresses.
+
+   An attacker can also run :
+
+              “nbtstat.exe –a <IP address of the remote machine>”
+
+                  to get the NetBIOS name table
+
+                        of a remote computer.
+
+----------
+
+
+Which of the following tools is not a NetBIOS enumeration tool?
+
+
+      OpUtils :               SNMP enumeration
+
+      NetScanTools Pro :      NetBIOS enumeration
+
+      Hyena :                 NetBIOS enumeration
+
+      SuperScan :             NetBIOS enumeration
+
+
+-------
+Which protocol enables an attacker to enumerate
+
+                            user accounts
+                            &
+                            devices
+on a target system?
+
+
+                NetBIOS
+
+                SNMP : TRUE
+
+                SMTP
+
+                TCP
+
+  SNMP (Simple Network Management Protocol)
+
+        application layer protocol
+
+        runs on UDP
+
+        maintains & manages
+            routers,
+            hubs,
+            switches
+                  on an IP network.
+
+        SNMP agents run on
+
+              Windows & UNIX networks
+
+                        on networking devices.
+
+  SNMP holds 2 passwords to
+
+        access & configure
+
+          SNMP agent
+            from the management station:
+
+              ?        Read community string:
+
+                                public by default;
+                                allows viewing of device/system configuration
+
+              ?        Read/write community string:
+
+                                private by default;
+                                allows remote editing of configuration
+
+  Attacker uses these default community strings to
+              extract information about a device
+
+  Attackers enumerate SNMP to
+
+              extract information about "network RESOURCES" such as  :
+                        - hosts, routers, devices, shares, etc.
+
+              extract "network INFORMATION" such as :
+                        - ARP tables, routing tables, traffic, etc.
+
+
+------------------------------------------------------
+
+Which of the following tools can be used to perform SNMP enumeration?
+
+
+        SNScan :                                     SNMP enumeration
+
+
+        Nsauditor Network Security Auditor :         NetBIOS enumeration
+
+        SuperScan :                                  NetBIOS enumeration
+
+        SoftPerfect Network Scanner :                NetBIOS enumeration
+
+
+-------------------------------------------------------
+
+Which of the following protocols is responsible for
+
+
+    accessing
+
+        distributed directories
+
+   & access information such as
+
+        valid usernames,
+        addresses,
+        departmental details, and so on?
+
+
+DNS
+
+LDAP :
+        Lightweight directory access protocol (LDAP)
+
+        Internet protocol
+
+        used for accessing
+
+                distributed directory services.
+
+        Directory services may provide any
+
+                ORGANIZED set of RECORDS such as
+                      corporate e-mail directory,
+
+          often in a
+
+                  HIEARCHICAL & LOGICAL structure.
+
+        An attacker queries LDAP service to gather information such as
+
+              valid user names,
+              addresses,
+              departmental details, and so on
+
+                  that can be further
+
+                            used to perform attacks.
+
+SMTP
+
+NTP
+
+----------------
+
+Which of the following tools can be used to perform LDAP enumeration?
+
+      JXplorer : perform LDAP enumeration
+
+
+      SoftPerfect Network Scanner : perform NetBIOS enumeration
+
+      Nsauditor Network Security Auditor :perform NetBIOS enumeration
+
+      SuperScan : perform NetBIOS enumeration
+
+-----------
+
+Which of the following protocols is responsible for
+
+
+    synchronizing clocks of networked computers?
+
+
+      LDAP
+
+      NTP :   Network time protocol (NTP)
+
+              port 123
+
+              designed to synchronize clocks of networked computers.
+
+              can maintain time to within 10 milliseconds (1/100 seconds) over the public Internet.
+
+              can achieve accuracies of 200 microseconds or better
+
+                    in local area networks under ideal conditions.
+
+      SMTP
+
+      DNS
+
+-----------------------------------------------------------------------------------------------
+
+
+Which of the following
+
+      SMTP in-built commands
+
+that returns
+          - actual delivery addresses of aliases
+          &
+          -  mailing lists?
+
+
+    PSINFO
+
+    VRFY
+
+    RCPT TO
+
+    EXPN
+
+
+    Explanation:
+    Mail systems commonly use SMTP with POP3 and IMAP that enables users to save the messages in the server mailbox and download them occasionally from the server. SMTP uses Mail Exchange (MX) servers to direct the mail via DNS. It runs on TCP port 25.
+
+    SMTP provides 3 built-in-commands:
+
+    ?        VRFY - Validates users
+
+    ?        EXPN - returns the actual delivery addresses of aliases and mailing lists
+
+    ?        RCPT TO - Defines the recipients of the message
+
+    SMTP servers respond differently to VRFY, EXPN, and RCPT TO commands for valid and invalid users from which
+    we can determine valid users on SMTP server. Attackers can directly interact with SMTP via the telnet prompt
+    and collect list of valid users on the SMTP server.
+
+
+-----------------
+
+Which of the following protocols is the technology for both gateway-to-gateway (LAN-to-LAN)
+ and host to gateway (remote access) enterprise VPN solutions?
+
+
+  IPSec : True
+
+  NetBios :
+
+  SMTP :
+
+  SNMP :
+
+  Explanation:
+IPsec is the most commonly implemented technology for both  :
+      - gateway-to-gateway (LAN-to-LAN)
+      - host-to-gateway (remote access)
+  enterprise VPN solutions.
+IPsec provides data security by employing various components such as :
+    - ESP (encapsulation security payload),
+    - AH (authentication header), and
+    - IKE (Internet key exchange) to secure communication between VPN end-points.
+ Most Ipsec-based VPNs use ISAKMP (Internet security association key management protocol), a part of IKE to :
+      - establish,
+      - negotiate,
+      - modify,
+      - delete security associations (SA) and cryptographic keys in a VPN environment.
+
+  An attacker can perform simple direct scanning for ISAKMP at UDP port 500 with tools, such as Nmap,
+   to acquire the information related to the presence of a VPN gateway.
