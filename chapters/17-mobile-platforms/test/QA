@@ -1,0 +1,414 @@
+Which of the following is not an OWASP Top 10-2016 Mobile Risks?
+
+
+            Insecure Cryptography
+
+            Insecure Communication
+
+            Buffer Overflow  :     not an OWASP Mobile Risk
+
+            Reverse Engineering
+
+Explanation:
+According to OWASP, following are the Top 10 Mobile Risks:
+1.   Improper platform usage
+2.   Insecure data storage
+3.   Insecure communication
+4.   Insecure authentication
+5.   Insufficient cryptography
+6.   Insecure authorization
+7.   Client code quality
+8.   Code tampering
+9.   Reverse engineering
+10.  Extraneous functionality
+
+Answer is “buffer overflow,” as it is not considered in the OWASP Top 10 List.
+
+-----------
+Which of the following mobile Bluetooth attacks enables an attacker to gain remote access to the victims mobile and use its features without the victim’s
+knowledge or consent?
+
+
+BlueSniff
+
+Bluebugging : Gaining remote access to a target Bluetooth-enabled device and use its features without a victim’s knowledge or consent.
+              Attackers compromise the target device’s security to create a backdoor attack prior to returning control of it to its owner.
+              Bluebugging allows attackers to :
+                    - sniff sensitive corporate or personal data,
+                    - receive calls and text messages intended for the victim,
+                    - intercept phone calls and messages
+                    - forward calls and messages
+                    - connect to the Internet and perform other malicious activities such as accessing contact lists, photos, and videos.
+
+Bluesmacking
+
+Bluesnarfing
+
+
+
+
+----------------
+
+If an attacker is able to access the email contact list, text messages, photos, etc. on your mobile device, then what type of attack did the attacker employ?
+
+
+Bluesnarfing : Theft of information from a wireless device through a Bluetooth connection,
+               Happens between phones, desktops, laptops, PDAs, and others.
+               Allows an attacker to access the victim’s contact list, emails, text messages, photos, videos, business data, and so on stored on the device.
+               Any device with its Bluetooth connection enabled and set to “discoverable” or “discovery” mode (allowing other
+               Bluetooth devices within range to view the device) may be susceptible to bluesnarfing if the vendor’s software contains certain vulnerabilities.
+               Bluesnarfing exploits others’ Bluetooth connections without their knowledge.
+
+Bluesmacking
+
+Bluebugging
+
+BlueSniff
+
+----------------
+
+Which of the following technique helps protect mobile systems and users by limiting the resources the mobile application can access on the mobile platform?
+
+
+Firewall : software- or hardware-based system located at the network gateway
+           protects  resources of a private network from unauthorized access of users on other networks.
+
+Sandbox :Security mechanism that helps protect systems and users by limiting resources the app can access to its intended functionality on the mobile platform.
+         Often, sandboxing is useful in executing untested code or untrusted programs from unverified third parties, suppliers, untrusted users, and untrusted websites.
+
+Anti-Malware : Provides protection against malware, ransomware, and other growing threats to mobile devices.
+
+Spam Filter : Filters & protects user emails against :  viruses, malware, phishing emails, DoS attacks etc.
+
+----------------------
+
+Which of the following attacks can be performed by Spam messages?
+
+
+Phishing Attacks : Attackers perform phishing attack on mobile devices through spam messages or emails.
+                   Phishing emails or pop-ups redirect users to fake web pages of mimicking trustworthy sites that ask them to submit their
+                   personal information such as usernames, passwords, credit card details, address, and mobile number.
+
+Denial-of-Service Attacks
+
+Bluesnarfing Attacks:
+
+Wardriving Attacks : In a wardriving attack, wireless LANS are detected either by :
+                                    - sending probe requests over a connection
+                                or  - by listening to web beacons.
+                     An attacker who discovers a penetration point can launch further attacks on the LAN.
+------------------
+
+When Jason installed a malicious application on his mobile, the application modified the content in other applications on Jason’s mobile phone. What process did the malicious application perform?
+
+
+Data Loss
+
+Data Mining
+
+Data Tampering : true answer
+
+Data Exfiltration
+
+---------------
+Which of the following is not a mobile platform risk?
+
+
+Malicious Apps in App Store
+
+Mobile Malware
+
+Sandboxing : Sandboxing helps protect systems and users by limiting the resources an app can access to the mobile platform.
+
+Jailbreaking and Rooting
+
+-----------
+----------
+Which of the following tools is used to root the Android OS?
+
+
+TunesGo : android tool that has an advanced android root module that :
+                  recognize & analyzes your Android device
+                  choose an appropriate Android-root-plan for it automatically.
+
+LOIC : Low Orbit Ion Cannon (LOIC) is a mobile application that allows the attackers to perform DoS/DDoS attacks on the target IP address
+
+zANTI : Android application which allows you to perform various attacks
+
+DroidSheep : Android tool for web session hijacking (sidejacking)
+
+------------
+Which of the following browser applications encrypts your Internet traffic and then hides it by bouncing through a series of computers around the world?
+
+Google Chrome
+
+ORBOT : Proxy app
+        Empowers other apps to use the internet more privately.
+        Uses Tor to encrypt your Internet traffic and then hides it by bouncing through a series of computers around the world.
+        Attackers can use this application to hide their identity while performing attacks or surfing through the target web applications.
+
+Mozilla FireFox
+
+UC Browser
+
+---------------------
+
+Which of the following applications allows attackers to identify the target devices and block the access of Wi-Fi to the victim devices in a network?
+
+
+Network Spoofer
+
+KingoRoot
+
+DroidSheep
+
+NetCut : Wi-Fi killing mobile application
+         Quickly detects all network users in the WIFI
+         Allows the attacker to kill Wi-Fi access to any specific user in a network
+         use this tool to identify target devices and block the access of Wi-Fi to the victim devices in a network.
+
+-----------------------------------
+Which of the following iOS applications allows you to find, lock or erase a lost or stolen device?
+
+
+Find My iPhone : true
+
+Find My Device
+
+Faceniff
+
+X-Ray
+
+------------------------------
+Which of the following android applications allows you to find, lock or erase a lost or stolen device?
+
+
+X-Ray
+
+Faceniff
+
+Find My iPhone
+
+Find My Device : in-built android mobile security application
+                 Helps you to locate a lost Android device easily, and keeps your information safe.
+
+
+------------------------------
+Which of the following applications is used for Jailbreaking iOS?
+
+
+Superboot :  Android rooting tool
+
+Pangu Anzhuang : tool used to perform jailbreaking for iOS mobile devices.
+
+One Click Root :  Android rooting tool
+
+KingoRoot :  Android rooting tool
+
+----------------
+Which of the following tools is not used for iOS Jailbreaking?
+
+
+Yalu : iOS Jailbreaking tool
+
+Velonzy : iOS Jailbreaking tool
+
+TaiG : iOS Jailbreaking tool
+
+Unrevoked : Android rooting tool
+
+----------------
+
+Which of the following types of jailbreaking allows user-level access but does not allow iboot-level access?
+
+
+Userland Exploit : uses a loophole in the system application.
+                   Allows user-level access
+                   Does not allow iboot-level access.
+                   You cannot secure iOS devices against this exploit, as nothing can cause a recovery mode loop.
+                   Only firmware updates can patch these types of vulnerabilities
+
+None of the above
+
+iBoot Exploit : allow user-level access
+                allow also iboot-level access.
+
+Bootrom Exploit : allow user-level access
+                  allow also iboot-level access.
+
+-----------------
+Which of the following processes is supposed to install a modified set of kernel patches that allows users to run third-party applications not signed by the OS vendor?
+
+
+Spear-Phishing
+
+JailBreaking : Jailbreaking is defined as the process of installing a modified set of kernel patches
+                    that allows users to run 3rd-party applications not signed by the OS vendor.
+               It is the process of bypassing user limitations set by Apple, such as :
+                    - modifying the OS,
+                    - attaining admin privileges,
+                    - and installing unofficially approved apps via “side loading.”
+               You can accomplish jailbreaking simply by modifying iOS system kernels.
+               A reason for jailbreaking iOS devices such as iPhone, iPad, and iPod Touch is to expand the feature set restricted by Apple and its App Store.
+               It provides root access to the OS
+                  permits downloading of third-party applications, themes, and extensions that are unavailable through the official Apple App Store.
+                  Jailbreaking also removes sandbox restrictions, which enables malicious apps to access restricted mobile resources and information.
+
+WarDriving
+
+Sandboxing
+
+-------------------
+Which of the following statements is not true for securing iOS devices?
+
+
+Disable Jailbreak detection : Jailbreak detection has to be enabled all the time in any iOS device.
+                              Disabling Jailbreaking detection in the device cannot secure the device from jailbreaking and once if
+                                jailbreaking has been performed on the device, the device can be prone to installation of applications from
+                                any untrusted sources and can also lead to various attacks that can cause data theft.
+
+Do not jailbreak or root your device if used within enterprise environments
+
+Do not store sensitive data on client-side database
+
+Disable Javascript and add-ons from web browser
+
+----------------------
+
+Which of the following Jailbreaking techniques will make the mobile device jailbroken after each reboot?
+
+
+Untethered Jailbreaking : has the property that if the user turns the device off & back on :
+                                - the device will start up completely,
+                                - the kernel will be patched without the help of a computer – in other words, it will be jailbroken after each reboot.
+
+None of the Above
+
+Tethered Jailbreaking
+
+Semi-Tethered Jailbreaking
+
+-----------------------------
+
+By performing which of the following Jailbreaking techniques does a mobile device start up completely,
+and it will no longer have a patched kernel after a user turns the device off and back on?
+
+None of the Above
+
+Semi-Tethered Jailbreaking :  if the user turns the device off and back on :
+                                      - the device will start up completely;
+                                      - it will no longer have a patched kernel,
+                                      - but it will still be usable for normal functions.
+
+                              To use jailbroken addons, the user needs to start the device with the help of the jailbreaking tool.
+
+Tethered Jailbreaking
+
+Untethered Jailbreaking
+----------------------------------
+
+Which of the following is a Mobile Device Management Software?
+
+
+XenMobile :  XenMobile is the only tool that can provide complete Mobile Device Management.
+
+SpyBubble :  Tool for tracking the geographical location of mobile devices.
+
+Phonty :      Tool for tracking the geographical location of mobile devices.
+
+GadgetTrak : Tool for tracking the geographical location of mobile devices.
+
+------------------------------------------
+If you are responsible for securing a network from any type of attack and if you have found that one of your employees is able to access any
+website that may lead to clickjacking, attacks, what would you do to avoid the attacks?
+
+Delete Cookies
+
+Configure Application certification rules
+
+Harden browser permission rules : true
+
+Enable Remote Management
+
+--------------------------
+In order to avoid data loss from a Mobile device, which of following Mobile Device Management security measures should you consider?
+
+
+Enable Remote Management
+
+Perform periodic backup and synchronization : true
+
+Encrypt Storage
+
+Configure Application certification rules
+
+-------------------
+Which of the following is not a countermeasure for phishing attacks?
+
+
+Review the bank’s policy on sending SMS
+
+Do not click on any links included in the SMS
+
+Never reply to a SMS that urges you to act or respond quickly
+
+Disable the “block texts from the internet” feature from your provider : true
+
+-----------------
+
+Which of the following refers to a policy allowing an employee to bring his or her personal devices such as laptops, smartphones, and tablets to the workplace and using them for accessing the organization’s resources as per their access privileges?
+
+Phishing
+
+Social Engineering
+
+Spear-Phishing
+
+BYOD : Bring your own device (BYOD) refers to a policy allowing an employee to bring his or her personal devices such as :
+            laptops, smartphones, and tablets to the workplace and using them for accessing the organization’s resources as per their access privileges.
+      BYOD policy allows employees to use the devices that :
+              - they are comfortable with
+              - best fits their preferences & work purposes.
+
+----------------
+Which of the following can pose a risk to mobile platform security?
+
+
+Securely wipe or delete the data when disposing of the device
+
+Install applications from trusted application stores
+
+Connecting two separate networks such as Wi-Fi and Bluetooth simultaneously : true
+
+Disable wireless access such as Wi-Fi and Bluetooth, if not in use
+
+
+Explanation:
+Given below are some of the guidelines that help one to protect their mobile device:
+
+Do not load too many applications and avoid auto-upload of photos to social networks
+Perform a Security Assessment of the Application Architecture
+Maintain configuration control and management
+Install applications from trusted application stores
+Securely wipe or delete the data disposing of the device
+Do not share the information within GPS-enabled apps unless they are necessary
+Never connect two separate networks such as Wi-Fi and Bluetooth simultaneously
+Disable wireless access such as Wi-Fi and Bluetooth, if not in use
+In order to provide security to the mobile device platform, never connect two separate networks such as Wi-Fi and Bluetooth simultaneously.
+
+---------------------
+Which of the following is not a feature of Mobile Device Management Software (MDM)?
+
+
+Remotely wipe data in the lost or stolen device
+
+Perform real time monitoring and reporting
+
+Enforce policies and track inventory
+
+Sharing confidential data among devices and networks :
+          Mobile Device Management provides platforms for over-the-air or wired distribution of applications, data and configuration settings for
+              all types of mobile devices, including mobile phones, smartphones, tablet computers, and so on.
+
+          It enforces policies and tracks inventory, remotely wipe data in the lost or stolen device, and performs real time monitoring and reporting.
+          MDM does not share confidential data among devices and networks.
