@@ -37,8 +37,10 @@ Public-key cryptosystems are faster than symmetric-key cryptosystems.
 
 ### Public-key cryptosystems distribute public-keys within digital signatures. 
 
-Public-key cryptography and the public-key/private-key pair provides an important benefit: the ability to widely distribute the public key on a server, or in a central directory, without jeopardizing the integrity of the private key component of the key pair. 
-This eliminates the need to transmit the public key to every correspondent in the system.
+    Public-key cryptography and the public-key/private-key pair provides an important benefit: 
+        the ability to widely distribute the public key on a server, or in a central directory, 
+        without jeopardizing the integrity of the private key component of the key pair. 
+        This eliminates the need to transmit the public key to every correspondent in the system.
 
 -----------------------------------------------------------------------------------------------------------------------------
 
