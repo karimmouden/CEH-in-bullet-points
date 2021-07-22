@@ -11,7 +11,7 @@ It is impossible to crack hashed user passwords unless the key used to encrypt t
 
 If a user forgets the password, it can be easily retrieved using the hash key stored by administrators.
 
-
+-----------------------------------------------------------------------------------------------------------------
 
 ## After gaining access to the password hashes used to protect access to a web-based application, the knowledge of which cryptographic algorithms would be useful to gain access to the application?
 
@@ -23,6 +23,7 @@ AES
 
 RSA
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## The fundamental difference between symmetric and asymmetric key cryptographic systems is that symmetric key cryptography uses__________________?
 
@@ -36,6 +37,7 @@ Bulk encryption for data transmission over fiber
 Multiple keys for non-repudiation of bulk data
 
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## Which cipher encrypts the plain text digit (bit or byte) one by one?
 
@@ -48,6 +50,7 @@ Classical cipher
 
 ### Stream cipher
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## Which of the following algorithms provides better protection against brute force attacks by using a 160-bit message digest?
 
@@ -60,6 +63,7 @@ RC4
 
 MD4
 
+-----------------------------------------------------------------------------------------------------------------
 
 
 ## What is the most secure way to mitigate the theft of corporate information from a laptop that was left in a hotel room?
@@ -73,6 +77,7 @@ Back up everything on the laptop and store the backup in a safe place.
 
 Use a strong logon password to the operating system.
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## Which of the following is an example of an asymmetric encryption implementation?
 
@@ -85,6 +90,7 @@ MD5
 
 SHA1
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## Which of the following is a symmetric cryptographic algorithm?
 
@@ -97,6 +103,7 @@ RSA
 
 PKI
 
+-----------------------------------------------------------------------------------------------------------------
 
 ## Advanced encryption standard is an algorithm used for which of the following?
 
@@ -109,6 +116,7 @@ Data integrity
 
 Key discovery
 
+-----------------------------------------------------------------------------------------------------------------
 
 
 ## What is the primary drawback of using Advanced Encryption Standard (AES) algorithm with a 256-bit key to share sensitive data?
