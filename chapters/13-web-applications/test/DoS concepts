@@ -1,0 +1,215 @@
+Gordon was not happy with the product that he ordered from an online retailer.
+He tried to contact the seller’s post purchase service desk, but they denied any help in this matter.
+Therefore, Gordon wants to avenge this by damaging the retailer’s services.
+He uses a utility named
+        high orbit ion cannon (HOIC) that
+            he downloads from an underground site
+      to flood the retailer’s system with requests so that the retailer’s site
+      was unable to handle any further requests even from legitimate users’ purchase requests.
+ What type of attack is Gordon using?
+
+
+Gordon is taking advantage of an incorrect configuration that leads to access with higher-than-expected privilege.
+
+Gordon is using a denial-of-service attack. : TRUE
+
+Gordon is using poorly designed input validation routines to create and/or to alter commands so that he gains access to the secure data and execute commands.
+
+Gordon is executing commands or is viewing data outside the intended target path.
+
+
+------------------------
+
+What is the goal of a DDoS attack?
+
+
+Create bugs in web applications
+
+Exploit a weakness in the TCP stack
+
+Render a network or computer incapable of providing normal service : TRUE
+
+Capture files from a remote compute
+
+
+----------------------------
+
+Identify the DoS attack that
+              does not use botnets for the attack.
+Instead, the attackers
+        exploit flaws found in the network that uses the
+              DC++ (direct connect) protocol,
+                  which allows the exchange of files between instant messaging clients.
+
+
+Bandwidth attack
+
+Service request flood attack
+
+Peer-to-peer attack : TRUE
+    Peer-to-peer attack is a form of DDoS attack.
+    Attacker exploits a number of bugs in
+            peer-to-peer servers to
+                    initiate a DDoS attack.
+    Unlike a botnet-based attack, a peer-to-peer attack
+                eliminates the need for attackers to communicate with the clients it subverts.
+                Here, the attacker instructs clients of large peer-to peer file-sharing hubs to
+                              - disconnect from their peer-to-peer network and instead,
+                              - connect to the victim’s website.
+    With this, several thousand computers may aggressively try to
+              connect to a target website  ->      decreases the performance of the target website.
+
+DRDoS attack
+
+-----------------------------
+Which of the following is considered to be a smurf attack?
+
+
+An attacker sends a large amount TCP traffic with a spoofed source IPaddress.
+
+An attacker sends a large number of TCP connection requests with spoofed source IPaddress.
+
+An attacker sends a large number of TCP/user datagram protocol (UDP) connection requests.
+
+An attacker sends a large amount of ICMP traffic with a spoofed source IPaddress : TRUE
+
+---------------------------
+
+Systems administrator in a company named “We are Secure Ltd.” has encountered with a problem where
+      he suspects the possibility of a cyber attack
+              over his company’s router.
+He observed that
+          vast amount of network traffic is
+                  directed toward the network router,
+causing router CPU utilization to reach 100% and making it non-functional to legitimate users.
+What kind of attack is this?
+
+
+Buffer overflow (BoF) attack
+
+DoS attack  : TRUE
+
+MitM attack
+
+SQL injection (SQLi) attack
+
+
+
+-------------------------
+Jacob Hacker is a disgruntled employee and is fired from his position as a network engineer.
+He downloads a program outside the company that
+      transmits a very small packet
+                  to his former company’s router,
+thus
+      overloading the router
+      causing lengthy delays in operational service of his former company.
+
+He loads the program on a bunch of computers at several public libraries and executes them. What type of attack is this?
+
+
+HTTP response-splitting attack
+
+SSH Brute-Force attack
+
+DDoS attack : TRUE
+
+Man-in-the-middle attack
+
+Explanation:
+
+DDoS attack:
+    DDoS is the right answer since Jacob has used
+            multiple public libraries to
+                        overload his former company’s router.
+    DDoS represents a flood attack.
+
+Man-in-the-middle attack: When 2 parties are communicating, a man-in-middle attack can take place, in which a third party intercepts a communication between the two parties without their knowledge.
+
+HTTP Response-Splitting Attack:
+          web-based attack
+          tricks the server by
+                - injecting new lines into response headers,
+                - injecting arbitrary code  into response headers.
+                - adding header response data into
+                              input field so that
+                                        server splits the response into 2 responses.
+          This type of attack exploits vulnerabilities in input validation.
+
+SSH Brute Force Attack:
+        Attackers use SSH protocols to
+                create an encrypted SSH tunnel between 2 hosts in order to
+                                transfer unencrypted data over an insecure network.
+
+        Usually SSH runs on TCP port 22.
+        In order to conduct an attack on SSH,  attacker
+                      scans  entire SSH server using
+                                  bots (performs TCP port 22 port scan)
+                                        to identify possible vulnerabilities.
+
+----------------------
+When a client’s computer is infected with malicious software which connects to the remote computer to receive commands,
+the client’s computer is called a ___________
+
+
+Command and Control(C&C)
+
+Bot : TRUE
+
+Client
+
+Botnet
+
+------------------
+When a client’s computer is infected with malicious software which connects to the remote computer to receive commands,
+the remote computer is called ___________
+
+
+Botnet
+
+Server
+
+C&C : TRUE
+
+Bot
+
+-----------------
+
+Which of the following
+          volumetric attacks technique
+                transfers messages to the broadcast IP address in order
+                        to increase the traffic over a victim system and consuming his entire bandwidth?
+
+
+Flood attack : just involves zombies sending large volumes of traffic
+                    to victim’s systems in order to
+                            clog these systems’ bandwidth.
+
+Application layer attacks : not volumetric attacks
+
+Protocol attack : not volumetric attacks
+
+Amplification attack : TRUE
+    amplification attack engages the attacker or zombies to
+              transfer messages to a broadcast IP address.
+    This method amplifies malicious traffic that consumes victim systems’ bandwidth.
+
+--------------------
+
+The DDoS tool created by anonymous sends
+              junk HTTP GET and POST requests
+                      to flood the target,
+and its second version of the tool (the first version had different name) that was used in the so-called Operation Megaupload is called _______.
+
+
+BanglaDOS
+
+Dereil
+
+HOIC : TRUE
+HOIC is the successor of
+          low orbit ion cannon (LOIC) (which was used in operation payback by anonymous),
+     is the version that has some additional features like hiding attacker’s geolocation
+
+Pandora DDoS
+
+--------------------

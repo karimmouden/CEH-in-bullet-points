@@ -1,0 +1,208 @@
+Don Parker, a security analyst, is hired to
+        perform a DoS test on a company.
+Which of the following tools can he successfully utilize to perform this task?
+
+
+N-Stalker :  Webapp security Scanner to
+                        search for vulnerabilities such as XSS and SQLi.
+
+
+Cain and Abel :  Password cracking tool;
+
+Hping3 : TRUE
+Hping3 is a command-line tool that can be used to send
+            custom TCP/IP packets such as
+                    a huge number of SYN packets that can crash the target machine.
+
+Recon-ng :  information gathering tool
+
+----------------
+
+Paul has been contracted to test a network, and he intends to test for any DoS vulnerabilities of the network servers.
+Which of the following automated tools can be used to discover systems that are vulnerable to DoS?
+
+
+John the ripper : password cracking tool
+
+Nmap : TRUE
+        security scanner for network exploration.
+        allows you to discover hosts and services on a computer network, thus creating a "map" of the network.
+        sends specially crafted packets to the target host
+        then analyzes  responses to accomplish its goal.
+        Either a network administrator or an attacker can use this tool for their specific needs.
+        Network administrators can use Nmap for network inventory, managing service upgrade schedules, and monitoring host or service uptime.
+        In the process of network exploration and monitoring,
+              Nmap can be used to test for DoS vulnerabilities.
+
+Netcraft : information gathering.
+
+Cain and Abel : perform password cracking
+
+--------------------
+
+A systems administrator in a small company named “We are Secure Ltd.” has a problem with their Internet connection.
+The following are the symptoms:
+  the speed of the Internet connection is slow (so slow that it is unusable).
+  The router connecting the company to the Internet is
+    - accessible
+    - showing a large amount of SYN packets flowing from 1 single IP address.
+
+The company’s Internet speed is only 5 Mbps, which is usually enough during normal working hours.
+What type of attack is this?
+
+
+DDoS
+
+DRDoS
+
+MitM
+
+DoS : TRUE
+      Since the attack is coming from one single IP address,
+          it is not a DDoS because all requests come from the same IP and
+          it is not a DRDoS because of the SYN packets – in reflection attacks
+                    other type of packets will be used
+                    (answer that reflection device is sending to an initial request).
+          It is not MitM – MitM does not have anything to do with DoS (at least not directly).
+
+------------------------
+
+A systems administrator in a small company named “We are Secure Ltd.” has a problem with their Internet connection.
+The following are the symptoms:
+          The speed of the Internet connection is slow (so slow that it is unusable).
+          The router connecting the company to the Internet is
+                  - accessible
+                  - showing large amount of router solicitation messages from neighboring routers
+                          even though the router is not supposed to receive any of these messages.
+
+What type of attack is this?
+
+
+DDoS (Distributed Denial of Service)
+
+MitM (Man in the Middle)
+
+DoS (Denial of Service)
+
+DRDoS (Distributed Reflected Denial of Service) : Distributed
+
+     A distributed reflection denial-of-service attack (DRDoS),
+     also known as a “spoofed” attack,
+     involves the use of
+            multiple intermediary & secondary machines that
+                    contribute to the actual DDoS attack against the target machine or application.
+
+     exploits  TCP 3-way handshake vulnerability.
+
+     involves attacker machine,
+              intermediary victims (zombies),
+              secondary victims (reflectors), and
+              target machine.
+     launches this attack by sending requests
+            to the intermediary hosts, which in turn
+                      reflects the attack traffic to the target.
+
+     It is not DoS or DDoS because the attack is being reflected.
+     It is not MitM—MitM does not have anything to do with DoS (at least not directly).
+
+-----------------
+
+Martha is a network administrator in a company named “Dubrovnik Walls Ltd.”
+She realizes that her network is under a DDoS attack.
+After careful analysis, she realizes that
+          large amounts of UDP packets are being sent
+                      to the organizational servers that are present behind the “Internet facing firewall.”
+
+What type of DDoS attack is this?
+
+
+Volume (volumetric) attack : TRUE
+          volume-based attack which includes
+                      UDP floods,
+                      ICMP floods, and
+                      other spoofed packet floods.
+
+SYN flood attack :   It is not SYN flood since this is part of protocol attacks.
+
+
+Protocol attack : It is not protocol attack, which includes
+                      SYN floods,
+                      fragmented packet attacks,
+                      ping of death attack,
+                      smurfDDoS,
+                      teardrop attack,
+                      land attack, and so on.
+
+
+Application layer attack :  It is not application layer attack, which includes
+                                      GET/POST floods,
+                                      attacks that targets web server,
+                                      application or OS vulnerabilities,
+                                      Slowloris,
+                                      and so on.
+
+----------------------------
+
+Martha is a network administrator in a company named “Dubrovnik Walls Ltd.”.
+She realizes that her network is under a DDoS attack. After careful analysis,
+she realizes that a large amount of
+    fragmented packets
+are being sent to the servers present behind the “Internet facing firewall.”
+
+What type of DDoS attack is this?
+
+
+Protocol attack : TRUE
+
+Volume (volumetric) attack
+
+SYN flood attack
+
+Application layer attack
+
+------------------
+
+Martha is a network administrator in company named “Dubrovnik Walls Ltd.”
+She realizes that her network is under a DDoS attack. After careful analysis,
+she realizes that large amount of
+      HTTP POST requests
+are being sent to the web servers behind the WAF.
+The traffic is not legitimate, since the web application requires
+      workflow to be finished in order to
+            send the data with the POST request,
+                    and this workflow data is missing.
+
+So, What type of DDoS attack is this?
+
+
+Application layer attack : TRUE
+
+Protocol attack
+
+SYN flood attack
+
+Volume (volumetric) attack
+
+-------------
+
+The DDoS tool used by anonymous in the so-called Operation Payback is called _______
+
+
+Dereil
+
+LOIC : TRUE
+
+BanglaDOS
+
+HOIC
+
+LOIC is the 1st version of the tool and it was used in
+    Operation Payback.
+
+HOIC is the 2nd version of the tool with some additional features, and it was used in the
+      Operation Megaupload.
+
+BanglaDos and Dereil do not have direct connection with anonymous group.
+
+
+-----------------------

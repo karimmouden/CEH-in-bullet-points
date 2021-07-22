@@ -1,0 +1,496 @@
+Which of the following DoS attack detection techniques
+
+          analyzes network traffic in terms of spectral components?
+
+It divides incoming signals into various frequencies and examines different frequency components separately.
+
+
+      - Activity Profiling
+
+      - Wavelet-based Signal Analysis : TRUE
+
+
+
+                        checks for individual components of the frequency present at a particular time
+                        provides a description of those components.
+                        The presence of an unfamiliar frequency indicates
+                              suspicious network activity.
+
+                        A network signal consists of a
+                                - time-localized data packet flow signal
+                                - background noise.
+
+                        Wavelet-based signal analysis filters out
+                              the anomalous traffic flow input signals
+                                  from background noise.
+
+                        Regular network traffic is generally
+                                low-frequency traffic.
+
+                        During an attack, the high-frequency components of a signal increase.
+
+      - Change-point Detection
+
+      - Signature-based Analysis
+
+-----------------------
+
+Which algorithm does the “sequential change-point detection” technique use
+          to identify & locate the DoS attacks?
+
+Obfuscation
+
+Cumulative Sum : TRUE
+
+Advanced Encryption Standard
+
+BlackShades
+
+Explanation:
+The cumulative sum control chart (CUSUM) is a
+            sequential analysis technique
+
+It is typically used in
+          monitoring change detection.
+
+The sequential change-point detection technique
+      - filters network traffic by
+              - IP addresses,
+              - targeted port numbers, and
+              - communication protocols used
+      - stores the traffic flow data in
+                  a graph
+                      that shows the traffic flow rate versus time.
+
+Change-point detection algorithms isolate changes in network traffic statistics and in traffic flow rate caused by attacks.
+
+If there is a drastic change in traffic flow rate, a DoS attack may be occurring.
+
+This technique uses
+
+        Cumulative Sum (Cusum) algorithm to
+
+              identify & locate
+                    DoS attacks;
+
+the algorithm calculates deviations in the actual versus expected local average in the traffic time series.
+
+The sequential change-point detection technique identifies the typical scanning activities of the network worms.
+
+Obfuscation is the obscuring of the intended meaning of communication by making the message difficult to understand, usually with confusing and ambiguous language.
+
+BlackShades
+
+        name of a malicious Trojan horse used by hackers to control computers remotely.
+
+The Advanced Encryption Standard (AES) is a
+
+        symmetric block cipher
+        chosen by the U.S. Government to protect classified information
+        implemented in software & hardware throughout the world to encrypt sensitive data.
+
+
+
+---------------------------
+
+Smith, a network security administrator,
+is configuring routers in his organization
+    to protect the network from DoS attacks.
+
+Which router feature can he use
+  to prevent SYN flooding effectively?
+
+          TCP Intercept : TRUE
+
+                          TCP Intercept Mode
+                          router intercepts
+
+                                  SYN packets that are
+
+                                      - sent by the clients to the server
+                                      - matches with an extended "access list".
+
+                          If there is a match,
+                                  then
+                                    - On behalf of the destination Server,
+                                           The "intercept software" establishes
+
+                                                    a connection with the "client".
+
+                                    - On behalf of the Client,
+                                        The "intercept software" also establishes
+
+                                                    a connection with the destination "server"
+
+                          Once the 2 "half-connections" are established,
+                                    the intercept software
+                                            combines them transparently.
+
+
+          Egress Filtering : scans the headers of IP packets
+                                                              going out of the network
+
+          Mac Address Filtering﻿ : define a list of devices and only allows those devices on your network.
+
+          Ingress Filtering :  protects against
+                                                flooding attacks that
+                                                                        originate from valid prefixes (IP addresses)
+
+-----------------------
+
+Which of the following is an attack detection technique
+that monitors the
+      network packet’s header information?
+This technique also determines the
+          increase in overall number of distinct clusters and
+          activity levels among the network flow clusters?
+
+
+Activity profiling : TRUE
+
+            done based on the
+                  average packet rate for a network flow,
+                          which consists
+                                      of consecutive packets
+                                              with similar packet header information.
+
+            Packet header information includes the
+                        - destination IP
+                        - sender IP ,
+                        - ports,
+                        - transport protocols .
+
+
+
+Ping of death attack : type of ICMP attack
+
+Wavelet-based signal analysis :   denotes an
+                                          input signal in terms of
+                                                          spectral components
+
+Sequential Change-point detection : used to identify
+                                            typical scanning activities of
+                                                            network worms.
+
+-------------------------------
+
+Ivan works as security consultant at “Ask Us Intl.”
+One of his clients is under a large-scale volume-based DDoS attack,
+and they have to decide how to deal with the issue.
+They have some DDoS appliances that are currently not configured.
+They also have a good communication channel with providers,
+and some of the providers have fast network connections.
+In an ideal scenario, what would be the
+        best option to deal with this attack ?
+Bear in mind that this is a
+
+          volume-based DDoS attack
+
+          with at least 1 000 000 bots sending the traffic from the entire globe!
+
+
+Block the traffic at the provider level :
+
+          Blocking the traffic at the provider level is a viable option,
+                  but in this case,
+                        since the attack cannot be easily filtered
+                        (Since the traffic coming from the entire globe),
+                                this is not an apt solution.
+
+Filter the traffic at the company's internet facing routers :
+
+          will not work because
+                traffic is already there,
+                      in this case, it is impossible to do anything at the client’s site.
+
+
+Filter the traffic at the provider level :
+
+        Filtering the traffic at the provider level is the
+                same thing as blocking the traffic at the provider level,
+                          so this is not a correct answer
+
+Absorb the attack : TRUE
+
+            " Absorb the attack " since this is a really large volume of traffic,
+                  and using additional capacity (DDoS appliances that are currently not configured) to absorb the attack.
+
+                  Most of the other options are not practically feasible.
+
+------------------------------------------------------------------
+
+Ivan works as security consultant at “Ask Us Intl.”
+
+One of his clients is under a large-scale
+
+          protocol-based DDoS attack, and
+
+
+      they have to decide how to deal with this issue.
+
+They have some DDoS appliances that are currently
+
+                  not configured.
+
+They also have a
+          good communication channel with providers,
+    and some of the providers have
+          fast network connections.
+
+In an ideal scenario,
+    what would be the best option to deal with this attack ?
+
+
+Bear in mind that this is a protocol-based DDoS attack with at least
+10 000 bots sending the traffic from the entire globe!
+
+
+      Block the traffic at the provider level : TRUE
+
+                since the provider can easily block specific protocols,
+                thereby effectively preventing traffic to reach the client’s site.
+
+
+      Filter the traffic at the company Internet facing routers :
+
+              option, but
+
+                    the best thing to do is to filter the traffic as high as possible,
+                    and since in this case, we do have a
+                                      good communication channel with the provider(s),
+                                                  we will not use the filtering at client site.
+
+      Absorb the attack at the client site :
+
+                not the answer, since this is not the best solution in this case (provider level or client site).
+
+      Absorb the attack at the provider level :
+
+                not the answer, since this is not the best solution in this case (provider level or client site).
+
+-------------------------
+
+John’s company is facing a DDoS attack.
+
+While analyzing the attack, John has learned that the
+          attack is originating from the entire globe, and
+          filtering  traffic at  ISP Level ( Internet Service Provider’s)
+                  is impossible task to do.
+
+After a while, John has observed that
+          his personal computer at home was also compromised
+            similar to that of the company’s computers.
+
+He observed that his computer is
+              sending large amounts of UDP data
+                    directed toward his company’s public IPs.
+
+John takes his personal computer to work and starts a forensic investigation.
+
+Two hours later, he earns crucial information:
+            the infected computer is connecting to the C&C server, and unfortunately,
+                        the communication between
+                          C&C & the infected computer is
+                              encrypted.
+
+Therefore, John intentionally lets the
+              infection spread to another machine in his company’s secure network,
+              where he can
+                    observe & record
+                        all the traffic between the
+                            Bot software & the Botnet.
+
+After thorough analysis he discovered an interesting thing that the
+                  initial process of infection
+                        downloaded the malware
+                              from an FTP server
+                                    which consists of username & password
+                                                      in cleartext format.
+
+ John connects to the FTP Server and finds the
+        Botnet software including the C&C on it, with
+        username and password for C&C in configuration file.
+
+ What can John do with this information?
+
+
+Neutralize handlers : TRUE
+
+    “neutralize handlers,” because with admin’s access to C&C John can
+                                stop the attack,
+                                disable the C&C software,
+                                and/or change the password to
+                                          stop the DDoS attack on his company’s network.
+     Deflect the attack and mitigate the attack are .
+
+Mitigate the attack
+
+      not the correct answers because , he is literally stopping the attack
+
+Protect Secondary Victims
+
+      not the correct answer because
+                  secondary victims are still infected.
+
+Deflect the attack
+
+     not the correct answers because , he is literally stopping the attack
+
+-----------------------------------------------
+
+John’s company is facing a DDoS attack.
+
+While analyzing the attack, John has learned that the
+                    attack is originating from entire globe and
+                    filtering the traffic at the Internet Service Provider’s (ISP) level is an
+                          impossible task to do.
+
+                    After a while, John has observed that his
+                                    personal computer at home was also compromised similar to that of the company’s computers.
+
+                    He observed that his computer is sending large amounts of
+                                      UDP data directed toward his
+                                            company’s public IPs.
+
+John takes his personal computer to work and starts a forensic investigation.
+Two hours later, he earns crucial information:
+
+        - the infected computer is connecting to the C&C server, and
+        -  unfortunately,  communication between C&C and the infected computer is encrypted.
+
+      Therefore, John intentionally lets the infection
+                          spread to another machine in his company’s secure network,
+                          where he can
+                                observe & record
+                                      all the traffic between
+                                          the Bot software and the Botnet.
+
+  After thorough analysis he discovered an interesting thing that the
+    initial process of infection downloaded the malware from
+            an FTP server
+                  which consists of username and password
+                      in cleartext format.
+  John connects to the FTP Server and
+      finds the Botnet software including the C&C on it, with
+              username and password for C&C
+                  in configuration file.
+
+  What can John do with this information?
+
+After successfully stopping the attack against his network,
+          John connects to the C&C again,
+                dumps all the IPs the C&C is managing, and
+                sends this information to the national CERT.
+
+What is John trying to do?
+
+
+        Mitigate the attack
+
+        Neutralize handlers
+
+        Deflect the attack
+
+        Protect secondary victims : TRUE
+
+                      CERT will try to inform
+                              all the infected computer owners (or at least providers) that
+                                        their computers are infected.
+
+                      If the IP in question is not in this CERTs jurisdiction,
+                              they will send the information to
+                                            the CERT “in charge” for this IP address range.
+
+                      Not all the users will be directly contacted, but
+                                        ISP could block specific traffic flowing from infected computers.
+
+
+----------------------------
+
+Sarah is facing one of the biggest challenges in her career—
+
+  she has to design the early warning DDoS detection techniques for her employer.
+
+She starts with
+                    - network analysis &
+                    - detection of an increase in activity levels &
+                    - analyzing the network flows
+                      (focusing on network’s packet header information).
+
+Her idea is to
+                  try to spot the increase in specific traffic,
+                            which is above normal traffic rate
+                                    for this specific network flow.
+
+Which DDoS detection technique is she trying to implement?
+
+
+Change-point detection
+
+NetFlow detection
+
+Wavelet-based signal analysis
+
+Activity profiling : TRUE
+
+--------------------------------------
+
+Sarah is facing one of the biggest challenges in her career—she has to
+            design the early warning DDoS detection techniques for her employer.
+
+She starts developing the detection technique which uses
+
+              signal analysis to
+                      detect anomalies.
+
+The technique she is employing analyzes network traffic in terms of
+
+            spectral components
+
+      where she
+                - divides incoming signals
+                          into various frequencies &
+                - analyzes different frequency components separately.
+
+Which DDoS detection technique is she trying to implement?
+
+//////////////
+          Wavelet-based signal analysis : TRUE
+
+///////////
+          Activity profiling :
+                 - monitors the network’s packet header information
+                 - identifies increase in specific type of traffic.
+
+//////////////
+          Change-point detection :
+                   filters network traffic by  :  - IP addresses,
+                                                  - targeted port numbers,
+                                                  - communication protocols used,
+                   stores the traffic flow data
+                                  in a graph that shows the traffic flow rate versus time.
+//////////////
+          NetFlow detection :
+              could be a part of activity profiling,
+                      but
+                    it is not used as a self-contained DDoS detection technique.
+
+Explanation:
+
+The correct answer is “Wavelet-based signal analysis” because this technique
+          divides the signal in
+              spectral components
+        & analyzes it.
+
+The wavelet analysis technique analyzes network traffic in terms of spectral components.
+
+            - divides incoming signals into various frequencies &
+            - analyzes different frequency components separately.
+
+                              -> Analyzing each spectral window’s energy
+                                            determines the presence of anomalies.
+
+These techniques check frequency components present at a specific time and provide a description of those components.
+Presence of an unfamiliar frequency indicates suspicious network activity.
+
+---------------------------
