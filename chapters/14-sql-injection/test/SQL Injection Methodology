@@ -1,0 +1,276 @@
+A tester has been hired to do a web application security test.
+
+The tester notices that the
+          site is dynamic =>  must make use of a back-end database.
+
+In order for the tester to see if an SQL injection is possible, what is the first character that the tester should use to attempt breaking a valid SQL request?
+
+
+          Single quote : TRUE
+
+          Semicolon
+
+          Double quote
+
+          Exclamation mark
+
+-------------------------------------------------------------------------------------------------
+
+During a penetration test, a tester finds a target that is running
+
+              MS SQL 2000 with default credentials.
+
+The tester assumes that the service is running with a
+
+                  local system account.
+
+How can this weakness be exploited to access the system?
+
+
+                              Using the Metasploit psexec module
+                                                    setting the SA/admin credential
+
+                              Invoking the stored procedure xp_cmdshell
+                                                  to spawn a Windows command shell   : TRUE
+
+                              Invoking the stored procedure cmd_shell
+                                                  to spawn a Windows command shell
+
+                              Invoking the stored procedure xp_shell
+                                                  to spawn a Windows command shell
+
+
+-------------------------------------------------------------------------------------------------
+
+Which tool is used to
+        automate SQL injections
+        and
+        exploit a database by forcing a given web application to
+
+                                connect to another database controlled by a hacker?
+
+
+            Cain and Abel
+
+            DataThief       :     TRUE
+
+            NetCat
+
+            Nmap
+
+
+  Explanation:
+
+  DataThief:
+
+            tool
+            used to demonstrate to web admins & developers
+                how to steal data from a web application that is vulnerable to SQL Injection.
+            designed to retrieve  data from
+                a Microsoft SQL Server back-end
+                      behind a web application
+                          with a SQL Injection vulnerability.
+
+  NetCat:
+
+          networking utility
+          reads & writes data across network connections
+          use the TCP/IP protocol.
+          reliable ""back-end"" tool
+          used directly or driven by other programs and scripts.
+          network debugging & exploration tool.
+
+  Cain and Abel:
+
+          password recovery tool
+          runs on the Microsoft OS.
+          allows you to recover various kinds of passwords by
+              sniffing the network,
+              cracking encrypted passwords using a
+                        dictionary,
+                        brute-force and
+                        cryptanalysis attacks,
+              recording VoIP conversations,
+              decoding scrambled passwords,
+              recovering wireless network keys,
+              revealing password boxes,
+              uncovering cached passwords, &
+              analyzing routing protocols.
+          The Cain & Abel tool recovers passwords and credentials from various sources easily.
+
+  Nmap:
+
+          security scanner for network exploration and hacking.
+          allows you to discover hosts & services on a computer network,
+                  thus creating a "map" of the network.
+          sends specially crafted packets to the target host
+          then analyzes the responses to accomplish its goal.
+
+
+
+-------------------------------------------------------------------------------------------------
+
+Shea is a licensed penetration tester.
+She is working with a client to test their new e-commerce website for SQL injection.
+After signing the NDA and agreeing on the rules of engagement (RoE),
+
+    she starts by examining and listing all the input fields on the website.
+
+    She tries to insert a string value in the CVV2 textbox,
+            where a three-digit number is expected,
+                    and she ends up with the below error message.
+
+"Microsoft ole db provider for ODBC Drivers error '80040e07'  [Microsoft][ODBC SQL Server Driver]
+[SQL Server] Syntax ERROR converting VARCHAR value 'test' to a column of data type int.
+visa/credit.aspx   line 17"
+
+
+Identify in which stage of the SQL injection methodology is Shea right now.
+
+
+        Launch SQL injection attacks
+
+        Information gathering and SQL injection vulnerability detection : TRUE
+
+        Perform blind SQL injection
+
+        Exploit second-order SQL injection
+
+
+-------------------------------------------------------------------------------------------------
+
+Talisa is inspecting the website Movie Scope for SQL injection attacks.
+
+She is using an open-source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and the taking over of database servers.
+
+The tool is called sqlmap.
+
+Talisa was able to find and exploit an SQL injection vulnerability in the
+    user ID parameter on the website.
+
+Now she has full control over the DBMS.
+
+However, she had to prove to the website owner that she was able to execute SQL commands on the DB server and successfully retrieve answers from the DB prior to getting paid.
+
+From the screenshot below, identify the SQL command that Talisa used in order to retrieve the DBMS version.
+
+
+
+
+          SELECT @@VERSION        : TRUE
+
+          GET @@VERSION
+
+          SELECT * FROM VERSION
+
+          SELECT @VERSION
+
+-------------------------------------------------------------------------------------------------
+
+Fill in the blank:
+
+______ function is an IDS evasion technique that can be used to
+
+            inject SQL statements into MySQL database
+
+                  without using double quotes.
+
+
+          CHAR()            : TRUE
+
+          CONV()
+
+          ASCIISTR()
+
+          CHR()
+
+
+
+-------------------------------------------------------------------------------------------------
+
+William has been hired by the ITSec, Inc. to perform web application security testing.
+
+He was asked to perform
+        black box penetration testing
+to test the security of the company’s web applications.
+
+No information is provided to William about the company’s network and infrastructure.
+
+William notices that the
+          company website is dynamic and must make use of a backend database.
+
+He wants to see if an SQL injection would be possible.
+
+As part of the testing, he tries to
+
+        catch instances where
+              the user input is used as
+                    part of an SQL identifier
+                        without any input sanitization.
+
+Which of the following characters should William use as the input data to catch the above instances?
+
+
+            Double quote          :  TRUE
+
+            Right square bracket
+
+            Semicolon
+
+            Single quote            : TRUE
+
+  Explanation:
+
+  Single & double quotes:
+
+      In black box penetration testing, single and double quotes are used as the input data to catch instances where the user input is not sanitized.
+
+  Semicolon:
+
+      In black box penetration testing, a semicolon is used to group two or more SQL statements in the same line.
+
+-------------------------------------------------------------------------------------------------
+
+A tester has been hired to perform
+            source code review of a web application to
+                    detect SQL injection vulnerabilities.
+
+As part of the testing process, he needs to
+          get all the information about the project from the development team.
+
+During the discussion with the development team,
+      he comes to know that the project is in the initial stage of the development cycle.
+
+As per the above scenario, which of the following processes
+                                      does the tester need to follow
+                                              in order to save the company’s time and money?
+
+
+            The tester needs to perform static code analysis as it covers the executable file of the code
+
+            The tester needs to perform static code analysis as it covers the structural and statement coverage testing      : TRUE
+
+            The tester needs to perform dynamic code analysis as it finds and fixes the defects
+
+            The tester needs to perform dynamic code analysis as it uncovers bugs in the software system
+
+
+Explanation:
+
+Option A: The main objective of static code analysis is to
+
+
+          improve the quality of software products by
+
+                      finding errors in the early stages of the development cycle.
+
+          In static testing, code is not executed.
+          It involves manual or automated reviews of the documents.
+          This review is done during the initial phase of the testing to catch defects early in SDLC.
+          It assesses the code and documentation and covers the structural and statement coverage testing.
+
+Option B: Static code analysis is performed in early stages of the development cycle. In static testing, code is not executed, so it does not cover the testing of an executable file of the code.
+
+Option C: Dynamic code analysis checks for functional behavior of the software system, memory/CPU usage, and overall performance of the system. In dynamic testing, code is executed to uncover bugs in the software system. This testing is not performed in the early stages of the development cycle.
+
+Option D: Dynamic code analysis finds and fixes the defects, but the cost of finding and fixing defects is high.

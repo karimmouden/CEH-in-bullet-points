@@ -1,0 +1,183 @@
+A security administrator notices that the log file of the company’s webserver contains suspicious entries:
+
+[20/Mar/2011:10:49:07] "GET /login.php?user=test'+oR+3>2%20-- HTTP/1.1" 200 9958
+[20/Mar/2011:10:51:02] "GET /login.php?user=admin';%20-- HTTP/1.1" 200 9978
+
+The administrator decides to further investigate and analyze the source code of the login.php file:
+
+php
+include('../../config/db_connect.php');
+$user = $_GET['user'];
+$pass = $_GET['pass'];
+$sql = "SELECT * FROM USERS WHERE username = '$user' AND password = '$pass'";
+$result = mysql_query($sql) or die ("couldn't execute query");
+
+if (mysql_num_rows($result) != 0) echo 'Authentication granted!';
+else echo 'Authentication failed!';
+?>
+
+Based on the source code analysis, the analyst concludes that the login.php script is vulnerable to:
+
+
+      command injection
+
+      LDAP injection
+
+      SQL injection : TRUE
+
+      directory traversal
+
+------------------------------------------------------------------------------------------------
+
+Which of the following is used to indicate a single-line comment in structured query language (SQL)?
+
+
+    %%
+
+    "
+
+    --    : TRUE
+
+    ||
+
+------------------------------------------------------------------------------------------------
+What is the main difference between a “Normal” SQL injection and a “Blind” SQL injection vulnerability?
+
+
+The request to the webserver is not visible to the administrator of the vulnerable application.
+
+The attack is called “Blind” because, although the application properly filters user input, it is still vulnerable to code injection.
+
+A successful attack does not show an error message to the administrator of the affected application.
+
+The vulnerable application does not display errors with information about the injection results to the attacker.   : TRUE
+
+------------------------------------------------------------------------------------------------
+
+SQL injection attacks do not exploit a specific software vulnerability; instead they target websites that do not follow secure coding practices for accessing and manipulating data stored in a relational database.
+
+
+False
+
+True : TRUE
+
+
+
+------------------------------------------------------------------------------------------------
+
+Which of the following system table does MS SQL Server database use to store metadata? Hackers can use this system table to acquire database schema information to further compromise the database.
+
+
+            sysrows
+
+            syscells
+
+            sysdbs
+
+            sysobjects : TRUE
+
+
+Explanation:
+SYSOBJECTS contains a row for every object that has been created in the database, including stored procedures, views, and user tables. Rest of the options does not exist.
+
+------------------------------------------------------------------------------------------------
+
+Which of the following attacks are not performed by an attacker who exploits SQL injection vulnerabilities?
+
+
+            Covering Tracks      : TRUE
+
+            Information Disclosure
+
+            Authentication Bypass
+
+            Remote Code Execution
+
+-------------------------------------------------------------------------------------------------
+
+Which of the following methods carries the requested data to the webserver as a part of the message body?
+
+
+            HTTP POST : TRUE
+
+            IBM DB2
+
+            Cold Fusion
+
+            HTTP GET
+
+---------------------------------------------------------------------------------------------------
+
+Which of the following is the most effective technique in identifying vulnerabilities or flaws in the web page code?
+
+
+          Data Analysis
+
+          Packet Analysis
+
+          Code Analysis      : TRUE
+
+          Traffic Analysis
+
+---------------------------------------------------------------------------------------------------
+
+An attacker injects the following SQL query:
+
+blah' AND 1=(SELECT COUNT(*) FROM mytable); -- What is the intention of the attacker?
+
+
+
+
+          Adding New Records
+
+          Updating Table
+
+          Deleting a Table
+
+          Identifying the Table Name : TRUE
+
+---------------------------------------------------------------------------------------------------
+
+Bank of Timbuktu is a medium-sized, regional financial institution in Timbuktu.
+The bank has recently deployed a new Internet-accessible web application.
+
+Customers can access their account balances,
+              transfer money between accounts,
+              pay bills, and
+              conduct online financial business using a web browser.
+
+John Stevens is in charge of information security at the Bank of Timbuktu.
+After one month in production, several customers have complained about the Internet-enabled banking application.
+
+Strangely, the account balances of many of the bank’s customers have been changed!
+
+However, money has not been removed from the bank; instead, money is transferred between accounts.
+
+Given this attack profile, John Stevens reviewed the web application’s logs and found the following entries:
+
+Attempted login of unknown user: johnm
+Attempted login of unknown user: susaR
+Attempted login of unknown user: sencat
+Attempted login of unknown user: pete'';
+Attempted login of unknown user: ' or 1=1--
+Attempted login of unknown user: '; drop table logins--
+Login of user jason, sessionID= 0x75627578626F6F6B
+Login of user daniel, sessionID= 0x98627579539E13BE
+Login of user rebecca, sessionID= 0x9062757944CCB811
+Login of user mike, sessionID= 0x9062757935FB5C64
+Transfer Funds user jason
+Pay Bill user mike
+Logout of user mike
+
+What kind of attack did the hacker attempt to carry out at the bank?
+
+
+
+
+The hacker first attempted logins with suspected user names, and then used SQL injection to gain access to valid bank login IDs.            : TRUE
+
+The hacker attempted session hijacking, in which the hacker opened an account with the bank, then logged in to receive a session ID, guessed the next ID, and took over Jason’s session.
+
+Brute force attack in which the hacker attempted guessing login IDs and passwords from password-cracking tools.
+
+The hacker used a generator module to pass results to the webserver and exploited web application CGI vulnerability.

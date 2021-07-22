@@ -1,0 +1,213 @@
+Steve works as a penetration tester in a firm named InfoSecurity. Recently, Steve was given an assignment to test the security of the company’s web applications and backend database.
+
+While conducting the test, he sends a malicious SQL query with conditional timing delays to the backend database through the web application.
+
+This conditional time delay forces the database to wait for a specified amount of time before responding.
+
+He performs the same task using different malicious SQL queries.
+
+By observing various query responses from the database, Steve came to know that the web application is vulnerable to an SQL injection attack.
+
+What type of SQL injection attack is Steve most likely performing?
+
+
+        Out-of-band SQL Injection
+
+        Union-based SQL injection
+
+        Error-based SQL injection
+
+        Blind SQL injection  : TRUE
+
+
+--------------------------------------------------------------------------------------------------
+
+Select all correct answers.
+In blind SQLi, attackers can steal data by asking a series of
+
+                    true or false questions through SQL statements.
+
+Select all the correct types of blind SQL injections.
+
+
+        Boolean exploitation : TRUE
+
+        Tautology
+
+        System stored procedure
+
+        Time Delay :          TRUE
+
+--------------------------------------------------------------------------------------------------
+
+In which of the following attacks does an attacker
+                      use the same communication channel to
+                            perform the attack
+                            &
+                            retrieve the results?
+
+
+          Blind SQL injection
+
+          Out-of-band SQL injection
+
+          In-band SQL injection :       TRUE
+
+          Inferential SQL injection
+
+
+
+--------------------------------------------------------------------------------------------------
+
+In which of the following attacks does an attacker
+            use a conditional OR clause
+                    in such a way that the condition of the WHERE clause
+                                                          will always be true?
+
+
+          UNION SQL injection
+
+          Illegal/logically incorrect query
+
+          Tautology :                          TRUE
+
+          End-of-line comment
+
+--------------------------------------------------------------------------------------------------
+
+An attacker uses the following SQL query to perform an SQL injection attack
+
+    SELECT * FROM users WHERE name = ‘’ OR ‘1’=‘1';
+
+ Identify the type of SQL injection attack performed.
+
+
+        Illegal/Logically Incorrect Query
+
+        Tautology  : TRUE
+
+        UNION SQL Injection
+
+        End-of-Line Comment
+
+--------------------------------------------------------------------------------------------------
+
+In which of the following attacks, does an attacker
+
+    inject an additional malicious query to the original query?
+
+
+        In-line Comments
+
+        UNION SQL Injection
+
+        Tautology
+
+        Piggybacked Query      :   TRUE
+
+
+
+--------------------------------------------------------------------------------------------------
+
+In which of the following attacks does an attacker
+
+                  use an ORDER BY clause to
+
+                      find the right number of columns in a database table?
+
+
+        UNION SQL injection   : TRUE
+
+        In-line comments
+
+        Piggybacked query
+
+        Tautology
+
+--------------------------------------------------------------------------------------------------
+
+Which of the following attacks is
+
+                time-intensive
+
+                      because the database
+                                should generate a new statement for each newly recovered bit?
+
+
+        Blind SQL Injection  :           TRUE
+
+        UNION SQL Injection
+
+        Error Based SQL Injection
+
+        In-band SQL Injection
+
+Explanation:
+
+A Blind/Inferential SQL Injection attack can become TIME-INTENSIVE because
+
+      database should generate a new statement for each newly recovered bit.
+
+Blind SQL Injection is used when
+            a web application is vulnerable to an SQL injection
+                      but the results of the injection are not visible to the attacker.
+
+Blind SQL injection is identical to a normal SQL Injection
+
+    except that when an attacker attempts to exploit an application
+
+          rather than seeing a useful ERROR message,
+
+                          a GENERIC CUSTOM PAGE is displayed.
+
+In blind SQL injection, an attacker poses a
+
+                      true or false question
+
+                          to the database to see if the application is vulnerable to SQL injection.
+
+---------------------------------------------------------------------------------------------------
+
+Which of the following commands is used to make the CPU wait for a specified amount of time before executing an SQL query?
+
+
+        ORDER BY 10--
+
+        WAITFOR DELAY '0:0:10'--          :  TRUE
+
+        GET_HOST_NAME()
+
+        UNION SELECT 1,null,null—
+
+--------------------------------------------------------------------------------------------------
+
+Which of the following SQL queries is an example of a
+
+      heavy query used in SQL injection? ????????????????????????
+
+
+                SELECT * FROM products WHERE id_product=$id_product
+
+                SELECT Name, Phone, Address FROM Users WHERE Id=1 UNION ALL SELECT creditCardNumber,1,1 FROM CreditCardTable
+
+                SELECT Name, Price, Description FROM ITEM_DATA WHERE ITEM_ID = 67 AND 1 = 1
+
+                SELECT * FROM products WHERE id=1 AND 1 < SELECT count(*) FROM all_users A, all_users B, all_users C        :  TRUE
+
+
+
+Explanation:
+
+For example, the following is a query in Oracle that
+
+      takes a huge amount of time to execute:
+
+                    SELECT count(*) FROM all_users A, all_users B, all_users C
+
+If an attacker injects a malicious parameter to the above query to perform a time-based SQL injection without using functions, then it takes the following form:
+
+1 AND 1 < SELECT count(*) FROM all_users A, all_users B, all_users C
+
+The final resultant query takes the form:
+
+SELECT * FROM products WHERE id=1 AND 1 < SELECT count(*) FROM all_users A, all_users B, all_users C
