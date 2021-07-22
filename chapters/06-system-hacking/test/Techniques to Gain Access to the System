@@ -1,0 +1,293 @@
+Which of the following type of access control determines
+the usage & access policies of the users and provides that a user can access a resource
+only if he or she has the access rights to that resource?
+
+
+Discretionary access control
+
+Mandatory access control : True
+
+Role-based access control
+
+Rule-based access control
+
+Explanation:
+Mandatory Access Control (MAC):
+          Determine  usage & access policies of the users.
+          Users can access a resource only if that particular user has the access rights to that resource.
+          MAC finds its application in the data marked as highly confidential.
+          The network administrators impose MAC, depending on the operating system and security kernel.
+          It does not permit the end user to decide who can access the information,
+          and does not permit the user to pass privileges to other users as the access could then be circumvented.
+
+Discretionary Access Control (DAC):
+        Determine  access controls taken by any possessor of an object in order to
+                decide the access controls of the subjects on those objects.
+        The other name for DAC is a need-to-know access model. (NTK)
+        It permits the user, who is granted access to information, to decide :
+              - how to protect the information
+              - the level of sharing desired.
+        Access to files is restricted to users and groups based upon their identity and the groups to which the users belong.
+
+Role Based Access Control (RBAC):
+      Access permissions are available based on the access policies determined by the system.
+      The access permissions are out of user control, which means that users cannot amend the access policies created by the system.
+      Users can be assigned access to systems, files, and fields on a 1-to-1 basis whereby access is granted to the user for a particular file or system.
+      It can simplify the assignment of privileges and ensure that individuals have all the privileges necessary to perform their duties.
+
+Rule-Based Access Control (RuBAC):
+      End point devices such as firewalls verifies the request made to access the network resources against a set of rules.
+      These rules generally include IP addresses, port numbers, etc.
+
+--------------------
+A hacker is sniffing the network traffic and trying to crack the encrypted passwords using
+        Dictionary, Brute-Force, and Cryptanalysis attacks.
+ Which of the following tool helps the hacker to recover the passwords?
+
+Cain and Abel : True
+                password recovery tool for Microsoft Operating Systems.
+                Allows easy recovery of various kind of passwords by
+                                  sniffing the network,
+                                  cracking encrypted passwords using Dictionary,
+                                  Brute-Force
+                                  Cryptanalysis attacks,
+                                  recording VoIP conversations,
+                                  decoding scrambled passwords,
+                                  recovering wireless network keys,
+                                  revealing password boxes,
+                                  uncovering cached passwords
+                                  analyzing routing protocols.
+                The program does not exploit any software vulnerabilities or bugs that could not be fixed with a little effort.
+                It covers some security aspects/weaknesses present in protocol's standards, authentication methods and caching mechanisms.
+                Its main purpose is the simplified recovery of passwords and credentials from various sources; however,
+                it also ships some "non standard" utilities for Microsoft Windows users.
+
+Metagoofil : extracts metadata of
+                        public documents (pdf, doc, xls, ppt, docx, pptx, and xlsx)
+                        belonging to a target company.
+             Performs a Google search to
+                    - identify
+                    - download
+                    documents to local disk
+             then extracts  metadata with different libraries like Hachoir, PdfMiner and others.
+             With the results, it generates a report with
+                      usernames, software versions and servers or machine names
+            that will help penetration testers in the information gathering phase.
+
+Hoovers : business research company that provides complete details about
+                      companies & industries all over the world.
+          provides patented business-related information through
+              the Internet, data feeds, wireless devices, and co-branding agreements with other online services.
+          It gives complete information about the organizations, industries, and people that drive the economy.
+
+Nessus : assessment solution for identifying vulnerabilities, configuration issues, and malware that attackers use to penetrate networks.
+        It performs :
+            - vulnerability assessment,
+            - configuration assessment,
+            - compliance assessment.
+        It supports various technologies such as
+                OS,
+                network devices,
+                hypervisors,
+                databases,
+                tablets/phones,
+                web servers
+                critical infrastructure.
+
+-----------
+
+You have retrieved the raw hash values from a Windows 2000 Domain Controller.
+Using social engineering, you know that they are enforcing strong passwords.
+You understand that all users are required to use passwords that are at least eight characters in length.
+All passwords must also use three of the four following categories: lower-case letters, capital letters, numbers, and special characters.
+With your given knowledge of users, likely user account names, and the possibility that they will choose the easiest passwords possible,
+what would be the fastest type of password cracking attack you can run against these hash values to get results?
+
+Hybrid Attack: A hybrid attack is more powerful as it uses both a dictionary attack and brute force attack.
+                    It also uses symbols and numbers.
+                    Password cracking becomes easier with this method.
+                    Often, people change their passwords merely by adding some numbers to their old passwords.
+                    In this case, the program would add some numbers and symbols to the words from the dictionary to try and crack the password.
+                    For example, if the old password is “system,” then there is a chance that the person will change it to “system1” or “system2.”
+
+Replay Attack: In a replay attack, packets and authentication tokens are captured using a sniffer.
+                After the relevant info is extracted, the tokens are placed back on the network to gain access.
+                The attacker uses this type of attack to replay bank transactions or other similar types of data transfer,
+                  in the hope of replicating and/or altering activities, such as banking deposits or transfers.
+
+Dictionary Attack: In a dictionary attack, a dictionary file is loaded into the cracking application that runs against user accounts.
+                   This dictionary is the text file that contains a number of dictionary words that are commonly used as passwords.
+                   The program uses every word present in the dictionary to find the password.
+                   Apart from a standard dictionary, attackers’ dictionaries have added entries with numbers and symbols added to words (e.g., “3December!962”).
+                   Simple keyboard finger rolls (“qwer0987”), which many believe to produce random and secure passwords, are thus included in an attacker's dictionary.
+
+Brute-Force Attack: In a brute force attack, attackers try every combination of characters until the password is broken.
+                    Cryptographic algorithms must be sufficiently hardened to prevent a brute-force attack,
+                    which is defined by the RSA: “Exhaustive key-search, or brute-force search,
+                                                  is the basic technique for trying every possible key in turn until the correct key is identified.”
+
+------------
+
+An engineer is learning to write exploits in C++ and is using Kali Linux. The engineer wants to compile the newest C++ exploit and name it calc.exe. Which command would the engineer use to accomplish this?
+
+
+g++ -i hackersExploit.pl -o calc.exe
+
+g++ --compile –i hackersExploit.cpp -o calc.exe
+
+g++ hackersExploit.py -o calc.exe
+
+g++ hackersExploit.cpp -o calc.exe : True
+
+------------
+
+How can rainbow tables be defeated?
+
+    Password salting :              technique where random strings of characters
+                                              are added to the password before calculating their hashes.
+                                    This makes it more difficult to reverse the hashes and defeats precomputed hash attacks.
+
+    Use of non-dictionary words :   Rainbow tables can be created for all nondictionary words .
+
+    Lockout accounts under brute force password cracking attempts :
+                                    Locking out accounts is not a right answer as the rainbow attacks are
+                                          - passive attacks
+                                    and   - not performed on live systems.
+
+    All uppercase character passwords :
+                                    Rainbow tables can be created for all uppercase characters.
+
+------------
+
+Which of the following is the advantage of adopting a single sign on (SSO) system?
+
+
+
+
+A reduction in overall risk to the system since network and application attacks can only happen at the SSO point
+
+Impacts user experience when an application times out the user needs to login again reducing productivity
+
+Decreased security as the logout process is different across applications
+
+A reduction in password fatigue for users because they do not need to know multiple passwords when accessing multiple applications : TRUE
+
+Explanation:
+Advantages of Single Sign On (SSO) system:
+
+        A reduction in password fatigue for users because they do not need to know multiple passwords when accessing multiple applications.
+        A reduction in system administration overhead since any user login problems can be resolved at the SSO system.
+        Improves usability and user satisfaction through automatic login functionality.
+        Users need not maintain multiple passwords and since authentication is performed at a centralized server it improves security.
+        Improves productivity through single sign in functionality as it reduces the login time.
+        Improves auditing as the SSO system provides easy way of tracking application usage, shared resources usage, etc.
+        Improves account management such as account disabling (Disabling hardware and network accounts).
+
+------------------
+
+What statement is true regarding LAN Manager (LM) hashes?
+
+
+    Uppercase characters in the password are converted to lowercase.
+
+    LM hashes limit the password length to a maximum of 14 characters.
+
+    LM hashes are based on AES128 cryptographic standard.
+
+    LM hashes consist in 48 hexadecimal characters.
+
+
+    Explanation:
+            LAN Manager uses a 14-byte password.
+            If the password is less than 14 bytes, it is concatenated with zeros.
+            After conversion to uppercase, it is split into two 7-byte halves.
+            From each 7-byte half an 8-byte odd parity DES key is constructed.
+            Each 8-byte DES key is used to encrypt a fixed value.
+            The results of these encryptions are concatenated into a 16-byte value.
+            The value obtained is the LAN Manager one-way hash for the password.
+
+    LM hashes limit the length of the password to a maximum of 14 characters.
+    What makes the LM hash vulnerable is that an attacker has to go through just 7 characters twice to retrieve passwords up to 14 characters in length.
+    There is no salting (randomness) done.
+    For instance, if the password is 7 characters or less, the second half will always be a constant (0xAAD3B435B51404EE).
+    If it has over 7 characters such as 10, then it is split up into :
+          - a password hash of 7 variable characters
+          - another password hash of 3 characters.
+          The password hash of 3 variable characters can be easily cracked with password crackers such as LOphtCrack.
+          It is easy for password crackers to detect if there is an 8-character when the LM password is used.
+          The challenge response can then be brute-forced for the LM-hash.
+          The number of possible combinations in the LM password is low compared to the Windows NT password.
+
+-----------------------------
+
+How does the SAM database in Windows operating system store the user accounts and passwords?
+
+
+
+
+The operating system stores the passwords in a secret file that users cannot find.
+
+The operating system uses key distribution center (KDC) for storing all user passwords.
+
+The operating system performs a one-way hash of the passwords. : TRUE
+
+The operating system stores all passwords in a protected segment of volatile memory.
+
+Explanation:
+Windows uses the security accounts manager (SAM) database or active directory database to
+                  manage user accounts & passwords
+                      in the hashed format (one-way hash).
+The system does not store the passwords in plaintext format, but in hashed format, to protect them from attacks.
+    The system implements SAM database as a registry file,
+    Windows kernel obtains and keeps an exclusive file system lock on the SAM file.
+As this file consists of a file system lock, this provides some measure of security for the storage of passwords.
+
+-------------
+A pen tester is using Metasploit to exploit an FTP server and pivot to a LAN.
+How will the pen tester pivot using Metasploit?
+
+
+Create a route statement in the meterpreter. : TRUE
+
+            When malicious activities are performed on the system with Metasploit Framework,
+            the Logs of the target system can be wiped out by :
+                1- launching meterpreter shell prompt of the Metasploit Framework
+                2- type "clearev" command in meterpreter shell prompt
+                3- type Enter.
+
+Issue the pivot exploit and set the meterpreter.
+
+Set the payload to propagate through the meterpreter.
+
+Reconfigure the network settings in the meterpreter.
+
+-----------
+
+John the Ripper is a technical assessment tool used to test the weakness of which of the following?
+
+
+      File permissions
+
+      Passwords : TRUE
+
+      Usernames
+
+      Firewall rulesets
+
+-----------
+
+You need to do an ethical hack for BAYARA Company,
+and the manager says that you need to obtain the password of the root account of the main server to hire you.
+You are in possession of a rainbow table, what else do you need to obtain the password of the root?
+
+
+Perform a network recognition
+
+Do a vulnerability assessment
+
+Inject an SQL script into the database
+
+The hash of the root password : TRUE
+          To do an offline hacking of the password with a rainbow table, you need the hashes of the passwords.
+
+---------

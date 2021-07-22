@@ -1,0 +1,285 @@
+Which of the following techniques do attackers use to cover the tracks?
+
+
+-Scanning
+
+-Disable auditing :TRUE
+
+-Steganalysis
+
+-Steganography
+
+Explanation:
+
+Steganography:
+    refers to the art of hiding data “behind”
+          other data
+              without the target’s knowledge.
+
+Steganalysis:
+      Process of discovering
+              existence of hidden information in a medium.
+
+Disable auditing:
+      Technique where an attacker
+            disables auditing features of the target system
+                to cover  tracks.
+
+Scanning: This refers to a set of procedures used
+                  for identifying
+                      hosts,
+                      ports, and
+                      services
+                                in a network.
+
+-------------
+
+Identify the technique used by the attackers to wipe out the entries corresponding to their activities in the system log to remain undetected?
+
+
+-Executing applications
+
+-Gaining access
+
+-Clearing logs : TRUE
+
+-Escalating privileges
+
+Explanation:
+
+Executing Applications:
+      Once attackers have administrator privileges,
+      they attempt to install malicious programs such as
+            Trojans, Backdoors, Rootkits, and Keyloggers,
+            which grant them remote system access,
+            thereby enabling them to execute malicious codes remotely.
+      Installing Rootkits allows them
+                to gain access at the OS level
+                      to perform malicious activities.
+      To maintain access for use at a later date,
+              they may install Backdoors.
+
+Escalating Privileges:
+      After gaining access to a system using a low-privileged normal user account,
+              attackers may then try to increase their administrator privileges
+                          to perform protected system operations,
+                                  so that they can proceed to the next level of the system hacking phase:
+                                          execute applications.
+      Attackers exploit known system vulnerabilities to escalate user privileges.
+
+Gaining Access: In system hacking,
+                    the attacker first tries to gain access to a target system using
+                              - information obtained
+                              - loopholes found in the system’s access control mechanism.
+                  Once attackers succeed in gaining access to the system,
+                          they are free to perform malicious activities such as
+                                        stealing sensitive data,
+                                        implementing a sniffer to capture network traffic, and
+                                        infecting the system with malware.
+
+Clearing Logs: To maintain future system access,
+                          attackers attempt to
+                                  avoid recognition by legitimate system users.
+               To remain undetected, attackers
+                          wipe out the entries corresponding to their activities in the system log,
+                                  thus avoiding detection by users.
+
+-------------------
+
+Which of the following techniques is used by the attackers to clear online tracks?
+
+
+
+
+-Disable auditing     : TRUE
+
+-Disable LAN manager
+
+-Disable LMNR and NBT-NS services
+
+-Disable the user account
+
+
+Explanation:
+      Techniques used for Clearing Tracks
+
+      The main activities that an attacker performs toward removing his/her traces on the computer are:
+
+            Disable auditing:
+                  An attacker disables auditing features of the target system
+            Clearing logs:
+                  An attacker clears/deletes the system log entries corresponding to his/her activities
+            Manipulating logs:
+                  An attacker manipulates logs in such a way that he/she will not be caught in legal actions
+
+-------------------------------------
+
+Which of the following is an
+    sh-compatible shell that
+    stores command history in a file?
+
+
+      - ksh
+
+      - BASH : TRUE
+
+      - Tcsh/Csh
+
+      - Zsh
+
+
+      Explanation:
+
+BASH: The BASH or Bourne Again Shell
+          is an sh-compatible shell
+          stores command history in a file called bash history.
+          You can view the saved command history using more ~/.bash_history command.
+          This feature of BASH is a problem for hackers as the bash_history file could be used by investigators
+          in order to track the origin of an attack and the exact commands used by an intruder in order to compromise a system.
+
+Tcsh:
+      This is a Unix shell and compatible with C shell.
+      It comes with features such as command-line completion and editing, etc.
+      Users cannot define functions using tcsh script.
+      They need to use scripts such as Csh to write functions.
+
+Zsh: This shell can be used as
+          an interactive login shell
+      as well as
+          a command-line interpreter for writing shell scripts.
+
+     It is an extension of the Bourne shell (BASH)
+     It includes a vast number of improvements.
+
+Ksh: It improved version of the Bourne shell that includes
+                floating-point arithmetic,
+                job control,
+                command aliasing, and
+                command completion.
+
+------------------
+
+Which of the following commands is used to
+disable the BASH shell from saving the history?
+
+
+- history –c
+
+- export HISTSIZE=0   : TRUE
+
+- history -w
+
+- shred ~/.bash_history
+
+Explanation:
+
+      history –c:               This command is useful in
+                                      clearing the stored history.
+
+      export HISTSIZE=0:       This command
+                                      disables the BASH shell from saving  history
+                                            by setting the
+                                                    size of the history file to 0.
+
+      history–w:               This command
+                                      only deletes the history of the current shell,
+                                                whereas the command
+                                                          history of other shells remain unaffected.
+
+      shred ~/.bash_history:   This command
+                                    shreds the history file,
+                                            making its contents unreadable.
+
+-----------------
+
+Which of the following technique is used by the attacker
+    to distribute the payload &
+    to create covert channels?
+
+
+      - Clear online tracks
+
+      - Performing steganalysis
+
+      - TCP Parameters        : TRUE
+
+      - Covering tracks
+
+
+      Explanation:
+      TCP Parameters: TCP parameters can be used by the attacker to
+                              - distribute the payload
+                              - create covert channels.
+                     Some of the TCP fields where data can be hidden are as follow:
+
+                            1)  IP Identification field: Easy approach where
+                                                            a payload is transferred bitwise
+                                                                      over an established session
+                                                                              between two systems
+                                                      Here, 1 character is encapsulated per packet.
+
+                            2)  TCP acknowledgement number: Quite difficult approach as it
+                                                                  uses a bounce server that
+                                                                        receives packets from the victim &
+                                                                        sends it to an attacker.
+                                                                  Here, 1 hidden character is relayed
+                                                                          by the bounce server
+                                                                                per packet.
+
+                            3)  TCP initial sequence number: Does not require an established connection between two systems.
+                                                             Here, 1 hidden character is encapsulated per
+                                                                        SYN request & Reset packets.
+
+-------------------
+
+Which of the following registry entry you will delete to clear Most Recently Used (MRU) list?
+
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs : TRUE
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2
+
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts
+
+
+Explanation:
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey              stores the hotkeys.
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts             responsible for file extension association.
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs          key maintains a list
+                                                                                                of recently opened
+                                                                                            or saved files
+                                                                                                  via Windows Explorer-style dialog boxes.
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2         stores the network locations.
+
+
+---------------------
+In a Windows system, an attacker was found to have run the following command:
+type C:\SecretFile.txt >C:\LegitFile.txt:SecretFile.txt
+What does the above command indicate?
+
+
+The attacker has used Alternate Data Streams to hide SecretFile.txt file into LegitFile.txt. : TRUE
+
+The attacker has used Alternate Data Streams to copy the content of SecretFile.txt file into LegitFile.txt.
+
+The attacker has used Alternate Data Streams to rename SecretFile.txt file to LegitFile.txt.
+
+The attacker was trying to view SecretFile.txt file hidden using an Alternate Data Stream.
+
+
+Explanation:
+NTFS has a feature called as Alternate Data Streams that allows attackers to hide a file behind other normal files. Given below are some steps in order to hide file using NTFS:
+
+1) Open the command prompt
+        with an elevated privilege
+
+2) Type the command
+          “type C:\SecretFile.txt >C:\LegitFile.txt:SecretFile.txt”
+(here, LegitFile.txt file is kept in C drive where SecretFile.txt file is hidden inside LegitFile.txt file)
+
+3) To view the hidden file,
+        type
+            “more < C:\SecretFile.txt”
+             (for this you need to know the hidden file name)

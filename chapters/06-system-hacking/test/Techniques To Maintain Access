@@ -1,0 +1,350 @@
+Which of the following are valid types of rootkits? (Choose three.)
+
+
+- Hypervisor level : TRUE
+
+- Application level : TRUE
+
+- Kernel level : TRUE
+
+- Network level
+
+- Data access level
+
+- Physical level
+
+- Explanation:
+
+Hypervisor-level rootkit:
+            Attackers create hypervisor-level rootkits
+                        by exploiting hardware features such as
+                               - Intel VT
+                               - AMD-V.
+            These rootkits
+                    - run in Ring-1,
+                    - host the OS of target machine as a virtual machine,
+                    - intercept all hardware calls made by the target OS.
+
+            This kind of rootkit
+                    - works by: modifying the system’s boot sequence
+                    - gets loaded instead of the original virtual machine monitor.
+
+Kernel-level rootkit:
+            The kernel is the core of the OS.
+            Kernel-level rootkit
+                - runs in Ring-0 with highest OS privileges.
+                - cover backdoors on the computer
+                - created by :
+                      - writing additional code
+                  or  - substituting portions of kernel code with modified code via :
+                                      - device drivers in Windows
+                                  or  - loadable kernel modules in Linux.
+                - If the kit’s code contains mistakes or bugs, kernel-level rootkits affect the stability of the system.
+                - have the same privileges of the OS;
+                            => hence, Difficult to detect & intercept
+                                      or subvert the operations of OS.
+
+Application-level rootkit:
+              Operates inside the victim’s computer by :
+                        - replacing the standard application files (application binaries) with rootkits
+                    or  - modifying behavior of present applications with :
+                                                - patches,
+                                                - injected malicious code,....
+
+---------------------------
+Fill in the blank   _________________ type of rootkit is most difficult to detect.
+
+
+Kernel Level Rootkit : TRUE
+
+Hypervisor Rootkit : Hypervisor
+                        - hosts OS of target machine as a virtual machine
+                    and - intercepts all hardware calls made by the target operating system.
+
+Hardware/Firmware Rootkit :
+      Uses device/platform firmware to create persistent malware image in hardware, like HDD, System BIOS, Network Card.
+      Code integrity tool does not inspect the integrity of firmware.
+
+Application Rootkit :
+      replaces standard application files by modifying behavior of present applications with patches, injected malicious code.
+
+-----------------------
+
+Which of the following is not a defense technique against malicious NTFS streams?
+
+
+      Use up-to-date antivirus software
+
+      Write critical data to alternate data streams : TRUE
+
+      Move suspected files to FAT partition
+
+      Use File Integrity Monitoring tool like tripwire
+
+
+      You should do the following to defend against malicious NTFS streams:
+
+          To delete hidden NTFS streams, move the suspected files to FAT partition
+          Use third-party file integrity checker such as Tripwire File Integrity Monitor to maintain
+          integrity of NTFS partition files against unauthorized ADS
+          Use third-party utilities such as EventSentry or adslist.exe to show and manipulate
+          hidden streams
+          Avoid writing important or critical data to alternate data streams
+          Use up-to-date antivirus software on your system.
+          Enable real-time antivirus scanning to protect against execution of malicious streams
+          Use file-monitoring software such as
+                    Stream Detector (http://www.novirusthanks.org)
+                    ADS Detector (https://sourceforge.net/projects/adsdetector/?source=directory)
+            to help detect creation of additional or new data streams.
+
+--------------------------
+
+Which one of the following techniques is used by attackers to hide their programs?
+
+
+NTFS Stream :  Using NTFS data steam, an attacker can almost completely hide files within the system.
+               It is easy to use the streams but the
+                    user can only identify it with specific software.
+               Explorer can display only the root files;
+                    it cannot view the streams linked to the root files
+                    and cannot define the disk space used by the streams.
+               As such, if a virus implants itself into ADS,
+                    it is unlikely that usual security software will identify it.
+
+Enumeration
+
+Footprinting
+
+Scanning
+
+---------------------
+
+Which one of the following software program helps the attackers to gain unauthorized access to a remote system and perform malicious activities?
+
+
+Rootkit : TRUE
+
+Anti-spyware
+
+Antivirus
+
+Keylogger
+
+----------------------------------------------
+
+Which type of rootkit is created by attackers
+by exploiting hardware features such as
+Intel VT and AMD-V?
+
+- Hypervisor Level Rootkit : TRUE
+
+- Hardware/Firmware Rootkit :
+      Uses device/platform firmware to create persistent malware image in hardware, like HDD, System BIOS, Network Card.
+      Code integrity tool does not inspect the integrity of firmware.
+
+
+- Boot Loader Level Rootkit :
+      Boot loader level (bootkit) rootkits function either by :
+                - replacing
+            or  - modifying
+            legitimate bootloader  with    another one.
+      Bootkit  : can activate even before the OS starts.
+                 are serious threats to security because
+                      they can help in hacking encryption keys and passwords.
+
+- Kernel Level Rootkit :
+      The kernel is the core of the OS.
+      Kernel-level rootkit
+          - runs in Ring-0 with highest OS privileges.
+          - cover backdoors on the computer
+          - created by :
+                - writing additional code
+            or  - substituting portions of kernel code with modified code via :
+                                - device drivers in Windows
+                            or  - loadable kernel modules in Linux.
+          - If the kit’s code contains mistakes or bugs, kernel-level rootkits affect the stability of the system.
+          - have the same privileges of the OS;
+                      => hence, Difficult to detect & intercept
+                                or subvert the operations of OS.
+
+-----------------
+
+
+In the options given below; identify the nature of a library-level rootkit?
+
+- Operates inside the victim’s computer by replacing the standard application files
+
+- Uses devices or platform firmware to create a persistent malware image in hardware
+
+- Functions either by replacing or modifying the legitimate bootloader with another one
+
+- Works higher up in the OS and usually patches, hooks, or supplants system calls with backdoor versions : TRUE
+
+
+Explanation:
+Application Level Rootkit:
+      Application level rootkit operates inside the victim’s computer by replacing
+                  the standard application files (application binaries)
+                          with rootkits
+                  or by modifying behavior of present applications
+                          with patches,
+                               injected malicious code, and so on.
+
+Boot Loader Level Rootkit:
+      Boot loader level (bootkit) rootkits
+              function either by
+                        replacing or modifying
+                              the legitimate bootloader with another one.
+              can activate even before the operating system starts.
+              are serious threats to security because
+                      they can help in hacking encryption keys and passwords.
+
+Library Level Rootkits:
+      Work higher up in the OS
+      usually Patch,
+              Hook, or
+              Supplant system calls
+                  with backdoor versions
+                    to keep the attacker unknown.
+      Replace original system calls
+                      with fake ones
+            to hide information about the attacker.
+
+Hardware/Firmware Rootkit:
+                  use devices or platform firmware
+                      to create a persistent malware image in hardware, such as a
+                                hard drive,
+                                system BIOS, or
+                                network card.
+                  hides in firmware as the users
+                        do not inspect it for code integrity.
+                  implies the use of creating a permanent delusion of rootkit malware.
+
+----------------------
+
+Which of the following techniques refers to the art of hiding data “behind” other data without the target’s knowledge?
+
+
+-Footprinting
+
+-Enumeration
+
+-Steganography : TRUE
+
+-Scanning
+
+-----------------
+
+In which of the following techniques is
+the text or an image considerably condensed in size,
+up to one page in a single dot,
+to avoid detection by unintended recipients?
+
+
+-Microdots : TRUE
+
+-Invisible Ink
+
+-Spread Spectrum
+
+-Computer-Based Methods
+
+
+Explanation:
+Microdots:
+    A microdot is
+          text or an image considerably condensed in size
+                (with the help of a reverse microscope),
+          up to 1 page in a single dot,
+            to avoid detection by unintended recipients.
+      Microdots are usually circular,
+                    about 1 millimeter in diameter,
+                    but are changeable into different shapes and sizes.
+
+Computer-based methods:
+            A computer-based method makes changes to digital carriers to embed information foreign to the native carriers.
+            Communication of such information occurs in the
+                      form of text,
+                      binary files,
+                      disk and storage devices,
+                      and network traffic and protocols,
+                      and can alter the software,
+                      speech,
+                      pictures,
+                      videos or
+                      any other digitally represented code for transmission.
+
+Invisible ink: Invisible ink,
+            or “security ink,” is
+            one of the methods of technical steganography.
+            Used for invisible writing with colorless liquids and
+            can later be made visible by
+                    certain pre-negotiated manipulations such as lighting or heating.
+            For example, if you use onion juice and milk to write a message,
+                          the writing will be invisible,
+                              but when heat is applied,
+                                  it turns brown and the message becomes visible.
+
+Spread spectrum:
+            Less susceptible to interception and jamming.
+            In this technique, communication signals
+                                      occupy more bandwidth than required to send the information.
+            The sender increases the band spread
+                          by means of code (independent of data),
+            The receiver uses
+                          a synchronized reception
+                                    with the code to recover the information
+                                              from the spread spectrum data.
+----------------
+
+Which of the following steganography techniques
+allows the user
+to add white spaces and tabs
+at the end of the lines?
+
+
+- Folder Steganography
+
+- Video steganography
+
+- Document steganography : TRUE
+
+- Image Steganography
+
+Explanation:
+
+Image Steganography:
+      Allows you to conceal your secret message within an image.
+      You can take advantage of the redundant bit of the image to conceal your message within it.
+      These redundant bits are those bits of the image that have very little effect on the image, if altered.
+      Detection of this alteration is not easy.
+      You can conceal your information within images of different formats (e.g., .PNG, .JPG, .BMP).
+
+Document Steganography:
+      Technique of
+                    hiding secret messages transferred in the form of documents.
+      It includes addition of
+                  white spaces and tabs at the end of the lines.
+      Stego-document is a cover document comprising of the hidden message.
+      Steganography algorithms,
+              referred to as the “stego system,
+                are employed for hiding the secret messages in the cover medium at the sender end.
+      The same algorithm is used
+                for extracting the hidden message from the stego-document by the recipient.
+
+Folder Steganography:
+      Folder steganography refers to hiding secret information in folders.
+      Files are hidden
+            and encrypted
+                within a folder
+                  and are not seen by the normal Windows applications,
+                      including Windows Explorer.
+
+Video Steganography:
+      Video steganography refers to hiding secret information
+              into a carrier video file.
+      The information is hidden in video files of different formats such as
+                      .AVI, .MPG4, .WMV, etc.
+      Discrete Cosine Transform (DCT) manipulation is used
+          to add secret data at the time of the transformation process of the video.
+---------------

@@ -1,0 +1,364 @@
+Least privilege is a security concept, which requires that a user is …
+
+
+Given root or administrative privileges.
+
+Trusted to keep all data and access to that data under their sole control.
+
+Given privileges equal to everyone else in the department.
+
+Limited to those functions which are required to do the job. : True
+
+        Least privilege refers to the process of providing users with sufficient access privilege that allows them to perform
+                 - only their assigned task
+                 - and not more than that
+        to ensure information security.
+
+-----------
+
+What is the best defense against a privilege escalation vulnerability?
+
+Run services with least privileged accounts and implement multifactor authentication and authorization. : TRUE
+
+Never place executables in write-protected directories.
+
+Review user roles and administrator privileges for maximum utilization of automation services.
+
+Never perform debugging using bounds checkers and stress tests and increase the amount of code that runs with particular privilege.
+
+Explanation:
+The following are the best countermeasures to defend against privilege escalation:
+
+              Restrict the interactive logon privileges
+              Use encryption technique to protect sensitive data
+              Run users and applications on the least privileges
+              Reduce the amount of code that runs with particular privilege
+              Implement multi-factor authentication and authorization
+              Perform debugging using bounds checkers and stress tests
+              Run services as unprivileged accounts
+              Test operating system and application coding errors and bugs thoroughly
+              Implement a privilege separation methodology to limit the scope of programming errors and bugs
+              Change UAC settings to “Always Notify”, so that it increases the visibility of the user when UAC elevation is requested
+              Restrict users from writing files to the search paths for applications
+              Continuously monitor file system permissions using auditing tools
+              Reduce the privileges of user accounts and groups so that only legitimate administrators can make service changes
+              Use whitelisting tools to identify and block malicious software that changes file, directory, and service permissions
+              Use fully qualified paths in all the Windows applications
+              Ensure that all executables are placed in write-protected directories
+              In MAC operating systems, prevent plist files from being altered by users making them read-only
+              Block unwanted system utilities or software that may be used to schedule tasks
+              Patch and update the web servers regularly
+
+------------
+
+In which of the following techniques does an unauthorized user try to access the resources,
+functions, and other privileges that belong to the authorized user who has similar access permissions?
+
+Horizontal Privilege Escalation:
+      the unauthorized user tries to access
+            the resources, functions, and other privileges
+       that belong to the authorized user
+            who has similar access permissions.
+      For instance, online banking user A can easily access user B’s bank account.
+
+
+Kerberos Authentication
+        Kerberos is a network authentication protocol
+        provides strong authentication for client/server applications by using
+              secret-key cryptography.
+        provides mutual authentication, in that
+              both  server &  user verify each other’s identity.
+        Messages sent through Kerberos protocol are protected against
+              - replay attacks
+              - eavesdropping.
+
+Rainbow table attack
+        type of cryptography attack
+        Attacker uses a rainbow table for reversing cryptographic hash functions.
+        Attack uses the cryptanalytic time memory trade-off technique, which requires less time than some other techniques.
+        It uses already-calculated information stored in memory to crack the cryptography.
+        In the rainbow table attack, the attacker creates a table of all
+              possible passwords & their respective hash values,
+                  known as a rainbow table, in advance.
+
+Vertical Privilege Escalation:
+       Unauthorized user tries to gain access to the resources and functions of
+                  the user with higher privileges, such as application or site administrators.
+       For example, someone performing online banking can access the site using administrative functions.
+
+----------
+
+Which of the following operating systems allows loading of weak dylibs dynamically that is exploited by attackers to place a malicious dylib in the specified location?
+
+
+OS X :
+            OS X provides several legitimate methods, such as setting the DYLD_INSERT_LIBRARIES environment variable, which are user specific.
+            These methods
+                    force the loader to load malicious libraries automatically into a target running process.
+            OS X allows the loading of weak dylibs (dynamic library) dynamically, which allows an attacker to place a malicious dylib in the specified location.
+
+Linux
+
+Unix
+
+Android
+
+------------
+
+Which of the following vulnerability repositories is available online and allows attackers access to information about various software vulnerabilities?
+
+
+
+
+https://www.tarasco.org
+
+http://project-rainbowcrack.com
+
+http://foofus.net
+
+http://www.securityfocus.com : TRUE
+
+Explanation:
+Attackers search for any vulnerabilities on exploit sites such as
+        Exploit Database (https://www.exploit-db.com),
+        Security Focus (http://www.securityfocus.com), and
+        Zero Day Initiative (http://zerodayinitiative.com)
+
+If a vulnerable component is identified, the attacker customizes the exploit as required and executes the attack.
+Successful exploitation allows attacker to cause serious data loss or takeover the control of servers.
+Attacker generally uses exploit sits to
+   - identify the web application exploits
+or - performs vulnerability scanning using tools like Nessus and GFI LanGuard, to identify the existing vulnerable components.
+
+http://foofus.net is an advanced security services forum that provides various tools for cyber security.
+
+http://project-rainbowcrack.com provides RainbowCrack software used for cracking password hashes with rainbow tables.
+
+https://www.tarasco.org is a website that contains security-related tools and published exploit codes.
+
+-------------
+
+Which of the following vulnerabilities allows attackers to trick a processor to exploit speculative execution to read restricted data?
+
+Spectre vulnerability:
+      Spectre vulnerability is found in many modern processors
+                  such as AMD, ARM, Intel, Samsung, and Qualcomm processors.
+      This vulnerability leads to tricking a processor
+                  to exploit speculative execution to read restricted data.
+      The modern processors implement speculative execution
+                  to predict the future
+              and to complete the execution faster.
+
+Meltdown vulnerability:
+      This is found in all the Intel processors and ARM processors deployed by Apple.
+      This vulnerability leads to tricking a process to access out-of-bounds memory by exploiting
+              CPU optimization mechanisms such as speculative execution.
+
+Dylib hijacking: This allows an attacker to inject a malicious dylib in one of the primary directories
+                and simply load the malicious dylib at runtime.
+
+DLL hijacking: In DLL hijacking attackers place a malicious DLL in the application directory;
+               the application will execute the malicious DLL in place of the real DLL.
+
+-------------
+
+Which of the following techniques do attackers use
+to escalate privileges in  Windows OS?
+
+
+Plist Modification
+
+Launch Daemon
+
+Application Shimming : TRUE
+                    The Windows OS uses
+                        Windows application compatibility framework
+                          called "Shim"
+                              to provide compatibility between
+                                    the older and newer versions of Windows.
+
+                    An attacker can use these shims to perform different attacks such as
+                            disabling Windows defender,
+                            privilege escalation,
+                            installing backdoors, and so on.
+
+Setuid and Setgid
+
+------------
+
+Which of the following techniques allows attackers to inject malicious script on a web server
+to maintain persistent access and escalate privileges?
+
+Scheduled Task
+
+Launch daemon
+
+Web Shell : TRUE
+
+Access Token Manipulation
+
+Explanation:
+
+Scheduled task:
+      The Windows operating system includes utilities such as “at” and “schtasks.”
+      A user with administrator privileges can use
+                    these utilities in conjunction with the task scheduler
+      to schedule programs or scripts that can be executed at a particular date and time.
+      If a user provides proper authentication,
+                    he can also schedule a task from a remote system using RPC.
+      An attacker can use this technique to :
+              execute malicious programs at system startup,
+              maintain persistence,
+              perform remote execution,
+              escalate privileges, etc.
+
+Web shell:
+          A web shell is a web-based script that allows access to a web server.
+          Web shells can be created in all the operating systems like Windows, Linux, MacOS, and OS X.
+          Attackers create web shells to inject malicious script on a web server to maintain persistent access and escalate privileges.
+          Attackers use a web shell as a backdoor to gain access and control a remote server.
+          Generally, a web shell runs under current user’s privileges.
+          Using a web shell an attacker can perform privilege escalation by exploiting local system vulnerabilities.
+          After escalating the privileges, an attacker can
+                install malicious software,
+                change user permissions,
+                add or remove users,
+                steal credentials,
+                read emails, etc.
+
+Launch daemon:
+          At the time of MacOS and OS X booting process, launchd is executed to complete the system initialization process.
+          Parameters for each launch-on-demand system-level daemon
+            found in /System/Library/LaunchDaemonsand/Library/LaunchDaemons
+                  are loaded using launchd.
+
+          These daemons have property list files (plist) that
+                  are linked to executables
+                      that run at the time of booting.
+
+          Attackers can create and install a new launch daemon, which can be configured
+                      to execute at boot-up time using launchd or launchctl
+                              to load plist into concerned directories.
+
+          The weak configurations allow an attacker to
+                      alter the existing launch daemon’s executable to
+                            maintain persistence or to escalate privileges.
+
+Access token manipulation:
+          In Windows operating system, access tokens are used to determine the security context of a process or thread.
+          These tokens include the access profile (identity and privileges) of a user associated with a process.
+          After a user is authenticated, the system produces an access token. Every process the user executes makes use of this access token.
+          The system verifies this access token when a process is accessing a secured object.
+
+
+--------------------
+
+Which of the following vulnerabilities is found in
+all the Intel processors and ARM processors deployed by Apple (and others)
+and leads to tricking a process to access out of bounds memory by
+exploiting CPU optimization mechanisms such as speculative execution?
+
+Dylib Hijacking
+
+Meltdown : TRUE
+
+DLL Hijacking
+
+Privilege escalation
+
+Explanation:
+
+Privilege escalation:
+          In a privilege escalation attack,
+                  attackers first gain access to the network using a
+                            non-admin user account,
+                  and then try to gain administrative privileges.
+
+          Attackers take advantage of
+                            design flaws,
+                            programming errors,
+                            bugs,
+                            configuration oversights in the OS and software application
+          to gain administrative access to the network and its associated applications.
+
+Dylib hijacking:
+            OS X similar to windows is vulnerable to dynamic library attacks.
+            OS X provides several legitimate methods such as
+                        setting the DYLD_INSERT_LIBRARIES environment variable,
+                              which are user specific.
+            These methods force the loader to
+                            load malicious libraries automatically
+                                    into a target running process.
+            OS X allows loading of weak dylibs (dynamic library) dynamically, which allows an attacker to
+                      place a malicious dylib in the specified location.
+
+            In many cases, the loader searches for dynamic libraries in multiple paths.
+            This helps an attacker to inject a malicious dylib in one of the primary directories and simply load the malicious dylib at runtime.
+
+            Attackers can take advantage of such methods to perform various malicious activities such as
+                      - stealthy persistence,
+                      - run-time process injection,
+                      - bypassing security software,
+                      - bypassing Gatekeeper, etc.
+
+Meltdown:
+          Meltdown vulnerability is found in
+                  all the Intel processors and ARM processors deployed by Apple.
+
+          This vulnerability leads to tricking a process
+                to access out of bounds memory by
+                    exploiting CPU optimization mechanisms such as
+                          speculative execution.
+
+          For example, an attacker requests to access an illegal memory location.
+                       He/she sends a second request to conditionally read a valid memory location.
+                       In this case, the processor using speculative execution will
+                                    complete evaluating the result for both requests
+                                          before checking the first request.
+          When the processor checks that
+                  the first request is invalid,
+                        it rejects both the requests
+                              after checking privileges.
+          Even though the processor rejects both the requests,
+                  the result of both the requests
+                        remains in the cache memory.
+          Now the attacker sends
+                    multiple valid requests
+                            to access out of bounds` memory locations.
+
+DLL hijacking:
+              Most Windows applications do not use the fully qualified path
+                      when loading an external DLL library;
+              instead, they first search the directory
+                      from which they have been loaded.
+
+              Taking this as an advantage,
+                      if attackers can place a malicious DLL in the application directory,
+                                  the application will execute the malicious DLL in place of the real DLL.
+
+------------------------------------------------
+
+Which of the following techniques is used to place an executable in a particular path in such a way
+that it will be executed by the application in place of the legitimate target?
+
+
+Scheduled Task
+
+Application Shimming
+
+File System Permissions Weakness
+
+Path Interception : TRUE
+                    method of placing
+                            an executable
+                    in a particular path in such a way
+                                that it will be executed by the application in place of the legitimate target.
+                    Attackers can take advantage of several flaws or misconfigurations to perform path interception like
+                                  - unquoted paths (service paths and shortcut paths),
+                                  - path environment variable misconfiguration,
+                                  - search order hijacking.
+                    Path interception helps an attacker to
+                              - maintain persistence on a system
+                              - escalate privileges.
+
+-------------------
