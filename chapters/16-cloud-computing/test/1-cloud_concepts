@@ -1,0 +1,444 @@
+which cloud platforms is most secure?
+
+private cloud platform : 
+
+	-  owned & maintained by a single entity 
+
+	-  Single entity has 
+
+			- flexibility of the cloud
+			- Security & control of hosting on-premise.
+
+Public/hybrid/internal cloud platforms are not as secure.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+standard cloud service models?
+
+//////////////////////////////////////////////////////////////////////////////////
+
+   - IaaS : infrastructure-as-a-service [NSSV]
+
+			- Most basic level 
+
+  			- PROVIDER manages :
+
+					1- Networking 
+					2- Storage
+					3- Servers
+					4- Virtualization
+
+			- Main advantage :
+
+ 					- USER has a lot of FREEDOM on : 
+ 							- infrastructure usage (Scalable Storage)
+ 							- Virtual Machines Managing
+
+ 					- Useful for "System Administrators"
+
+
+			- Examples of IaaS providers include :
+
+					- Amazon Web Services (AWS)
+					- Microsoft Azure
+					- Google Compute Engine
+					- Digital Ocean.
+
+//////////////////////////////////////////////////////////////////////////////////
+
+	- PaaS : platform-as-a-service [NSSVOMR]
+
+  			- PROVIDER manages :
+		
+					1- Networking  
+					2- Storage
+					3- Servers 
+					4- Virtualization
+	 				5- OS
+	 				6- Middleware 
+	 				7- Runtime
+
+	
+			- USER designs & operates :
+
+					- Data
+					- Application
+					
+			- Useful for Developers		
+
+			Examples of PaaS providers include :
+
+				- AWS Elastic Beanstalk,
+				- Windows Azure,
+				- Google App Engine,
+				- Heroku.
+
+//////////////////////////////////////////////////////////////////////////////////
+
+	- SaaS : software-as-a-service [NSSVOMRDA]
+
+				- Offers the complete package of a web application program
+
+			- PROVIDER manages all system layers :
+
+				1- Networking 
+				2- Storage 
+				3- Servers 
+				4- Virtualization
+				5- OS
+				6- Middleware
+				7- Runtime
+				8- Data
+				9- Application
+
+			- USER just 
+					- sign on
+					- use the application ( Gmail, Drive, Office ...)
+
+			- Very Useful for end users
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+ which cloud  services model provides
+
+	 - virtual machines
+	 - other abstracted hardware
+	 - operating systems (OSs)
+
+ which may be controlled using 
+
+ 	 service API?
+
+
+			- IaaS
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+In which of the following 
+	
+		cloud deployment models
+
+does the provider make services such as
+
+			- applications,
+			- servers,
+			- data storage
+
+available to the PUBLIC over the INTERNET?
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Public Cloud: 
+			 
+	- PROVIDER :
+
+		- make services such as
+
+			- applications,
+			- servers,
+			- data storage
+
+	  		 available to the PUBLIC over the INTERNET
+
+		- is liable for :
+
+			- creation 
+			- constant maintenance 
+
+				of the public cloud and its IT resources.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Private Cloud: 	
+	
+		- internal or corporate cloud
+		- cloud infrastructure 
+		- managed by a single entity
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Community Cloud: 
+		
+		- multi-tenant infrastructure
+												
+		- shared among organizations from a specific community 
+
+		- community members have common computing concerns:
+
+				- security
+				- regulatory compliance
+				- performance requirements
+				- jurisdiction
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Hybrid Cloud: 
+
+		- cloud environment 
+
+		- 2 or more clouds (private, public, or community) that : 
+
+				- remain unique entities
+
+				- are bound together for offering :
+				
+						BENEFITS of multiple deployment models.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+ Your company :
+
+ 	- based on a private cloud infrastructure
+ 	- discovers a potential breach,
+	- want to perform a ROOT CAUSE ANALYSIS
+		->    discover if any data was exfiltrated 
+		    & if so, what type of information did it contain?
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+- Cloud forensics  :
+		- perform a ROOT CAUSE ANALYSIS
+			
+				- discover if any data was exfiltrated 
+////////////////////////////////////////////////////////////////////////////////////////////
+
+- Data analysis :
+	
+		- would not uncover the necessary information needed .
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+- Vulnerability scanning : 		
+	
+		- would only give 
+
+					a report of  vulnerabilities present in the private cloud 
+		  
+		  that could have been the means to exfiltrate the data.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+- Penetration testing :
+
+ 		- not correct because your company is not trying to test their systems.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+You are looking for a cloud-based e-mail provider to
+
+		migrate the company’s legacy on-premise e-mail system to.
+
+
+What type of cloud service model will the new e-mail system be running on?
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+SaaS : 	you are purchasing the	
+							
+							USE of software based in the cloud.
+
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Company stores sensitive PII (Personally identifiable information) and must be SOC 2 compliant.
+
+Company would like to run from the cloud :
+
+			-  Windows server VMs
+			-  Directory services
+
+
+Which of the following
+	- services & deployment models
+would meet company’s requirements?
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+IaaS & Private :
+
+		- IaaS : 
+
+			   - allows access to individual VMs 
+					
+					USER is able to have granular control over everything
+
+		- Private deployment model  :
+								
+			   - ensures that only 
+
+			   		 individual company’s data is stored on the cloud.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+PaaS and public are not correct, with  PaaS not being the correct cloud service model and public not being as secure as private.
+////////////////////////////////////////////////////////////////////////////////////////////
+SaaS and hybrid are not correct, with SaaS not being the correct cloud service model and Hybrid not being as secure as private.
+////////////////////////////////////////////////////////////////////////////////////////////
+XaaS and community is not correct, with XaaS not being the correct cloud service model and community not being as secure as private.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Which of the following 
+
+	NIST cloud reference ARCHITECTURE FACTORS
+
+- manages cloud services in terms of
+
+			- use,
+			- performance, 
+			- delivery,
+
+- maintains a relationship between
+
+ 			- cloud service providers(CSP) 
+ 			& 
+ 			- consumers
+ ?
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Cloud Consumer: 
+
+	A cloud consumer is a person or organization that:
+
+              - maintains a business relationship with cloud service providers (CSP)
+              - uses cloud computing services.
+              - browses the CSP’s service catalog requests for the desired services,
+              - sets up service contracts with the CSP (either directly or via cloud broker)
+              - uses the service.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+Cloud Provider: 
+
+        - acquires & manages :
+ 				
+ 				- computing infrastructure
+
+
+ 		- provides services : 
+
+				- directly 
+
+				or 
+				
+				- via a cloud broker 
+
+		- provides services	to interested parties : 
+
+				- via network access.
+
+
+//////////////////////////////////////////////////////////////////////////////////////////// TRUE
+
+Cloud Broker: 
+	
+		- Integration of cloud services is becoming
+					
+				too complicated for 
+
+					cloud consumers to manage.
+
+         - cloud consumer may 
+
+         			request cloud services from a cloud broker,
+												rather than directly contacting a CSP.
+
+              The cloud broker is an entity that:
+
+                - manages cloud services regarding : - use,
+                                                     - performance,
+                                                     - delivery,
+
+                - maintains the relationship between CSPs & cloud consumers.
+
+////////////////////////////////////////////////////////////////////////////////////////////
+Cloud Carrier: 
+
+		- intermediary 
+
+		- provides :
+
+              - connectivity services
+			  - transport  services
+		
+				between :
+
+					- CSPs
+					& 
+					- cloud consumers.
+
+               - access to consumers via a
+					
+					- network,
+					- telecommunication
+					- other access devices.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+Types of virtualization [SNS]
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+1) Storage Virtualization
+
+	-> combines
+	
+			storage devices from multiple networks into	a 
+
+					single storage device
+	-> helps in:
+
+       - Expanding  storage capacity
+
+       - Making changes to store configuration easy
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+2) Network Virtualization
+
+-> combines
+						all network resources(hardware & software)
+												into a single virtual network
+ is used to:
+      - Optimize reliability & security
+      - Improves nwk rsrce Usage
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+3) Server Virtualization
+-> splits a
+				physical server
+							into
+								multiple smaller virtual servers.
+
+ Storage utilization is used to:
+      - Increase space utilization
+      - Reduces hardware maintenance cost
+
+
+
+4) Resource Virtualization
+	It is not a type of virtualization.
+
+----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+
+
+Virtualization characteristics in cloud computing technology:{PIE}
+
+1- Partitioning
+2- Isolation
+3- Encapsulation
+
+Storage is not a characteristic of virtualization in cloud computing technology, as it is a type of virtualization.
+
