@@ -1,0 +1,781 @@
+A technician is resolving an issue where a computer is unable to connect
+to the Internet using a wireless access point.
+The computer can transfer files locally to other machines,
+but cannot successfully reach the Internet.
+When the technician examines the IP address and default gateway,
+ they are both on the 192.168.1.0/24. Which of the following has occurred?
+
+
+    The computer is not using a private IP address.
+    The gateway and the computer are not on the same network.
+    The gateway is not routing to a public IP address. : True
+    The computer is using an invalid IP address.
+
+Explanation:
+If the gateway is not routing to a public IP address, then there is no way
+of getting to the Internet.
+A default gateway is an IP router that is used to send information to a computer
+ in another network.
+Computers can send data to another network through the default gateway.
+
+-------------------------------------------
+
+Which of the following is a routing protocol that allows the host
+to
+          discover the IP addresses
+
+              of ACTIVE ROUTERS
+
+                  on their subnet
+
+by listening to router advertisement and soliciting messages on their network?
+
+
+Explanation:
+
+IRDP (True)
+
+       ICMP Router Discovery Protocol (IRDP)
+
+      Routing protocol
+
+      Allows a host to
+                discover the IP addresses of ACTIVE ROUTERS on its subnet
+
+                    by listening to
+
+                          - router advertisement msg
+                          &
+                          - solicitation messages
+
+                    on its network.
+
+      The attacker can add
+            default route entries on a system remotely
+      by spoofing router advertisement messages.
+
+      Since IRDP does not require any authentication,
+      the target host will prefer the default route defined by the attacker
+      to the default route provided by the DHCP server.
+      The attacker accomplishes this by setting :
+              - Preference level
+          and - Lifetime of the route at high values
+      to ensure that the target hosts will choose it as the preferred route.
+
+
+//////
+ARP
+      Address Resolution Protocol (ARP) is a
+
+                          stateless TCP/IP protocol
+      that maps
+          IP network addresses
+      to
+          hardware addresses used by a data link protocol.
+
+      Using this protocol, a user can easily
+              obtain the MAC address
+                  of any device on a network.
+
+
+///////
+DHCP
+      Dynamic Host Configuration Protocol (DHCP) is a
+
+                  client/server protocol
+
+      DHCP Server provides :
+
+          - an IP address to an IP host.
+          - configuration  information such as
+                  - default gateway
+                  - subnet mask.
+
+      When a DHCP Client device boots up,
+
+            it participates in traffic broadcasting.
+
+
+
+///////
+DNS
+      Domain Name System (DNS)
+
+      Protocol
+
+      Translates
+            a domain name (e.g., www.eccouncil.org)
+                    into
+            an IP address (e.g., 208.66.172.56).
+
+      The protocol uses DNS TABLES that
+
+            contain the domain name and its equivalent
+
+      IP address stored in a
+
+                Distributed Large Database.
+
+-------------------
+
+Which of the following hping command performs UDP scan on port 80?
+
+hping3 -2 <IP Address> –p 80   : True
+hping3 –A <IP Address> –p 80
+hping3 -1 <IP Address> –p 80
+hping3 –F –P –U <IP Address> –p 80
+
+Explanation:
+
+Hping2/Hping3
+
+    - command-line network scanning tool
+    - packet crafting tool for the TCP/IP protocol
+    - sends ICMP echo requests
+    - supports TCP, UDP, ICMP, and raw-IP protocols.
+    - uses TCP as its default protocol.
+
+
+Below are various Hping commands:
+
+    -  ICMP Ping:                       hping3 -1 <IP Address> –p 80
+    -  UDP scan on port 80:             hping3 -2 <IP Address> –p 80
+    -  SYN scan on port 50-60:          hping3 –S <IP Address> -V -8 50-60
+    -  SYN flooding a victim            hping3 -S 192.168.1.1 -a 192.168.1.254 -p 22 --flood
+    -  ACK scan on port 80:             hping3 –A <IP Address> –p 80
+    -  FIN/PUSH/URG scan on port 80:    hping3 –F –P –U <IP Address> –p 80
+
+    -  Scan entire subnet :             hping3 -1 10.0.1.x --rand-dest –I eth0
+      (for live host)
+    -  Collecting ISN                   hping3 192.168.1.103 -Q -p 139 -s
+      (initial sequence number)
+    -  Intercept all traffic
+          containing HTTP signature:    hping3 -9 HTTP –I eth0
+
+
+
+///////////////////////////////////////////////////////////
+          --rand-dest : sends "ICMP-echo" request randomly (--rand-dest)
+                          to all the hosts from 10.0.1.0 – 10.0.1.255
+                                      connected to  interface eth0.
+
+            hosts whose ports are open will respond with an "ICMP-reply".
+
+          -Q : collect all TCP sequence numbers generated by the target host (192.168.1.103)
+
+///////////////////////////////////////////////////////////
+
+
+
+    =>  Using the argument -2 in the command line specifies
+          that Hping operates
+                  in UDP mode.
+
+                  You may use either --udp
+                              or      -2
+                       arguments in the command line.
+
+
+
+-----------------------------
+
+An NMAP scan of a server shows port 25 is open.
+
+What risk could this pose?
+
+
+      Open printer sharing
+
+      Clear text authentication
+
+      Active mail relay :
+
+              SMTP server configured in such a way
+                      that it allows anyone on the Internet
+                                      to send email through it,
+                          not just mail destined to or originating from known users.
+
+                          Simple Mail Transfer Protocol (SMTP) uses port 25 for :
+
+                                      EMAIL ROUTING
+                                            between MAIL SERVERS.
+
+                          In the above scenario, Nmap scan shows port 25 is open;
+                          it is vulnerable to active mail relay.
+
+      Web portal data leak
+
+---------------------------
+
+What type of OS fingerprinting technique
+
+  sends
+            specially crafted packets
+                      to
+                   remote OS
+
+& analyzes
+
+          received response?
+
+Passive
+Distributive
+Reflective
+
+Active : In active OS fingerprinting :
+                Specially Crafted packets are sent to remote OS
+              & Responses are : - noted.
+                                - compared with Database to determine  OS.
+
+         Response from different OSes varies due to differences in
+                    TCP/IP stack implementation.
+
+---------------------------
+
+Which of the following resources does
+  NMAP need to use as
+          a basic vulnerability scanner covering several vectors like SMB, HTTP and FTP?
+
+
+        NMAP scripting engine : True
+        Nessus scripting engine
+        SAINT scripting engine
+        Metasploit scripting engine
+
+Explanation:
+      Nmap scripting engine (NSE)
+
+          provides scripts that
+
+              reveal all sorts of useful information from the target web server.
+
+      NSE is used in the following tasks:
+
+            Network discovery
+            More sophisticated version detection
+            Vulnerability detection
+            Backdoor detection
+            Vulnerability exploitation
+
+------------
+
+Which of the following scanning tools is specifically designed to find
+potential exploits in Microsoft Windows products?
+
+
+      Core Impact
+
+      Microsoft Security Baseline Analyzer
+
+      Microsoft Baseline Security Analyzer: (MBSA)
+
+                allows administrators to
+                         scan
+                            local & remote systems
+                                    for  : - missing security updates
+                                           - common security misconfigurations
+                                    in Microsoft Windows products.
+      Retina
+------------------------------
+A hacker is attempting to see which protocols are supported by target machines
+ or network. Which NMAP switch would the hacker use?
+
+
+-sO (IP protocol scan) : TRUE
+
+    IP protocol scan allows you to
+
+      determine which IP protocols
+
+            (TCP, ICMP, IGMP, etc.)
+
+      are supported by target machines.
+
+    This isn't technically a port scan, since  :
+
+          it cycles
+
+              through IP protocol numbers
+
+              rather than TCP or UDP port numbers.
+
+-sT (TCP connect scan)
+
+    TCP connect scan is the default TCP scan type when SYN scan is not an option.
+
+    This is the case when a user
+
+              does not have "raw packet privileges".
+
+    Instead of writing raw packets (as most other scan types do),
+
+              Nmap asks the underlying OS to
+
+                   establish a connection with
+
+                          target machine & port
+
+                   by issuing the
+
+                        "CONNECT SYSTEM CALL".
+
+-sS (TCP SYN scan)
+    SYN scan is the default scan option used for scanning
+
+              thousands of ports per second
+
+    on a fast network not hampered by restrictive firewalls.
+
+-sU (UDP scans)
+
+    UDP scan works by sending a UDP packet to
+
+            every targeted port.
+
+--------------------------
+
+If a tester is attempting
+
+    to PING a target that exists
+
+            but receives
+
+                - no response
+
+            or
+
+                - a response that states the destination is "unreachable",
+
+=>      ICMP may be disabled
+                &
+        network may be using TCP.
+
+Which other option could the tester use to get a response from a host using TCP?
+
+      Traceroute
+      Broadcast ping
+      TCP ping
+
+      Hping : Hping2/Hping3 is : - a command-line-oriented network scanning
+                                 - a packet crafting tool for the TCP/IP
+                                    protocol that :
+                                        - sends ICMP echo requests
+                                        - supports TCP, UDP, ICMP, and raw-IP
+                                            protocols.
+                                        - performs :
+                                              - network security auditing,
+                                              - firewall testing,
+                                              - manual path MTU discovery,
+                                              - advanced traceroute,
+                                              - remote OS fingerprinting,
+                                              - remote uptime guessing,
+                                              - TCP/IP stacks auditing,
+                                              and other functions.
+
+In the above scenario, host does not respond to a ping request.
+
+Here, tester need to
+
+    use Hping tools
+
+      & perform ACK scan
+                    to get the response
+                              from a host using TCP.
+
+Hping can be configured to perform an ACK scan by specifying
+      the argument -A in the command line.
+
+Here, you are setting
+
+          ACK flag in the probe packets
+          and performing the scan.
+
+You perform this scan when a host does not respond to a ping request.
+
+By issuing this command, Hping checks
+
+                if a host is alive on a network.
+
+If it finds a
+
+        - live host
+        &
+        - open port
+
+              =>  it returns an RST response.
+
+-----------------
+-----------------
+A penetration tester is conducting a port scan on a specific host.
+The tester found
+    several open ports that were
+              confusing in concluding OS version installed.
+Considering the NMAP result below, which of the following is likely to be
+installed on the target machine by the OS?
+
+Starting NMAP 7.70 at 2018-03-15 11:06
+
+NMAP scan report for 172.16.40.65
+
+Host is up (1.00s latency).
+
+Not shown: 993 closed ports
+
+PORT       STATE   	SERVICE
+
+21/tcp         open       	ftp
+
+23/tcp         open       	telnet
+
+80/tcp         open       	http
+
+139/tcp       open       	netbios-ssn
+
+515/tcp      open
+
+631/tcp        open          	ipp
+
+9100/tcp     open
+
+MAC Address: 00:00:48:0D:EE:89
+
+        The host is likely a Windows machine.
+        The host is likely a printer :
+
+              protocols TCP and UDP uses port 515
+                              to interact with the printer.
+              As port 515 is open,
+                              probably the host is a printer.?
+        The host is likely a Linux machine.
+        The host is likely a router.
+
+---------------
+
+What results will the following command yield?
+
+nmap -sS -O -p 123-153 192.168.100.3
+
+    A stealth scan, opening port 123 and 153.
+
+
+    A stealth scan, determine operating system, and scanning ports 123 to 153. TRUE:
+
+                      -sS specifies stealth scan,
+                      -O attempts to perform OS fingerprinting to identify
+                            the operating system,
+                      -p specifies port range to scan.
+
+         Hence,
+              "stealth scan   + determine operating system,
+                              + scanning ports 123 to 153”
+                                        is the correct answer.
+
+    A stealth scan, checking open ports 123 to 153.
+    A stealth scan, checking all open ports excluding ports 123 to 153.
+
+-------------------
+Which of the following parameters enables NMAP's operating system detection
+ feature?
+
+NMAP -sV
+NMAP -oS
+NMAP -sC
+NMAP -O : True
+
+      Banner grabbing    <=>  "OS fingerprinting"
+
+        method used
+          to determine the OS that is running on a remote target system.
+
+      OS detection is enabled and controlled by Nmap with the following options:
+      ?        -O (Enable OS detection)
+      ?        --osscan-limit (Limit OS detection to promising targets)
+      ?        --osscan-guess; --fuzzy (Guess OS detection results)
+      ?        --max-os-tries (Set the maximum number of OS detection
+      tries against a target)
+
+      Hence, "NMAP -O" is the correct option.
+
+--------------------
+Which of the following open source tools would be the best choice to scan a
+network for potential targets?
+
+      NMAP :      Nmap is an open-source security scanner for network
+                        exploration and hacking.
+                  It allows you to discover hosts & services on a computer
+                        network, thus creating a "map" of the network.
+      Cain & Abel
+      hashcat
+      John the Ripper
+
+      hashcat, Cain & Abel, and John the Ripper :
+
+          the password cracking tools
+          allow you to reset :
+
+                      - unknown or lost Windows local administrator,
+                      - domain administrator,
+                      - other user account passwords.
+
+             In the case of forgotten passwords, it even allows users to :
+
+                  get access to their
+                      locked computer instantly
+                  without
+                      reinstalling Windows.
+
+---------------
+A hacker is attempting to see which
+
+          IP addresses are currently ACTIVE
+
+on a network.
+
+Which NMAP switch would the hacker use?
+
+      -sn : "No port scan" => "Only Host Discovery"
+
+                no port scan
+                      after host discovery
+
+            &   only print out
+                    available hosts
+                 that responded to
+                          host discovery probes.
+
+                    => Often called a PING SWEEP.
+      -sT
+      -sU
+      -sS
+
+
+--------------
+
+A security engineer is attempting to perform scanning on a  company’s internal
+network to
+            verify security policies of their networks.
+
+The engineer uses the following NMAP command:
+nmap –n –sS –P0 –p 80 ***.***.**.**
+What type of scan is this?
+
+      Quick scan
+      Comprehensive scan
+      Intense scan
+      Stealth scan : -sS
+
+      Explanation:
+      Nmap scanning techniques:
+      ?        -sS (TCP SYN/Stealth scan)
+      ?        -sT (TCP connect scan)
+      ?        -sU (UDP scans)
+      ?        -sY (SCTP INIT scan)
+      ?        -sN; -sF; -sX (TCP NULL, FIN, and Xmas scans)
+      ?        -sA (TCP ACK scan)
+      ?        -sW (TCP Window scan)
+
+-------------------------------------------------------
+
+Which NMAP feature can a
+
+  tester implement or adjust while scanning for open ports to
+
+      avoid detection by the network’s IDS?
+
+
+            Timing options to slow the speed that the port scan is conducted : True
+
+            ICMP ping sweep to determine which hosts on the network are not available .
+
+            Fingerprinting to identify which operating systems are running on the network.
+
+            Traceroute to control the path of the packets sent during the scan.
+
+
+The tester needs to implement
+
+        timing options
+
+in Nmap which allows the tester to
+
+        set the given amount of time
+
+                  between each probe it sends to a given host.
+
+TIMING OPTION is used to evade
+
+        threshold-based IDS & IPS
+
+Some of the timing options are as follows:
+
+?        --delay <time> (Delay between probes)
+
+?        --rate <rate> (Send probes at a given rate)
+
+?        -d <time>, --delay <time> (Specify line delay)
+
+?        -i <time>, --idle-timeout <time> (Specify idle timeout)
+
+?        -w <time>, --wait <time> (Specify connect timeout)
+
+------------
+You are performing a port scan with Nmap.
+
+You are in hurry and conducting the scans at the
+
+      fastest possible speed.
+
+However, you don’t want to
+
+      sacrifice reliability for speed.
+
+If stealth is not an issue,
+
+  what type of scan should you run to get very
+                                        RELIABLE results?
+
+      Stealth scan
+      Fragmented packet scan
+      XMAS scan
+      Connect scan : True
+
+      Explanation:
+
+            "TCP Connect/Full Open Scan" is one of the
+
+                        MOST RELIABLE forms
+
+                              of TCP scanning.
+
+            In TCP Connect scanning,
+
+                  the OS’s
+                      "TCP connect() SYSTEM CALL"
+
+                        tries to open a
+
+                            connection to every interesting port
+
+                                                on the target machine.
+
+            => Fastest scanning method supported by Nmap.
+
+            Making a separate connect() call
+
+                for every targeted port in a linear fashion
+
+                    would take a long time over a slow connection.
+
+            You can accelerate the scan by
+
+                    using many sockets in parallel.
+
+            Using non-blocking, I/O allows you to set a
+
+                              low time-out period
+                          and
+                              watch all the sockets simultaneously.
+
+            In the above scenario, user needs a reliable result in less time.
+
+            User needs to run connect scan to get the desired result.
+
+---------------
+
+Which NMAP command combination would let a tester scan
+
+      every TCP port from a
+          class C network
+
+that is blocking ICMP with fingerprinting and service detection?
+
+
+            NMAP -PN -O -sS -p 1-1024 192.168.0/8
+            NMAP -PN -A -O -sS 192.168.2.0/24 : TRUE
+            NMAP -P0 -A -sT -p0-65535 192.168.0/16
+            NMAP -P0 -A -O -p1-65535 192.168.0/24
+
+Explanation:
+
+-Pn  : " No Ping "
+
+        Assume  host is up,
+            => skip  host discovery phase,
+
+
+    whereas
+
+-P0  : "IP Protocol Ping"
+
+        sends IP packets with
+
+                specified PROTOCOL NUMBER
+
+                                  set in  IP HEADER.
+
+-A :
+    This options makes Nmap  :
+
+          - make an EFFORT to IDENTIFY   :
+
+                  - OS,
+                  - services,
+                  - versions.
+
+          - traceroute & applies :
+                  - NSE scripts to detect additional information.
+
+
+
+-O :  OS fingerprinting .
+
+Used alongside the
+
+-v  : VERBOSITY option,
+
+      gain information about  :
+
+            - remote OS
+            &
+            - OS's TCP sequence number generation
+              (useful for planning idle scans).
+
+-sS Perform a TCP SYN connect scan.
+    Nmap will send a TCP SYN packet just like any normal application would do.
+    If port open, application must reply with SYN/ACK;
+    however, to prevent half-open connections Nmap will send an RST to tear
+    down the connection again.
+
+-sT is an Nmap TCP connect scan
+    it is the default TCP scan type when SYN scan is not an option.
+        Since, Class C network starts its IP address from 192.0.0.0.
+            So,
+
+              “NMAP -PN -A -O -sS 192.168.2.0/24”
+
+                    is the correct answer.
+
+---------------
+
+Which of the following Hping3 command is used to perform ACK scan?
+
+
+hping3 -1 <IP Address> –p 80 : ICMP ping
+hping3 –A <IP Address> –p 80 : ACK scan on port 80  : TRUE
+hping3 -2 <IP Address> –p 80 : UDP scan on port 80
+hping3 -8 50-60 –S <IP Address> –V : SYN scan on port 50-60
+
+--------------
+
+A company has five different subnets:
+    192.168.1.0, 192.168.2.0, 192.168.3.0, 192.168.4.0 and 192.168.5.0.
+    How can NMAP be used to scan these adjacent Class C networks?
+
+
+NMAP -P 192.168.1-5. : 192.168.1-5 represents the five different subnets:
+                          192.168.1.0, 192.168.2.0, 192.168.3.0, 192.168.4.0,
+                          and 192.168.5.0
+
+NMAP -P 192.168.1.0,2.0,3.0,4.0,5.0
+NMAP -P 192.168.0.0/16
+NMAP -P 192.168.1/17
