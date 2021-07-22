@@ -150,6 +150,17 @@ Certificate authority
 
 Validation authority
 
+----------------------------------------------------------------------------------------------------------------------
 
-       
+## Which of the following contains a public key and the identity of the owner and the corresponding private key is kept secret by the certification authorities?
+
+
+d. Registration authority (RA)
+
+b. Self-signed certificate
+
+### c. Signed certificates
+
+a. Validation authority (VA)
+
  
