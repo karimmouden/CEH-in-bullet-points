@@ -57,7 +57,7 @@ Mandating only client-side PKI certificates for all connections
 
 
 -----------------------------------------------------------------------------------------------------------------------------
-Which of the PKI components is responsible for issuing and verifying digital certificate? 
+## Which of the PKI components is responsible for issuing and verifying digital certificate? 
 
 
 Validation authority (VA)
