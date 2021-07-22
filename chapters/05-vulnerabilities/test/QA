@@ -1,0 +1,529 @@
+An NMAP scan of a server shows port 69 is open. What risk could this pose?
+
+
+Unauthenticated access : Trivial File Transfer Protocol (TFTP) is a File Transfer Protocol that allows a client to get a file from or put a file onto a remote host.
+                         This protocol includes no login or access control mechanisms, and therefore it is recommended to take care when
+                         using this protocol for file transfers where authentication, access control, confidentiality, or integrity checking are needed.
+                         Otherwise, it may result in unauthorized access to remote host.
+Weak SSL version
+Web portal data leak
+Cleartext login
+
+-------------------
+Which of the following techniques helps the attacker in identifying the OS used on the target host in order to detect vulnerabilities on a target system?
+
+Banner grabbing: Banner grabbing or OS fingerprinting is the method used to determine the operating system running on a remote target system.
+                Identifying the OS used on the target host allows an attacker to figure out the vulnerabilities the system posses and the exploits
+                that might work on a system to further carry out additional attacks.
+
+Port scanning: Port scanning is the process of checking the services running on the target computer
+               by sending a sequence of messages in an attempt to break in.
+
+Source Routing: Source routing refers to sending a packet to the intended destination
+                with partially or completely specified route (without firewall-/IDS-configured routers)
+                in order to evade IDS/firewall.
+IP address decoy: IP address decoy technique refers to generating or manually specifying IP addresses of the decoys
+                  in order to evade IDS/firewall.
+
+--------------
+Which of the following business challenges could be solved by using a vulnerability scanner?
+
+
+There is an urgent need to remove administrator access from multiple machines for an employee who quit.
+
+There is a monthly requirement to test corporate compliance with host application usage and security policies : True
+
+Auditors want to discover if all systems are following a standard naming convention.
+
+A web server was compromised and management needs to know if any further systems were compromised.
+
+        Explanation:
+        Vulnerability scanners help in analyzing and identifying vulnerabilities in the target network or network resources
+        by means of vulnerability assessment and network auditing.
+        These tools also assist in overcoming weaknesses in the network by suggesting various remediation techniques.
+        Vulnerability scanners are used to test corporate compliance with host application usage and security policies.
+        Any deviation from a standard or baseline security configuration is marked as a vulnerability.
+
+        Vulnerability scanners generally scan for different network nodes and discover hostnames, but they cannot determine
+        if all systems are following a standard naming convention.
+        They can also not ascertain if the systems are already compromised.
+        Vulnerability scanners cannot be used to remove administrator access from multiple machines.
+
+
+----------
+Which of the following settings enables Nessus to detect when it is sending too many packets and the network pipe is approaching capacity?
+
+
+Silent Dependencies
+
+Consider unscanned ports as closed
+
+Netstat WMI Scan
+
+Reduce parallel connections on congestion : True
+
+Explanation :
+The Netstat WMI scan finds open ports in the Windows system.
+Silent dependencies limit the amount of plugin data.
+According to Nessus Network Auditing, edited by Russ Rogers, ‘Consider unscanned ports as closed’ will tell Nessus
+that all other ports not included in the port range scan to be considered as closed.
+This prevents ports that are targeted against ports outside that range from running.”
+
+------------
+What is the correct order for vulnerability management life cycle?
+
+
+b. Verification → vulnerability assessment → monitor → remediation → creating baseline → risk assessment
+
+c. Verification → risk assessment → monitor → remediation → creating baseline → vulnerability assessment
+
+a. Creating baseline → vulnerability assessment → risk assessment → remediation → verification → monitor  : True
+
+d. Monitor → risk assessment → remediation → verification → creating baseline → vulnerability assessment
+
+Explanation:
+
+Vulnerability management life cycle is an important process that helps in finding and remediating security weaknesses before they are exploited.
+The correct order of vulnerability management life cycle is
+            Creating baseline → vulnerability assessment →risk assessment → remediation →verification →monitor.
+---------------------------------
+
+Which term refers to common software vulnerabilities that happen due to coding errors allowing attackers to get access to the target system ?
+
+
+Buffer overflows
+
+Buffer overflows are common software vulnerabilities that happen due to coding errors allowing attackers to get access to the target system.
+In a buffer overflow attack, attackers undermine the functioning of programs and try to take the control of the system
+by writing content beyond the allocated size of the buffer.
+Insufficient bounds checking in the program is the root cause because of which the buffer is not able to handle data beyond its limit,
+causing the flow of data to adjacent memory locations and overwriting their data values.
+Systems often crash or become unstable or show erratic program behavior when buffer overflow occurs.
+
+Active footprinting
+
+Active footprinting involves gathering information about the target with direct interaction.
+In active footprinting, information is gathered by querying published name servers, extracting metadata, web spidering, Whois lookup, etc.
+
+Port scanning
+
+Port scanning is the process of checking the services running on the target computer by sending a sequence of messages in an attempt to break in.
+Port scanning involves connecting to or probing TCP and UDP ports on the target system
+to determine if the services are running or are in a listening state.
+
+Banner grabbing
+
+Banner grabbing, or “OS fingerprinting,” is a method used to determine the operating system that is running on a remote target system.
+
+--------------
+Tesla is running an application with debug enabled in one of its system. Under which category of vulnerabilities can this flaw be classified?
+
+
+Design Flaws
+
+Unpatched servers
+
+Misconfiguration : True
+
+Operating System Flaws
+
+Explanation:
+Misconfiguration is the most common vulnerability that is mainly caused by human error,
+which allows attackers to gain unauthorized access to the system.
+This may happen intentionally or unintentionally affecting web servers, application platform, database and network.
+
+A system can be misconfigured in so many ways:
+
+?        An application running with debug enabled
+
+?        Outdated software running on the system
+
+?        Running unnecessary services on a machine
+
+?        Using misconfigured SSL certificates and default certificates
+
+?        Improperly authenticated external systems
+
+?        Disabling security settings and features
+
+----------------------
+
+Sohum is carrying out a security check on a system. This security check involves carrying out a configuration-level check through the command line
+in order to identify vulnerabilities such as incorrect registry and file permissions, as well as software configuration errors.
+Which type of assessment is performed by Sohum?
+
+
+External Assessment
+
+Internal Assessment
+
+Host based Assessment : True
+
+Network based Assessment
+
+Explanation:
+Host-based Assessment
+
+Host-based assessments are a type of security check that involves carrying out a configuration-level check through the command line.
+These assessments check the security of a particular network or server.
+Host-based scanners assess systems to identify vulnerabilities such as incorrect registry and file permissions,
+as well as software configuration errors.
+Host-based assessment can use many commercial and open-source scanning tools.
+
+External Assessment
+
+External assessment assesses the network from a hacker's point of view to find out what exploits and vulnerabilities are accessible to the outside world.
+These types of assessments use external devices such as :
+          -firewalls, routers, & servers.
+
+Network based Assessments
+
+Network assessments determine the possible network security attacks that may occur on an organization’s system.
+These assessments evaluate the organization’s system for vulnerabilities such as missing patches, unnecessary services, weak authentication, and weak encryption.
+
+Internal Assessment
+
+An internal assessment involves scrutinizing the internal network to find exploits and vulnerabilities.
+
+--------------
+Which assessment focuses on transactional Web applications, traditional client-server applications, and hybrid systems?
+
+
+Wireless network Assessment
+
+Active Assessment
+
+Application Assessment : True
+
+Passive Assessment
+
+Explanation:
+
+Application Assessments
+
+    An application assessment focuses on transactional Web applications, traditional client server applications, and hybrid systems.
+    It analyzes all elements of an application infrastructure, including deployment and communication within the client and server.
+    This type of assessment tests the web server infrastructure for any misconfiguration, outdated content, and known vulnerabilities.
+    Security professionals use both commercial and open-source tools to perform such assessments.
+
+Passive Assessment
+
+    Passive assessments sniff the traffic present on the network to identify the active systems, network services, applications, and vulnerabilities.
+    Passive assessments also provide a list of the users who are currently using the network.
+
+Active Assessment
+
+    Active assessments are a type of vulnerability assessment that uses network scanners to scan the network to identify the
+                            hosts, services, and vulnerabilities
+    present in that network.
+
+Active network scanners
+    Active network scanners have the capability to reduce the intrusiveness of the checks they perform.
+
+Wireless Network Assessments
+
+    Wireless network assessment determines the vulnerabilities in an organization’s wireless networks.
+    Wireless network assessments try to attack wireless authentication mechanisms and get unauthorized access.
+    This type of assessment tests wireless networks and identifies rogue wireless networks that may exist within an organization’s perimeter.
+    These assessments audit client-specified sites with a wireless network.
+-------------------
+
+Which of the following term refers to the process of reducing the severity of vulnerabilities in vulnerability management life cycle?
+
+
+Vulnerability Assessment
+
+Remediation : True
+
+Verification
+
+Risk Assessment
+
+Explanation:
+Vulnerability management life cycle is an important process that helps in finding and remediating security weaknesses before they are exploited.
+This includes
+      defining the risk posture and policies for an organization,
+      creating a complete asset list of systems,
+      scanning and assessing the environment for vulnerabilities and exposures,
+ and  taking action to mitigate the vulnerabilities that are found.
+
+The phases involved in vulnerability management are:
+
+?        Creating Baseline
+
+In this phase, critical assets are identified and prioritized to create a good baseline for the vulnerability management.
+
+?        Vulnerability Assessment
+
+This is a very crucial phase in vulnerability management. In this step, the security analyst identifies the known vulnerabilities in the organization infrastructure.
+
+?        Risk Assessment
+
+In this phase, all the serious uncertainties that are associated with the system are assessed, fixed, and permanently eliminated for ensuring a flaw free system.
+
+?        Remediation
+
+Remediation is the process of reducing the severity of vulnerabilities.
+This phase is initiated after the successful implementation of the baseline and assessment steps.
+
+?        Verification
+
+This phase provides a clear visibility into the firm and allows the security team to check whether all the previous phases are perfectly employed or not.
+
+?        Monitor
+
+Regular monitoring needs to be performed for maintaining the system security using tools such as IDS/IPS, firewalls, etc.
+
+
+---------------------
+--------------------
+
+On a Linux device, which of the following commands will start the Nessus client in the background so that the Nessus server can be configured?
+
+
+nessus -d
+
+nessus +
+
+nessus *s
+
+nessus & : In Linux to start a process in the background you use &.
+          "nessus &" runs nessus client in background.
+
+------------
+
+Which of the following tools will scan a network to perform vulnerability checks and compliance auditing?
+
+
+Nessus : Nessus is a vulnerability scanner developed by Tenable Network Security.
+         It is free of charge for personal use in a nonenterprise environment.
+
+NMAP
+
+Metasploit
+
+BeEF
+
+---------
+
+Which of the following tools would be the best choice for achieving compliance with PCI Requirement 11?
+
+
+Sub7
+
+Clamwin
+
+Nessus : True
+
+Truecrypt
+
+Explanation:
+
+PCI DSS requirement 11: Regular testing of security systems and processes involves running
+                                      internal and external vulnerability scans
+                                      for all organizations involved in payment card processing.
+
+PCI requires the below types of network scanning:
+?  Run internal and external network vulnerability scans at least quarterly and after any significant change in the network
+? The external scan must be done via an approved scanning vendor (ASV)
+Nessus can be used to regularly test systems for security issues and correct configurations.
+If the log correlation engine is also deployed, it can be used
+        to log the vulnerability scanning activity to prove that systems are being audited?
+
+------------------
+
+Which type of assessment tools are used to find and identify previously unknown vulnerabilities in a system?
+
+
+Depth Assessment Tools
+
+      Depth assessment tools are used to find and identify previously unknown vulnerabilities in a system.
+      Generally, these tools are used to identify vulnerabilities to an unstable degree of depth.
+      Such types of tools include fuzzers that give arbitrary input to a system’s interface.
+      Many of these tools use a set of vulnerability signatures for testing that
+      the product is resistant to a known vulnerability or not.
+
+Scope Assessment Tools
+
+Scope assessment tools provides assessment of the security by testing vulnerabilities in the applications and operating system.
+These tools provide a standard control and a reporting interface that allows the user to select a suitable scan.
+
+Application-Layer Vulnerability Assessment Tools
+
+Application-layer vulnerability assessment tools are designed to serve the needs of all kinds of :
+                        - operating system types
+                    and - applications.
+
+Active Scanning Tools
+
+Active scanners perform vulnerability checks on the network that consume resources on the network.
+
+----------------
+
+Which among the following is not a metric for measuring vulnerabilities in common vulnerability scoring system (CVSS)?
+
+
+Base Metrics
+
+Active Metrics : True
+
+Temporal Metrics
+
+Environmental Metrics
+
+Explanation:
+CVSS assessment consists of 3 metrics for measuring vulnerabilities:
+?	Base metrics:           represents  inherent qualities of a vulnerability.
+?	Temporal metrics:       represents  features that keep on changing during the lifetime of a vulnerability.
+?	Environmental metrics:  represents  vulnerabilities that are based on a particular environment or implementation.
+
+-------------
+
+Sanya is a security analyst in a multinational company who wants to
+    schedule scans across multiple scanners,
+    use wizards to easily and quickly create policies and
+    wants to send results via email to her boss.
+Which vulnerability assessment tool should she use to get the best results?
+
+
+Nessus Professional : True
+
+Wireshark     : traffic capturing tool that lets you capture and interactively browse the traffic running on a computer network.
+                captures live network traffic from
+                  Ethernet, IEEE 802.11, PPP/HDLC, ATM, Bluetooth, USB, Token Ring, Frame Relay, FDDI networks.
+
+FOCA          : footprinting tool used to collect basic information about the target systems in order to exploit them
+
+Recon-ng      : footprinting tools used to collect basic information about the target systems in order to exploit them
+
+Explanation:
+Nessus Professional is an assessment solution for identifying vulnerabilities, configuration issues, and malware that attackers use to penetrate networks.
+Performs vulnerability, configuration, and compliance assessment.
+Supports various technologies such as operating systems, network devices, hypervisors, databases, tablets/phones, web servers, and critical infrastructure.
+Nessus is the vulnerability scanning platform for auditors and security analysts.
+Users can schedule scans across multiple scanners, use wizards to easily and quickly create policies, schedule scans, and send results via email.
+
+-------------
+
+Which tool includes a graphical and command line interface that can perform local or remote scans of Microsoft Windows systems?
+
+
+Netcraft : domain footprinting tool
+
+FOCA : metadata extraction tool
+
+Wireshark : network sniffer
+
+Microsoft Baseline Security Analyzer (MBSA) : determine the state of  security
+                                                in accordance with Microsoft security recommendations.
+
+----------
+Which of the following tools provides comprehensive vulnerability management for mobile devices, smartphones, and tablets?
+
+Retina CS for Mobile : industry’s innovative approach to security, policy, and health management for mobile devices.
+                       Provides comprehensive vulnerability management for mobile devices, smartphones, and tablets.
+                       Integrates mobile device assessment and vulnerability management for :
+                              - proactively discovering,
+                              - prioritizing, and
+                              - fixing
+                              smartphone security weaknesses.
+
+zANTI :           scanning tool for mobile devices used to identify  all  :
+                              active machines & Internet devices on the network
+
+Pamn IP Scanner : scanning tool for mobile devices used to identify  all  :
+                        active machines & Internet devices on the network
+
+FaceNiff :        scanning tool for mobile devices used to identify  all  :
+                        active machines & Internet devices on the network
+
+-----------
+
+Which element in a vulnerability scanning report allows the system administrator
+to obtain additional information
+about the scanning such as the origin of the scan?
+
+Classification : True
+
+Services
+
+Scan information
+
+Target information
+
+Explanation:
+A vulnerability assessment report will provide detailed information on the vulnerabilities that are found in the computing environment.
+The report will help organizations to :
+      - identify  security posture found in the computing systems (such as web servers, firewalls, routers, email, and file services)
+      - provide solutions to reduce failures in the computing system.
+
+Vulnerability reports cover the following elements:
+
+?        Scan information: This part of the report provides information such as :
+                                  - name of  scanning tool
+                                  - version of scanning tool,
+                                  - network ports scanned.
+
+?        Target information: This part of the report contains information about :
+                                   - target system’s name
+                                   - target system's address.
+
+?        Results: This section provides a complete scanning report.
+                  Contains subtopics such as :
+                        - target,
+                        - services,
+                        - vulnerability,
+                        - classification,
+                        - assessment.
+
+?        Target:  - Subtopic
+                  - Includes each host’s detailed information.
+
+?        Services: - Subtopic
+                   - Defines network services by their
+                          names & ports.
+
+?        Classification: This subtopic allows the system administrator to obtain
+                                 additional information about the scanning such as:
+                                                origin of the scan.
+
+?        Assessment: This class provides information regarding :
+                              scanner’s assessment of the vulnerability.
+
+------------
+SecTech Inc. is worried about the latest security incidents and data theft reports.
+The management wants a comprehensive vulnerability assessment of the complete information system at the company.
+However, SecTech does not have the required resources or capabilities to perform a vulnerability assessment.
+They decide to purchase a vulnerability assessment tool to test a host or application for vulnerabilities.
+Which of the following factors
+should the organization NOT consider while purchasing a vulnerability assessment tool?
+
+
+Functionality for writing own tests
+
+Types of vulnerabilities being assessed
+
+Test run scheduling
+
+Links to patches : True
+
+Explanation:
+In the above scenario, the organization is planning to purchase a vulnerability assessment tool to test a host or application for vulnerabilities.
+There are several vulnerability assessment tools available that include port scanners, vulnerability scanners, and OS vulnerability assessment scanners.
+Organizations have to choose the right tools based on their test requirements.
+
+The criteria to be followed at the time of choosing or purchasing any vulnerability assessment tool are as follows:
+
+?        Types of vulnerabilities being assessed
+
+?        Testing capability of scanning
+
+?        Ability to provide accurate reports
+
+?        Efficient and accurate scanning
+
+?        Capability to perform smart search
+
+?        Functionality for writing own tests
+
+?        Test run scheduling
