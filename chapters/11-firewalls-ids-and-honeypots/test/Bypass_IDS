@@ -1,0 +1,307 @@
+
+The use of alert thresholding in an IDS can
+  reduce the volume of repeated alerts,
+  but introduces which of the following vulnerabilities?
+
+
+          The IDS will not distinguish among packets originating from different sources.
+
+          Thresholding interferes with the IDS’ ability to reassemble fragmented packets.
+
+          Network packets are dropped if the volume exceeds the threshold.
+
+          An attacker, working slowly enough, can evade detection by the IDS. : TRUE
+
+Explanation:
+An intrusion detection system (IDS) is a security software or hardware device used to monitor, detect, and protect networks or systems from malicious activities;
+it alerts the concerned security personnel immediately upon detecting intrusions.
+
+Alert thresholding :
+
+    set of rules that detects suspicious activities based on
+            - access attempts
+            - time intervals.
+
+Users can customize the default threshold according to their requirements.
+
+Setting threshold is difficult because
+
+  if threshold is set too high, a user
+
+      may miss few key packets
+
+  If thresholds is set too low, analyst
+
+      may see many false-positives.
+
+
+----------------------------------------------------
+
+Eric, a professional hacker, is trying to perform a
+
+      SQL injection attack on the back-end database system of the InfomationSEC, Inc.
+
+During the information gathering process, he identifies that
+
+      MYSQL server is the back-end database engine used.
+
+Eric has tried various SQL injection attack attempts based on the information gathered but all of his attempts failed.
+
+Later, he discovered that IPS system
+    is blocking all the SQL injection attack attempts.
+
+Eric decided to bypass the IPS using
+    string concatenation IPS evasion technique
+        where he needs to
+            - break the SQL query into a number of small pieces
+        and
+            - concatenates the SQL query end-to-end.
+
+Which of the following string concatenation operator Eric need to use in the SQL query to concatenate the SQL query end-to-end?
+
+
+        “+” operator
+
+        “||” operator
+
+        “concat(,)” operator    : TRUE
+
+        “&” operator
+
+
+Explanation:
+
+“+” operator: This operator is used to concatenate the SQL strings in
+
+              MS SQL database.
+
+“||” operator: This operator is used to concatenate the SQL strings in
+
+              Oracle database.
+
+“concat(,)” operator: This operator is used to concatenate the SQL strings in
+
+              MySQL database.
+
+“&” operator: This operator is used to concatenate the SQL strings in
+
+              MS Access database.
+
+
+---------------------------------------------------
+When analyzing the IDS logs, the system administrator notices connections from outside of the LAN have been sending packets where
+      the source IP address & destination IP address are the same.
+
+However, no alerts have been sent via email or logged in the IDS.
+Which type of an alert is this?
+
+
+        False positive
+
+        True negative
+
+        False negative : TRUE
+
+        True positive
+
+
+----------------------------------------------------
+
+Michel, a professional hacker, is trying to perform an SQL injection attack on the MS SQL database system of the CityInfo, Inc. by
+
+      bypassing the signature-based IDS.
+
+He tried various IDS evasion techniques and finally succeeded with one where
+      - he breaks the SQL query into a number of small pieces
+  and
+      - uses the + sign to join SQL query end to end.
+
+Which of the following IDS evasion techniques he uses to bypass the signature-based IDS?
+
+
+          String concatenation : TRUE
+
+          Char encoding
+
+          Hex encoding
+
+          URL encoding
+
+Explanation:
+
+String concatenation:
+
+    breaks SQL statement into
+          a number of pieces
+              and
+    concatenation breaks up SQL keywords
+          to evade the IDS.
+
+Char encoding:
+
+    uses char() function to
+          replace common injection variables
+              present in the SQL statement to evade the IDS.
+
+Hex encoding:
+    uses hexadecimal encoding to
+          replace common injection variables
+                present in the SQL statement to evade the IDS.
+
+URL encoding:
+    uses online URL encoding to
+              encode SQL statement to bypass the IDS.
+---------------------------------------------------------------
+
+When analyzing the IDS logs, the system administrator noticed an alert was logged when the external router was accessed from the administrator’s computer to update the router configuration. What type of an alert is this?
+
+
+False-positive : TRUE
+
+True-positive
+
+True-negative
+
+False-negative
+
+
+----------------------------------------------------------
+
+A network administrator received an administrative alert at 3:00 a.m. from the intrusion detection system.
+The alert was generated because a
+    large number of packets were coming into the network over ports 20 and 21.
+
+During analysis, there were no signs of attack on the FTP servers. How should the administrator understand this situation?
+
+
+
+
+          False negatives
+
+          False positives : TRUE
+
+          True positives
+
+          True negatives
+
+
+
+-----------------------------------------------------
+
+Which evasion technique is used by attackers to encode the attack packet payload in such a way that the destination host can only decode the packet but not the IDS?
+
+
+        Fragmentation Attack
+
+        Obfuscation : TRUE
+
+        Session splicing
+
+        Unicode Evasion
+
+---------------------------------------
+
+How many bit checksum is used by the TCP protocol for error checking of the header and data and to ensure that communication is reliable?
+
+
+        15-bit
+
+        16-bit : TCP protocol uses 16-bit checksums for error checking of the header and data and to ensure that communication is reliable. It adds a checksum to every transmitted segment that is checked at the receiving end.
+
+        13-bit
+
+        14-bit
+
+------------------------------
+
+An attacker hides the shellcode by
+    - encrypting it with an unknown encryption algorithm
+    - including the decryption code as part of the attack packet.
+
+      =>  He encodes the payload
+        & then places a decoder before the payload.
+
+Identify the type of attack executed by attacker.
+
+
+        Preconnection SYN
+
+        Post-Connection SYN
+
+        Polymorphic Shellcode : TRUE
+
+        ASCII Shellcode
+
+Explanation:
+
+The polymorphic shellcode attacks include
+
+          multiple signatures,
+
+  making it difficult to detect the signature.
+
+Attackers encode the payload using some technique
+& then place a decoder before the payload.
+
+=> As a result,
+
+        shellcode is completely rewritten
+
+                      each time it is sent
+
+                            for evading detection.
+
+In ASCII shellcode attack,
+      IDS is bypassed by
+                commonly enforced character restrictions
+                      within string input code,
+
+whereas preconnection SYN & postconnection SYN are
+
+        type of desynchronization attack.
+
+---------------------------------
+
+
+Which NETWORK-LEVEL evasion method is used to bypass IDS where an attacker
+
+      splits the attack traffic in too many packets
+
+            so that no single packet triggers the IDS?
+
+
+        Fragmentation attack
+
+        Unicode evasion
+
+        Session splicing : TRUE
+
+        Overlapping fragments
+
+Explanation:
+
+SESSION SPLICING :
+
+      - IDS evasion technique
+      - exploits how some IDSs
+                  do not
+                    reconstruct sessions
+                        before pattern-matching the data.
+      - network-level evasion method
+      - used to bypass IDS
+      - splits the attack traffic in too many packets
+      - no single packet triggers the IDS.
+      - divides data into the packets into small portions of bytes
+         => evades "string match" while delivering the data
+      -  deliver the data into several small-sized packets.
+
+OVERLAPPING FRAGMENTS & FRAGMENTATION ATTACK evade IDS by using
+
+        fragments of packet,
+
+
+whereas in UNICODE EVASION it is done by
+
+        exploiting unicode characters.
+
+------------------------------

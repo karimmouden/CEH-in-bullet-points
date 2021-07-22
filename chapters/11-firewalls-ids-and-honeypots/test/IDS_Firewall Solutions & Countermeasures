@@ -1,0 +1,288 @@
+Jamie is an on-call security analyst.
+He had a contract to improve security for the company’s firewall.
+Jamie focused specifically on some of the items on the security of the Company’s firewall.
+After working for some time on the items, Jamie creates the following list to fix them:
+
+1. Set ssh timeout to 30 minutes.
+2. Set telnet timeout to 30 minutes.
+3. Set console timeout to 30 minutes.
+4. Set login password retry lockout.
+Which task should Jamie perform if he has time for just one change before leaving the organization?
+
+
+
+
+        Set ssh timeout to 30 minutes.
+
+        Set console timeout to 30 minutes.
+
+        Set login password retry lockout. : TRUE
+
+        Set telnet timeout to 30 minutes.
+
+
+Explanation:
+
+        The only option that protects against a potential attacker is the lockout setting.
+
+        The other features assume you are logged in and leave a session logged in.
+
+---------------------------------------------------
+
+
+Which honeypot detection tools has following features:
+
+Checks lists of HTTPS, SOCKS4, and SOCKS5 proxies with any ports
+Checks several remote or local proxylists at once Can upload "Valid proxies" and "All except honeypots" files to FTP
+Can process proxylists automatically every specified period
+May be used for usual proxylist validating as well
+
+
+
+          Ostinato
+
+          WireEdit
+
+          Send-Safe Honeypot Hunter   : TRUE
+
+          WAN Killer
+
+
+  Explanation:
+
+-  Ostinato, - WAN Killer & - WireEdit are :
+
+      packet generating tools.
+
+-  Send-Safe Honeypot Hunter :
+
+      tool designed for checking lists of HTTPS and SOCKS proxies for "honey pots.“
+
+  Following are some of the features of Send-Safe Honeypot Hunter :
+
+  ?        Checks lists of HTTPS, SOCKS4, and SOCKS5 proxies with any ports
+
+  ?        Checks several remote or local proxy lists at once
+
+  ?        Can upload "Valid proxies" and "All except honeypots" files to FTP
+
+  ?        Can process proxy lists automatically every specified period
+
+  ?        May be used for usual proxy list validating as well
+
+
+----------------------------------------------------------------------
+
+When an alert rule is matched in a network-based IDS like snort, the IDS does which of the following.
+
+
+        Continues to evaluate the packet until all rules are checked : TRUE
+
+        Drops the packet and moves on to the next one
+
+        Stops checking rules, sends an alert, and lets the packet continue
+
+        Blocks the connection with the source IP address in the packet
+
+
+-------------------------------------------------------------------------
+
+In what way do the attackers identify the presence of layer 7 tar pits?
+
+
+      By analyzing the TCP window size
+
+      By looking at the latency of the response from the service : TRUE
+
+      By looking at the responses with unique MAC address 0:0:f:ff:ff:ff
+
+      By looking at the IEEE standards for the current range of MAC addresses
+
+
+Explanation:
+
+Tar pits
+
+  security entities
+  similar to honeypots
+  designed to respond slowly to the incoming requests.
+
+  layer 7 tar pits react slowly to the incoming SMTP commands by the attackers/spammers.
+
+  Attackers can identify the presence of layer 7 tar pits by
+
+          looking at the latency of the response from the service.
+
+---------------------------------------------------------------------------
+
+Riya wants to defend against the polymorphic shellcode problem.
+What countermeasure should she take against this IDS evasion technique?
+
+
+            Look for the nop opcode other than 0x90  : TRUE
+
+            Catalog and review all inbound and outbound traffic
+
+            Disable all FTP connections to or from the network
+
+            Configure a remote syslog server and apply strict measures to protect it from malicious users.
+
+
+Explanation:
+Riya should look for the nop opcode other than 0x90 to defend against the polymorphic shellcode problem. Rest of the countermeasures are used for firewall evasion.
+
+
+--------------------------------------------------------------------------------
+
+
+Which of the following is not an action present in Snort IDS?
+
+
+      Log
+
+      Audit : TRUE
+
+      Alert
+
+      Pass
+
+
+  Explanation:
+  Snort performs the following actions:
+  ?        Alert - Generate an alert using the selected alert method, and then log the packet
+  ?        Log - Log the packet
+  ?        Pass - Drop (ignore) the packet
+  Auditing is not an action of Snort since Snort is an IDS and not an Audit tool.
+
+
+
+---------------------------------------------------------------------------------------
+
+Siya is using a tool to defend critical data and applications without affecting performance and productivity. Following are the features of the tool:
+
+Pre-built, real-time reports that display big-picture analyses on traffic, top applications, and filtered attack events.
+
+Permits to see, control, and leverage the rules, shared services, and profiles of all the firewall devices throughout the network.
+
+Comprises of in-line, bump-in-the-wire intrusion prevention system with layer two fallback capabilities.
+
+Gives an overview of current performance for all HP systems in the network, including launch capabilities into targeted management applications by using monitors.
+Identify the tool used by Siya-
+
+
+            Wifi Inspector
+
+            AlienVault® OSSIM™
+
+            Zimperium’s zIPS™
+
+            TippingPoint IPS : TRUE
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+
+Which of the following firewalls is used to secure mobile device?
+
+
+          Comodo firewall
+
+          Glasswire
+
+          TinyWall
+
+          NetPatch firewall : TRUE
+
+
+Explanation:
+
+NetPatch firewall
+
+    full-featured advanced android noroot firewall.
+
+    can be used to fully control over mobile device network.
+
+    can create network rules based on
+                                      APP,
+                                      IP address,
+                                      domain name.
+
+    save mobile device’s network traffic & battery consumption,
+
+    improve network security & protect privacy.
+
+
+
+
+Comodo firewall, Glasswire and TinyWall are
+
+          not used for mobile devices.
+
+
+----------------------------------------------------------------
+
+Manav wants to simulate a complete system and provide an appealing target to push hackers away from the production systems of his organization.
+
+By using some honeypot detection tool, he offers typical Internet services such as
+
+        SMTP, FTP, POP3, HTTP, and TELNET,
+
+which appear perfectly normal to attackers.
+
+However, it is a trap for an attacker by messing them so that he leaves some traces knowing that he had connected to a decoy system that does none of the things it appears to do; but instead, it logs everything and notifies the appropriate people. Can you identify the tool?
+
+
+              PeerBlock
+
+              SPECTER  : TRUE
+
+              Glasswire
+
+              TinyWall
+
+  Explanation:
+
+  SPECTER is a honeypot.
+
+        It automatically investigates attackers while they are still trying to break in.
+
+        It provides massive amounts of decoy content, and it generates decoy programs that cannot
+        leave hidden marks on the attacker's computer.
+
+        Automated weekly online updates of the honeypot's content and vulnerability databases allow the honeypot to change regularly without user interaction.
+
+
+  Glasswire, TinyWall, & PeerBlock are
+
+          firewall solutions.
+
+
+------------------------------------------------------------
+
+
+Which of the following firewall solution tool has the following features:
+
+●        Two-way firewall that monitors and blocks inbound as well as outbound traffic
+●        Allows users to browse the web privately
+●        Identity protection services help to prevent identity theft by guarding crucial data of the users. It also offers PC protection and data encryption
+●        Through Do Not Track, it stops data-collecting companies from tracking the online users
+●        Online Backup to backs up files and restores the data in the event of loss, theft, accidental deletion or disk failure
+
+
+
+        ZoneAlarm PRO FIREWALL 2018 : TRUE
+
+        Vangaurd Enforcer
+
+        Wifi Inspector
+
+        zIPS
+
+
+  Explanation:
+
+
+  ZoneAlarm PRO Firewall blocks attackers and intruders from accessing your system. It monitors programs for suspicious behavior spotting and stopping new attacks that bypass traditional anti-virus protection. It prevents identity theft by guarding your data. It even erases your tracks allowing you to surf the web in complete privacy. Furthermore, it locks out attackers, blocks intrusions, and makes your PC invisible online. Also, it filters out an annoying and potentially dangerous email.
+  zIPS, Wifi Inspector, and Vangaurd Enforcer are IDS tools.

@@ -1,0 +1,357 @@
+Which of the following is a hijacking technique where an attacker masquerades as a trusted host to conceal his identity, hijack browsers or websites, or gain unauthorized access to a network?
+
+
+
+        IP address spoofing : TRUE
+
+        Port-scanning
+
+        Source routing
+
+        Firewalking
+
+
+Explanation:
+
+IP address spoofing
+    - hijacking technique
+    - attacker masquerades as a trusted host to
+            conceal his identity,
+            spoof a website,
+            hijack browsers, or
+            gain unauthorized access to a network.
+    - attacker creates IP packets by using a forged IP address
+    - access the system or network without authorization.
+    - Attackers modify
+          - address information in the IP packet header
+          and
+          - source address bits field
+      to bypass the firewall.
+
+    The attacker spoofs the messages; therefore, the destination host feels that it has come from a reliable source.
+    Thus, the attacker succeeds in impersonating others’ identities with the help of IP spoofing.
+
+----------------------------------
+
+An attacker sends an e-mail containing a
+    malicious Microsoft office document
+      to target WWW/FTP servers
+
+    and embed Trojan horse files as
+      software installation files,
+      mobile phone software, and so on
+
+to lure a user to access them.
+
+Identify by which method the attacker is trying to bypass the firewall.
+
+
+Bypassing firewall through content : TRUE
+
+Bypassing firewall through external systems
+
+Bypassing WAF using XSS attack
+
+Bypassing firewall through MITM attack
+
+
+Explanation:
+Bypassing firewall through external systems: Attackers can bypass firewall restrictions of target networks from an external system that can access the internal network.
+
+Bypassing firewall through MITM attack: In MITM attacks, attackers make use of DNS servers and routing techniques to bypass firewall restrictions.
+
+Bypassing firewall through content: In this method, the attacker sends the content containing malicious code to the user and tricks user to open it so that the malicious code can be executed.
+
+Bypassing WAF using XSS attack: XSS attack exploits vulnerabilities that occur while processing input parameters of the end users and the server responses in a web application.
+
+
+----------------------------------------------------
+
+Which term is used to refer service announcements provided by services in response to connection requests and often carry vendor’s version of information?
+
+
+
+      Banner     : TRUE
+
+      Port
+
+      Scanning phase
+
+      Network discovery phase
+
+
+  Explanation:
+
+  Port: Through ports computers send or accept information from network resources.
+
+  Network discovery phase and a scanning phase are two phases involved in Firewalking.
+
+  Banner is used to refer to SERVICE ANNOUNCEMENTS
+                provided by services
+                    in response to connection requests
+
+                        and often carry vendor’s VERSION of information.
+
+
+------------------------------------------------------------------
+
+A pentester gains access to a Windows application server and
+needs to determine the settings of the built-in Windows firewall.
+Which command would be used?
+
+
+
+      Net firewall show config
+
+      Ipconfig firewall show config
+
+      Netsh firewall show config : TRUE
+
+      WMIC firewall show config
+
+--------------------------------------------------------
+
+Firewalk has just completed the second phase (the scanning phase) and a technician receives the output shown below.
+
+What conclusions can be drawn based on these scan results?
+
+       TCP port 21—no response
+       TCP port 22—no response
+       TCP port 23—Time-to-live exceeded
+
+
+
+          The lack of response from ports 21 and 22 indicate that those services are not running on the destination server.
+
+          The scan on port 23 was able to make a connection to the destination host prompting the firewall to respond with a TTL error.
+
+          The scan on port 23 passed through the filtering device. This indicates that port 23 was not blocked at the firewall.        : TRUE
+
+          The firewall itself is blocking ports 21 through 23 and a service is listening on port 23 of the target host.
+
+  Explanation:
+
+  Since the output shown to the technician contains   TCP port 21—no response, TCP port 22—no response, and TCP port 23—Time-to-live exceeded, this means that the
+
+        traffic through port 23 has
+              passed through the firewall filtering
+
+                which indicates that the
+
+                          firewall does not block port 23.
+
+
+-------------------------------------------------
+
+Check Point's FireWall-1 listens to which of the following TCP ports?
+
+
+1745
+
+1080
+
+1072
+
+259 : TRUE
+
+
+Explanation:
+Some firewalls will uniquely identify themselves using simple port scans.
+
+For example,
+
+    Check Point's FireWall-1 listens on TCP ports 256, 257, 258, and 259,
+
+    Microsoft's Proxy Server usually listens on TCP ports 1080 and 1745.
+
+
+--------------------------------------------------------
+
+
+Which method of firewall identification has the following characteristics:
+
+uses TTL values to determine gateway ACL filters
+maps networks by analyzing IP packet response
+probes ACLs on packet filtering routers/firewalls using the same method as trace-routing
+sends TCP or UDP packets into the firewall with TTL value is one hop greater than the targeted firewall
+
+
+
+      Banner Grabbing
+
+      Port Scanning
+
+      Firewalking : TRUE
+
+      Source Routing
+
+
+Explanation:
+
+Port scanning:
+
+    It is used to
+            identify
+                open ports
+                services running on ports.
+    Finding open ports is an attacker’s first step to access the target system.
+    To do so, the attacker systematically scans the target’s ports to identify the version of services, which helps in finding vulnerabilities in these services.
+
+Banner grabbing:
+
+    It is a simple method of FINGERPRINTING that helps in detecting
+            the VENDOR of a firewall
+            the firmware's version.
+
+Source Routing:
+
+    Qender of the packet designates the
+
+                  route (partially or entirely)
+
+            that a packet should take through the network in such a way
+                    that the designated route should
+                                bypass the firewall node.
+
+Firewalking
+
+    method of collecting information about remote networks behind firewalls.
+
+    uses TTL values to determine gateway ACL filters
+
+    map networks by analyzing IP packet response.
+
+    probes ACLs on packet filtering routers/firewalls using the same method as
+
+            tracerouting.
+
+    sends TCP or UDP packets into the firewall with
+
+            TTL value is one hop greater than the targeted firewall.
+
+    If the packet makes it through the gateway, the system forwards it to the next hop,
+          where the TTL equals one
+                and
+          prompts an ICMP error message at the point of rejection with a "TTL exceeded in transit" message.
+
+    This method helps locate a firewall, additional probing permits fingerprinting and identification of vulnerabilities.
+
+
+-------------------------------------
+
+Which of the following tools is used to
+
+      execute commands of choice by
+
+                  tunneling them inside the payload of
+
+                            ICMP echo packets if
+
+                                ICMP is allowed through a firewall?
+
+
+          Loki :  TRUE
+
+          HTTPTunnel
+
+          AckCmd
+
+          Anonymizer
+
+
+Explanation:
+
+Anonymizer:
+
+        Anonymous web-surfing sites help to browse the Internet anonymously and unblock blocked sites.
+
+Loki
+
+      ICMP tunneling is used to execute commands of choice by tunneling them inside the payload of ICMP echo packets.
+
+AckCmd (http://ntsecurity.nu)
+
+      use ACK tunneling.
+
+HTTPTunnel
+
+      uses technique of tunneling traffic across TCP port 80 to bypass firewall.
+
+
+--------------------------
+
+
+Which of the following is a two-way HTTP tunneling software tool that allows
+
+    HTTP, HTTPS, and SOCKS tunneling
+
+          of any TCP communication between any client–server systems?
+
+
+          Bitvise
+
+          Loki
+
+          Secure Pipes
+
+          Super network tunnel : TRUE
+
+
+Explanation:
+
+Super network tunnel
+
+    - 2-way HTTP tunneling software
+    - connects 2 computers utilizing
+
+          - HTTP-tunnel client
+          and
+          - HTTP-tunnel server.
+
+    - can bypass any firewall to surf the web, use IM applications, games, and so on.
+
+    - integrates SocksCap function along with
+
+                    bidirectional HTTP tunneling
+                    &
+                    remote control
+        to simplify the configuration.
+
+
+Bitvise
+&
+Secure Pipes :
+
+      SSH tunneling Tools
+
+
+Loki
+
+      ICMP tunneling tool.
+
+------------------------------------------------------------
+
+
+Which feature of Secure Pipes tool open application communication ports to remote servers without opening those ports to public networks?
+
+
+          SOCKS proxies
+
+          Remote backwards
+
+          Remote forwards
+
+          Local forwards
+
+              open application communication ports to remote servers
+                        without opening those ports to public networks.
+
+              brings the
+
+                  security of VPN communication
+
+                        to clients & servers
+
+                            on an ad hoc basis without the configuration and management hassle.
+
+--------------------------------

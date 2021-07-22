@@ -1,0 +1,404 @@
+Which of the following indicator identifies a network intrusion?
+
+
+
+
+            a. Sudden decrease in bandwidth consumption is an indication of intrusion
+
+            b. Rare login attempts from remote hosts
+
+            d. Connection requests from IPs from those systems within the network range
+
+            c. Repeated probes of the available services on your machines : TRUE
+
+Explanation:
+Network Intrusions: General indications of network intrusions include:
+
+Sudden increase in bandwidth consumption is an indication of intrusion
+
+Repeated probes of the available services on your machines
+
+Connection requests from IPs other than those in the network range, indicating that an unauthenticated user (intruder) is attempting to connect to the network
+
+Repeated login attempts from remote hosts
+
+A sudden influx of log data could indicate attempts at
+DoS attacks,
+bandwidth consumption,
+and DDoS attacks
+
+-----------------------------
+
+What is the main advantage that a
+      network-based IDS/IPS system
+          has over a
+      host-based solution?
+
+
+They are easier to install and configure.
+
+They are placed at the boundary, allowing them to inspect all traffic.
+
+They do not use host system resources. : TRUE
+
+They will not interfere with user interfaces.
+
+Explanation:
+The correct option is “They do not use host system resources”.
+
+Host-based intrusion detection systems (IDSes) protect just that:
+  the host or endpoint.
+This includes workstations, servers, mobile devices and the like.
+Host-based IDSes are not just one of the last layers of defense,
+                      but they're also one of the best security controls because they can be fine-tuned to the specific workstation, application, user role or workflows required.
+
+A network-based IDS often sits on the ingress or egress point(s) of the network to monitor what's coming and going.
+Given that a network-based IDS sits further out on the network, so
+
+    it doesn't use any host system resources
+
+    and it may not provide enough granular protection to keep everything in check -- especially for network traffic that's protected by SSL, TLS or SSH.
+
+-----------------------------
+
+Sean who works as a network administrator has just deployed an IDS in his organization’s network. Sean deployed an IDS that generates 4 types of alerts that include:
+      true positive, false positive, false negative, and true negative.
+
+In which of the following conditions does the IDS generate a true positive alert?
+
+
+A true positive is a condition occurring when an IDS fails to react to an actual attack event.
+
+A true positive is a condition occurring when an event triggers an alarm and causes the IDS to react as if a real attack is in progress.: TRUE
+
+A true positive is a condition occurring when an event triggers an alarm when no actual attack is in progress.
+
+A true positive is a condition occurring when an IDS identifies an activity as acceptable behavior and the activity is acceptable.
+
+-------------------------------
+
+Which solution can be used to emulate computer services, such as mail and ftp, and to capture information related to logins or actions?
+
+
+Firewall
+
+Intrusion Detection System (IDS)
+
+Honeypot   : TRUE
+
+DeMilitarized Zone (DMZ)
+
+
+
+------------------------------
+
+Which of the statements concerning proxy firewalls is correct?
+
+
+                          Computers establish a connection with a proxy firewall that initiates a new network connection for the client. : TRUE
+
+                          Proxy firewalls block network packets from passing to and from a protected network.
+
+                          Proxy firewalls increase the speed and functionality of a network.
+
+                          Firewall proxy servers decentralize all activity for an application.
+
+
+
+------------------------------
+
+
+Which protocol and port number might be needed to send log messages to a log analysis tool that resides behind a firewall?
+
+
+          UDP 415
+
+          UDP 123
+
+          UDP 514 : TRUE
+
+          UDP 541
+
+  Explanation:
+
+  The syslog protocol
+      enables network devices to record event messages to
+            the logging server
+            or
+            the syslog server.
+
+  It is possible to log many events and the syslog protocol can handle many different devices.
+
+  Normally, Windows-based servers do not support syslog.
+
+  However, there are many 3rd-party tools available that can actually
+
+          gather the Windows server log information
+
+              and then forward it to the syslog server.
+
+  Syslog is the standard for message logging and uses a facility code that determines the software used for generating the messages and also assigns a severity label to each.
+
+  The syslog finds its application in
+      system management,
+      security auditing,
+      debugging messages.
+
+  Many types of devices such as
+        printers,
+        routers,
+  use the syslog standard that enables a
+
+        centralized method of logging data from different devices.
+
+  The syslog server gathers information sent over the network over
+
+        UDP port 514 using a syslog listener.
+
+------------------------------
+
+The IDS at a software development company suddenly
+
+  started generating multiple alerts regarding attacks against the company’s
+            external webserver,
+            VPN concentrator, and
+            DNS servers.
+
+What should the security team do to determine which alerts to check first?
+
+
+          Investigate based on the potential effect of the incident. : TRUE
+
+          Investigate based on the service-level agreements of the systems.
+
+          Investigate based on the maintenance schedule of the affected systems.
+
+          Investigate based on the order that the alerts arrived in.
+
+Explanation:
+
+Priority of incident handling and response for various components of an information system or system recovery is determined according to the
+
+  potential impact of the incident.
+
+Appropriate strategies are selected after considering
+    availability of resources,
+    criticality of affected systems,
+    results of cost–benefit analysis.
+
+-----------------------------
+
+Which of the following INTRUSION DETECTION technique involves
+
+    first creating models of possible intrusions
+
+    and then comparing these models with incoming events
+
+to make a detection decision?
+
+
+
+            Protocol Anomaly Detection
+
+            Anomaly Detection
+
+            Obfuscating
+
+            Signature Recognition   : TRUE
+
+
+Explanation:
+
+Signature Recognition:
+
+    Signature recognition, also known as misuse detection,
+
+    tries to identify events that indicate an abuse of a system or network.
+
+    This technique involves
+
+        first creating models of possible intrusions
+        and then comparing these models with incoming events
+
+    to make a detection decision.
+
+
+
+Anomaly Detection:
+
+        Anomaly detection, or “not-use detection,” differs from the signature-recognition model.
+
+        Anomaly detection consists of a database of anomalies.
+
+        An anomaly can be detected
+
+            when an event occurs outside the
+
+                  tolerance THRESHOLD of normal TRAFFIC.
+
+        Therefore, any deviation from regular use is an attack.
+
+        Anomaly detection detects the intrusion based on the
+
+              fixed behavioral characteristics of the users & components
+                  in a computer system.
+
+        Creating a model of normal use is the
+              most challenging task in creating an anomaly detector.
+
+
+Protocol Anomaly Detection:
+
+        Protocol anomaly detection depends on the
+
+                  anomalies SPECIFIC to a PROTOCOL.
+
+        It identifies particular FLAWS
+
+                between how vendors DEPLOY the TCP/IP protocol.
+
+        Protocols are designed according to
+
+                  RFC specifications,
+
+                      which dictate
+
+                          STANDARD HANDSHAKES
+
+                            to permit universal communication.
+
+        The protocol anomaly detector can
+
+              identify new attacks.
+
+
+Obfuscating:
+
+      IDS evasion technique
+
+      Encode attack packet payload in such a way that the
+
+           only Victim can decode packet
+
+           but not the IDS.
+
+      An attacker manipulates the
+
+          path referenced in the signature
+
+       to fool the HIDS.
+
+      Using the UNICODE character,
+
+            an attacker could encode attack packets that the
+
+                    IDS would not recognize,
+
+                      but
+
+                    IIS web server would decode.
+---------------------------
+
+Jamie needs to keep data safe in a large datacenter, which is in desperate need of a firewall replacement for the end of life firewall.
+
+The director has asked Jamie to select and deploy an appropriate firewall for the existing datacenter.
+
+The director indicates that the amount of throughput will increase over the next few years and this firewall will need to keep up with the demand while other security systems do their part with the passing data.
+
+What firewall will Jamie use to meet the requirements?
+
+
+          Packet filtering firewall because layer 7 inspections use less overhead, allowing more packets to be inspected per second than other firewall types.
+
+          Application-level proxy firewall because unlike the old packet filtering firewall technology, it can adjust speed based on applications
+
+          Packet filtering firewall because it will best keep the increased traffic moving at an acceptable level. : TRUE
+
+          Application-level proxy firewall because the connection between internal and external systems are inspected but not broken; data moves more rapidly.
+
+
+------------------------------
+
+You are a security expert.
+What can you do to protect an internal server that does not have antivirus and you cannot install any tools because of performance issues?
+
+
+Install compensatory controls as external FW or IPS to protect it.
+
+Install compensatory controls as internal FW and IPS to protect it.  : TRUE
+
+Install mandatory controls as internal FW and IPS to protect it.
+
+Install mandatory controls as external FW and IPS to protect it.
+
+---------------------------
+
+Which of the following descriptions is true about a static NAT?
+
+
+A static NAT uses a one-to-many mapping.
+
+A static NAT uses a many-to-one mapping.
+
+A static NAT uses a one-to-one mapping. : TRUE
+
+A static NAT uses a many-to-many mapping.
+
+
+Explanation:
+
+NAT (Network Address Translator)
+
+    hide an internal network layout
+    force connections to go through a choke point.
+    works with the help of a router
+    helps in sending packets and modifying them.
+
+When the internal machine sends the packet to the outside machine,
+
+  NAT modifies  source address of the particular packet to
+
+        make it appear as if it is coming from a valid address.
+
+When the outside machine sends the packet to the internal machine,
+
+  NAT modifies the destination address to
+
+        turn the visible address into the correct internal address.
+
+The NAT can also modify the source and destination port numbers.
+
+ Create a fixed mapping from internal addresses to externally visible addresses,
+
+    but
+
+   use PORT MAPPING so that
+
+          multiple internal machines use the same external addresses.
+
+-----------------------------
+
+Jamie was asked by their director to make new additions to the firewall in order to allow traffic for a new software package.
+After the firewall changes, Jamie receives calls from users that they cannot access other services, such as email and file shares, that they were able to access earlier.
+
+What was the problem in the latest changes that is denying existing users from accessing network resources?
+
+
+Jamie needs to have the users restart their computers in order to make settings effective.
+
+Jamie should exit privileged mode to allow the settings to be effective.
+
+Jamie’s additional entries were processed first. : TRUE
+
+Jamie needs to restart the firewall to make the changes effective.
+
+
+Explanation:
+
+Jamie has typed the new changes at
+
+    the top of the existing access control list and included an explicit deny statement (deny any any) at the end of their new entries. 
+
+Since the firewall interprets each new line in order, when the firewall reaches the end of the new entries at the top, it stops allowing all traffic.
+
+Jamie should have added the new additions at the bottom just before the existing deny any any instead of adding an additional deny any any. The test taker needs to know that what is meant by processed first is that there was an accidental additional deny any any added just below the new lines but just above the original previously existing entries.
