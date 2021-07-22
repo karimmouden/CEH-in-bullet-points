@@ -1,0 +1,396 @@
+An attacker is sending
+        spoofed router advertisement messages so that
+              all the data packets travel through his system.
+Then the attacker is trying to sniff the traffic to
+        collect valuable information from the data packets to
+                launch further attacks such as
+                          man-in-the-middle, denial-of-service, and passive sniffing attacks on the target network.
+
+Which of the following technique is the attacker using in the above scenario?
+
+//////////////////
+ARP Spoofing :
+
+involves constructing a
+        large number of forged ARP request & reply packets
+            to overload a switch.
+
+Attackers use this flaw in ARP to
+            create malformed ARP replies containing
+                      spoofed IP and MAC addresses.
+
+Assuming it to be the legitimate ARP reply,  victim's computer
+                              blindly accepts  ARP entry into its ARP table.
+
+Once the ARP table is flooded with spoofed ARP replies, the attacker sets the switch in
+              forwarding mode,
+                      which intercepts
+                                all the data that flows from the victim machine
+                                            without the victim being aware of the attack.
+
+/////////////////////
+IRDP Spoofing : TRUE
+
+          IRDP Router Discovery Protocol (IRDP)
+          Routing protocol
+
+          Allows a host to
+                discover  IP addresses of active routers
+                      on its subnet
+                        by listening to
+                            router advertisement & solicitation messages on its network.
+                An attacker can use this to send
+                            spoofed router advertisement messages so that
+                                        all the data packets travel through the attacker's system.
+                                          -> Thus, the attacker can
+                                                          sniff the traffic
+                                                          collect valuable information from the data packets.
+                Attackers can use IRDP spoofing to launch
+                                    MITM, DoS, and passive sniffing attacks :
+
+              Passive Sniffing: In a switched network, the attacker spoofs IRDP traffic to
+                                          re-route  outbound traffic of target hosts through  attacker’s machine.
+              MITM: Once sniffing starts, the attacker acts as
+                                  a proxy between the victim and destination.
+                    The attacker plays an MITM role and tries to modify the traffic.
+
+              DoS: IDRP spoofing allows remote attackers to add wrong route entries into victims routing table.
+                   The wrong address entry causes DoS.
+
+//////////////
+DHCP Starvation Attack :
+    attacker floods the DHCP server by sending a large number of DHCP requests
+             uses all of the available IP addresses that the DHCP server can issue.
+    As a result, the server cannot issue any more IP addresses,
+          -> leading to Denial-of-Service (DoS) attacks.
+
+//////////////
+MAC Flooding : technique used to
+                          compromise the security of network switches that
+                                    connect network segments or network devices.
+              Attackers use  MAC flooding technique to
+                        force a switch to act as a hub,
+                                so that they can easily sniff the traffic.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which of the following DNS poisoning techniques uses
+        ARP poisoning
+              against switches
+                  to  manipulate routing table?
+
+
+DNS Cache Poisoning
+
+Internet DNS Spoofing
+
+Proxy Server DNS Poisoning
+
+Intranet DNS Spoofing : TRUE
+
+Explanation:
+DNS poisoning techniques to sniff the DNS traffic of a target network.
+Using this technique, an attacker can
+                  obtain the ID of the DNS request by sniffing
+                  and
+                  can send a malicious reply to the sender before the actual DNS server.
+
+DNS poisoning is possible using the following techniques:
+?	 Intranet DNS spoofing
+?	Internet DNS spoofing
+?	Proxy server DNS poisoning
+?	DNS cache poisoning
+
+Intranet DNS spoofing:
+          An attacker can perform an intranet DNS spoofing attack on a switched LAN
+                  with the help of  ARP poisoning technique.
+
+          To perform this attack, the attacker
+                        must be connected to the LAN and
+                             be able to sniff the traffic or packets.
+
+          An attacker who succeeds in sniffing
+                    the ID of the DNS request from the intranet
+                              can send a malicious reply to
+                                      the sender
+                                            before the actual DNS server.
+
+Internet DNS spoofing:
+          Attackers perform Internet DNS spoofing with the help of Trojans when the victim’s system connects to the Internet.
+          It is an MITM attack in which the attacker changes the primary DNS entries of the victim’s computer.
+
+Proxy server DNS poisoning:
+          In the proxy server DNS poisoning technique, the attacker sets up a proxy server on the attacker’s system.
+          The attacker also configures a fraudulent DNS and makes its IP address a primary DNS entry in the proxy server.
+
+DNS cache poisoning:
+          Attackers target this DNS cache and make changes or add entries to the DNS cache.
+          If the DNS resolver
+              cannot validate that the DNS responses have come
+                    from an authoritative source,
+                              it will cache the incorrect entries locally
+                              and
+                              serve them to users who make the same request.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Which tool would be used to collect wireless packet data?
+
+/////////////////////
+NetStumbler : TRUE
+              tool used for collecting wireless packets and detecting wireless LANs using 802.11b, 802.11a and 802.11g WLAN standards.
+              It runs on Windows environment.
+
+////////////////
+Netcat : networking utility
+         reads & writes data across network connections
+         uses the TCP/IP protocol.
+         Reliable “back-end�? tool
+         Used directly or driven by other programs and scripts.
+         Network debugging and exploration tool.
+
+
+///////////////
+Nessus : assessment solution for identifying
+                          - vulnerabilities,
+                          - configuration issues,
+                          - malware that attackers use to penetrate networks.
+        Performs vulnerability, configuration, and compliance assessment.
+        Supports various technologies such as
+                    - OS,
+                    - network devices,
+                    - hypervisors,
+                    - databases,
+                    - tablets/phones,
+                    - web servers
+                    - critical infrastructure.
+
+
+/////////////////////
+John the Ripper :
+              fast password cracker, currently available for many flavors of
+                        Unix, Windows, DOS, and OpenVMS.
+              Its primary purpose is to detect
+                        weak Unix passwords.
+              Besides several crypt(3) password hash types most commonly found on various Unix systems,
+                    supported out of the box are Windows LM hashes,
+                              plus lots of other hashes and ciphers in the community-enhanced version.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+A corporation hired an ethical hacker to test if it is possible
+            to obtain users’ login credentials
+                        using methods
+                                other than social engineering.
+The ethical hacker is working on Windows system & trying to
+            obtain login credentials.
+
+He decided to sniff and capture network traffic using an automated tool
+            and use the same tool to crack the passwords of users.
+
+Which of the following techniques can be employed by the ethical hacker?
+
+        Capture administrators’ RDP traffic and decode it with Cain and Abel. : TRUE
+
+        Guess passwords using Medusa or Hydra against a network service.
+
+        Capture every users' traffic with Ettercap.
+
+        Capture LANMAN Hashes and crack them with L0phtCrack.
+
+
+        Explanation:
+        Ettercap:
+                Ettercap is a comprehensive suite for man in the middle attacks.
+                It features sniffing of live connections, content filtering on the fly and many other interesting tricks.
+                It supports active and passive dissection of many protocols and includes many features for network and host analysis.
+
+        L0phtCrack:
+                  L0phtCrack is a tool designed to audit password and recover applications.
+                    It recovers lost Microsoft Windows passwords with the help of
+                              dictionary, hybrid, rainbow table, and brute-force attacks,
+                    it also checks the strength of the password.
+
+                    LOphtCrack helps to disclose the security defects that are inherent in windows password authentication system.
+
+        Medusa:
+              Medusa is intended to be a speedy, massively parallel, modular, login brute-forcer.
+              The goal is to support as many services which allow remote authentication as possible.
+
+        Cain And Abel:
+              Cain & Abel is a password recovery tool for Microsoft Operating Systems.
+              It allows
+                  easy recovery of various kind of passwords by
+                      sniffing  network,
+                      cracking encrypted passwords using
+                                  Dictionary,
+                                  Brute-Force and Cryptanalysis attacks,
+                                  recording VoIP conversations,
+                                  decoding scrambled passwords,
+                                  recovering wireless network keys,
+                                  revealing password boxes,
+                                  uncovering cached passwords,
+                                  analyzing routing protocols.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+A hacker, who posed as a heating and air conditioning specialist,
+              was able to install a sniffer program
+                      in a switched environment network.
+Which attack could have been used by the hacker to sniff all of the packets in the network?
+
+
+Smurf attack
+
+Tear drop attack :
+
+MAC flood attack : TRUE
+
+        To sniff all the packets in a network,
+        the attacker can
+          - flood the switch with many Ethernet frames, each containing different source MAC addresses.
+          - Check whether the switch enters into
+                      fail open mode,
+                                in which the switch broadcasts data
+                                    to all ports
+                                rather than just to
+                                   the port intended to receive the data.
+        If this happens, then attackers have the ability to sniff network traffic.
+
+Fraggle attack
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Pentest results indicate that voice over IP traffic is traversing a network.
+Which of the following tools will decode a packet capture and extract the voice conversations?
+
+
+Nikto
+
+Hping
+
+Cain and Abel : TRUE
+
+John the Ripper
+
+-----------------
+
+Which technical characteristic do Ethereal/Wireshark, TCPDump, and Snort have in common?
+
+
+They use the same packet capture utility. : TRUE
+
+They are written in Java.
+
+They use the same packet analysis engine.
+
+They send alerts to security monitors.
+
+Explanation:
+
+Snort : open source NIDS (network intrusion detection system),
+
+        capable of performing
+
+              - real time traffic analysis
+              - packet logging
+              on IP networks.
+              - protocol analysis
+              - content searching/matching
+
+        used to detect a variety of attacks & probes, such as
+              - buffer overflows,
+              - stealth port scans,
+              - CGI attacks,
+              - SMB probes,
+              - OS fingerprinting attempts.
+
+        It uses a
+            - flexible rules language to
+                    describe traffic that it should collect or pass,
+            - detection engine that utilizes a modular plug-in architecture.
+
+Uses of Snort:
+
+Straight packet sniffer like tcpdump, Wireshark
+Packet logger (useful for network traffic debugging, etc.)
+Network intrusion prevention system
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+What is the length of ID number of an organization in a MAC address?
+
+
+48 bits
+
+24 bits : TRUE
+
+26 bits
+
+12 bits
+
+Explanation:
+A MAC address is 48 bits, which splits into two sections, each containing 24 bits.
+The first section contains the ID number of the
+    organization that manufactured the adapter and is called the organizationally unique identifier.
+The next section contains the
+    serial number assigned to the NIC adapter and is called the network interface controller (NIC) specific.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+What happens when a switch CAM table becomes full?
+
+
+Every packet is dropped and the switch sends out simple network management protocol (SNMP) alerts to the intrusion detection system (IDS) port.
+
+The switch replaces outgoing frame switch factory default MAC address of FF:FF:FF:FF:FF:FF.
+
+The CAM overflow table will cause the switch to crash causing denial-of-service (DoS).
+
+The switch then acts as a hub by broadcasting packets to all machines on the network. : TRUE
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+What method should be incorporated by a network administrator to prevent the organization’s network against ARP poisoning?
+
+
+Use secure shell (SSH) encryption
+
+Use SSL for secure traffic
+
+Resolve all DNS queries to local DNS server
+
+Implement dynamic arp inspection (DAI) using the dynamic host configuration protocol (DHCP) snooping binding table : TRUE
+
+Explanation:
+Implementation of DAI prevents poisoning attacks.
+
+DAI : Dynamic ARP Inspection
+      security feature
+      validates ARP packets in a network.
+
+      When DAI activates on a VLAN, all ports on the VLAN
+                            are considered to be untrusted by default. 
+
+      DAI validates the ARP packets using
+                      a DHCP snooping binding table.
+
+DHCP snooping binding table :
+      table
+      consists of :
+          - MAC addresses,
+          - IP addresses,
+          - VLAN interfaces
+          acquired by listening to DHCP message exchanges.
+
+  !!!!!!!!!!!!!! Hence, you must enable DHCP snooping before enabling DAI.!!!!!!!!!!!
+
+   Otherwise, establishing a connection between
+              VLAN devices based on ARP is not possible.
+
+  Consequently, a self-imposed DoS attack
+        might result on any device in that VLAN.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------

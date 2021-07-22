@@ -1,0 +1,355 @@
+A tester wants to
+      securely encrypt the session to
+                prevent the network against sniffing attack,
+
+which of the following protocols should he use as a replacement of Telnet?
+
+
+SSH : TRUE
+      network protocol
+      used to remotely access and manage a device.
+
+      The key difference between
+            Telnet & SSH is that
+                SSH uses encryption  -> all data transmitted over a network is secure from eavesdropping.
+
+    On a remote device,
+        an SSH server must be
+              installed & running.
+
+Intrusion Prevention System (IPS)
+
+Public Key Infrastructure (PKI)
+
+Load Balancing (LB)
+
+------------------------
+
+Which of the following tool a tester can use to
+        detect a system that runs in promiscuous mode,
+                which in turns helps to detect sniffers installed on the network?
+
+
+shARP
+
+Nmap : TRUE
+
+OmniPeek
+
+FaceNiff
+
+
+-------------------
+
+Which of the following command is used to
+          set the maximum number of secure MAC addresses
+                for the interface on a Cisco switch?
+
+
+snmp-server enable traps port-security trap-rate 5
+
+switchport port-security maximum 1 vlan access : TRUE
+
+switchport port-security aging time 2
+
+switchport port-security violation restrict
+
+
+Explanation:
+        Configuring Port Security on Cisco switch: You can use the following Cisco port security feature to defend against MAC attacks:
+
+        switchport port-security
+              Enables port security on the interface.
+
+        switchport port-security maximum 1 vlan access
+              Sets the maximum number of secure MAC addresses for the interface.
+              The range is 1 to 3072.
+              The default is 1.
+
+        switchport port-security violation restrict
+              Sets the violation mode,
+              the action to be taken when a security violation {restrict | shutdown} is detected.
+
+        switchport port-security aging time 2
+              Sets the aging time for the secure port.
+
+        switchport port-security aging type inactivity
+              The type keyword sets the aging type as absolute or inactive.
+
+        snmp-server enable traps port-security trap-rate 5
+              Controls the rate at which SNMP traps are generated.
+
+---------------------------
+
+A network administrator wants to configure port security on a Cisco switch.
+Which of the following command helps the administrator to enable port security on an interface?
+
+      switchport port-security aging type inactivity
+
+      switchport port-security : TRUE
+
+      switchport port-security aging time 2
+
+      switchport port-security maximum 1
+
+-----------------------
+
+Out of the following options,
+identify the function of the following command performed on a Cisco switch.
+“switchport port-security mac-address sticky”
+
+
+Adds all secure MAC addresses that are dynamically learned to the running configuration : TRUE
+
+Configures the switch port parameters to enable port security
+
+Configures the secure MAC address aging time on the port
+
+Configures the maximum number of secure MAC addresses for the port
+
+
+Explanation:
+    "switchport port-security mac-address sticky"
+        Enables sticky learning on the interface by entering only the mac-address sticky keywords.
+        When sticky learning is enabled, the interface
+                  - adds all secure MAC addresses that are dynamically learned to the running configuration
+                  - converts these addresses to sticky secure MAC addresses.
+
+---------------------------
+
+Which of the following is a defense technique for
+          MAC spoofing used in switches
+                  that restricts the IP traffic on untrusted Layer 2 ports
+                        by filtering traffic based on
+                              the DHCP snooping binding database?
+
+
+Authentication, authorization, and accounting (AAA)
+
+IP Source Guard : TRUE
+
+DHCP snooping binding table
+
+Dynamic ARP inspection
+
+Explanation:
+Following some of the techniques to defend against MAC address spoofing attacks:
+
+/////////
+IP Source Guard:
+
+    security feature in switches
+    restricts  IP traffic on untrusted Layer 2 ports by
+            filtering traffic based on the DHCP snooping binding database.
+    prevents spoofing attacks when
+            the attacker
+                        tries to spoof
+                  or
+                        use the IP address of another host.
+///////////
+DHCP Snooping Binding Table:
+
+    DHCP snooping process filters untrusted DHCP messages
+                          helps to build and bind a DHCP binding table.
+                           This table contains :
+                                - MAC address,
+                                - IP address,
+                                - lease time,
+                                - binding type,
+                                - VLAN number,
+                                - interface information to correspond with untrusted interfaces of a switch.
+          It acts as a
+                  firewall between
+                        untrusted hosts & DHCP servers.
+
+          It also helps in differentiating between
+                    - trusted
+                    and
+                    - untrusted interfaces.
+
+/////////////
+Dynamic ARP Inspection:
+          The system checks the
+                      IP to MAC address binding
+                                for each ARP packet in a network.
+          While performing a Dynamic ARP inspection, the system will automatically
+                      drop invalid IP to MAC address bindings.
+
+///////////
+AAA (Authentication, Authorization and Accounting):
+          Use of AAA (Authentication, Authorization and Accounting) server mechanism
+                in order to filter
+                      MAC addresses subsequently.
+
+-----------------------------
+
+Which of the following is a type of network protocol for
+      port-based network access control (PNAC)?
+
+
+        SSH
+
+        SSL
+
+        SFTP
+
+        IEEE 802.1X suites :
+
+            type of network protocol for PNAC
+
+            main purpose is to
+                enforce access control at the point
+                      where a user joins the network.
+
+            part of the IEEE 802.1 group of networking protocols.
+
+            provides an authentication mechanism to devices
+                  wishing to attach to a LAN or WLAN.
+
+-------------------------
+
+An ethical hacker is performing penetration testing on the target organization.
+He decided to test the organization’s network to
+        identify  systems running in promiscuous mode.
+
+Identify the tool that the ethical hacker needs to employ?
+
+
+FaceNiff
+
+Recon-ng
+
+Nmap : True
+
+FOCA
+
+Explanation:
+
+///////////
+FaceNiff:
+          Android app that can
+                    - sniff & intercept web session profiles
+                          over the WiFi connected to the mobile.
+
+          Works on rooted android devices.
+
+          The Wi-Fi connection should be over Open,
+                WEP, WPA-PSK, or WPA2-PSK networks
+                  while sniffing the sessions.
+//////////
+FOCA:
+      FOCA (Fingerprinting Organizations with Collected Archives)
+      tool used mainly to find
+            metadata and hidden information
+                  in the documents its scans.
+
+      It is capable of
+        scanning & analyzing
+            a wide variety of documents,
+            with the most common being :
+              Microsoft Office, Open Office, or PDF files
+////////
+Nmap: Nmap’s NSE script allows you to check if
+
+                a target on a local Ethernet has
+                        its network card in promiscuous mode.
+
+Command to detect NIC in promiscuous mode:
+
+nmap --script=sniffer-detect [Target IP Address/Range of IP addresses]
+
+
+///////////
+Recon-ng:
+          Web Reconnaissance framework with
+                      independent modules,
+                      database interaction,
+                      built in convenience functions,
+                      interactive help, and
+                      command completion,
+
+         Provides an environment in which
+                      open source web-based reconnaissance
+                          can be conducted.
+
+--------------------
+Which of the following is not a mitigation technique against MAC address spoofing?
+
+
+
+
+DHCP Snooping Binding Table
+
+IP Source Guard
+
+DNS Security (DNSSEC) : TRUE
+
+Dynamic ARP Inspection
+
+Explanation:
+Following some of the techniques to defend against MAC address spoofing attacks:
+
+IP Source Guard:
+      security feature in switches that restricts the IP traffic on untrusted Layer 2 ports by filtering traffic based on the DHCP snooping binding database.
+      It prevents spoofing attacks when the attacker tries to spoof or use the IP address of another host.
+
+DHCP Snooping Binding Table:
+      The DHCP snooping process filters untrusted DHCP messages and helps to build and bind a DHCP binding table.
+      This table contains the
+              MAC address, IP address, lease time, binding type, VLAN number, and interface information
+          to correspond with untrusted interfaces of a switch.
+      It acts as a firewall between untrusted hosts and DHCP servers.
+      It also helps in differentiating between trusted and untrusted interfaces.
+
+Dynamic ARP Inspection:
+      The system checks the IP to MAC address binding for each ARP packet in a network.
+      While performing a Dynamic ARP inspection,
+              the system will automatically
+                    drop invalid IP to MAC address bindings.
+
+DNS Security (DNSSEC):
+      Implement Domain Name System Security Extension (DNSSEC) to
+                prevent DNS spoofing attacks.
+
+---------------------
+
+Which of the following Cisco IOS global commands is used
+    to enable or disable
+        DHCP snooping
+            on 1 or more VLANs?
+
+
+switchport port-security mac-address sticky
+
+ip dhcp snooping
+
+ip dhcp snooping vlan 4,104       : TRUE
+
+no ip dhcp snooping information option
+
+
+Explanation:
+
+Cisco OS Global Commands:
+
+ip dhcp snooping vlan 4,104
+      Enable or disable DHCP snooping on one or more VLANs.
+
+no ip dhcp snooping information option
+      To disable the insertion and the removal of the option-82 field,
+            use the no IP dhcp snooping information option in global configuration command.
+      To configure an aggregation, switch to drop incoming DHCP snooping packets with option-82 information from an edge switch,
+            use the no IP dhcp snooping information option allow-untrusted global configuration command.
+
+ip dhcp snooping
+        Enable DHCP snooping option globally.
+
+Configuring Port Security on Cisco switch:
+
+switchport port-security mac-address sticky
+        Enables sticky learning on the interface by entering only the mac-address sticky keywords. When sticky learning is enabled,
+                    the interface
+                        adds all secure MAC addresses that are dynamically learned to
+                            the running configuration  
+                        converts these addresses to
+                            sticky secure MAC addresses.

@@ -1,0 +1,262 @@
+A hacker was able to sniff packets on a company’s wireless network. The following information was discovered: the Key 10110010 01001011 and the Ciphertext 01100101 01011010.
+
+Using the exclusive OR function, what was the original message?
+
+
+
+
+              00101000 11101110
+
+              11110010 01011011
+
+              00001101 10100100
+
+              11010111 00010001 : TRUE
+
+Explanation:
+XOR or Exclusive OR function is
+      a binary logical operation that results in true (1) only when
+                one input is true (1) and the other is false (0).
+
+    It returns false (0) when both the inputs are true (1) or false (0).
+
+Example:
+
+Key = 10110010 01001011
+
+Ciphertext = 01100101 01011010
+
+Plaintext or Original Message = 11010111 00010001
+
+--------------------------------------------------------------------------------------------------
+
+A tester is attempting to
+    capture and analyze the traffic on
+        a given network and
+            realizes that the network has several switches.
+What could be used to successfully sniff the traffic on this switched network? (Choose three.)
+
+
+          MAC flooding : TRUE
+
+          Address Resolution Protocol (ARP) spoofing : TRUE
+
+          MAC duplication : TRUE
+
+          SYN flooding
+
+          ARP broadcasting
+
+          Reverse smurf attack
+
+  Explanation:
+
+          ARP spoofing :
+
+              Technique by which an attacker sends (spoofed) ARP messages onto a local area network.
+                      associate the attacker’s MAC address with the IP address of another host, such as
+                                  the default gateway,
+                                    causing any traffic meant for that IP address
+                                            to be sent to the attacker instead.
+
+          MAC duplication :
+
+              Executed by an attacker by changing the MAC address of their host
+                      to match the MAC address of the target host on the network,
+                            making the switch forward the target packets to
+                                  both the host on the network.
+
+          MAC flooding :
+
+              Technique employed to compromise the security of the network switches.
+                      Switches maintain a list (called a content addressable memory (CAM) table) that
+                              maps individual MAC addresses on the network
+                                    to the physical ports on the switch.
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Which of the following problems can be solved by using Wireshark?
+
+
+      Tracking version changes of source code
+
+      Resetting the administrator password on multiple systems
+
+      Checking creation dates on all webpages on a server
+
+      Troubleshooting communication resets between two systems : TRUE
+
+            Wireshark is a free and open-source packet analyzer.
+            It is used for  : network troubleshooting,
+                              analysis,
+                              software & communications protocol development,
+                              education.
+
+--------------------------------------------------------------------------------------------------
+
+What is the correct pcap filter to capture all transmission control protocol (TCP)traffic
+
+    going to or from host 192.168.0.125 on port 25?
+
+
+            port 25 and host 192.168.0.125
+
+            host 192.168.0.125:25
+
+            tcp.port == 25 and ip.addr == 192.168.0.125   : TRUE
+
+            tcp.src == 25 and ip.host == 192.168.0.125
+
+--------------------------------------------------------------------------------------------------
+
+Which of the following technique involves
+        - sending no packets
+        - just capturing & monitoring  packets flowing in the network?
+
+                  Network scanning
+
+                  Port sniffing
+
+                  Active sniffing
+
+                  Passive sniffing : TRUE
+
+--------------------------------------------------------------------------------------------------
+
+Out of the following, which is not an active sniffing technique?
+
+            Domain snipping : TRUE
+                              type of domain name system (DNS) attack
+
+            Switch port stealing : active sniffing technique
+
+            MAC flooding : active sniffing technique
+
+            Spoofing attack : active sniffing technique
+
+--------------------------------------------------------------------------------------------------
+
+Out of the following, which layer is responsible for
+
+      encoding & decoding
+
+        data packets
+            into
+          bits?
+
+//////////////////////////////
+
+Data Link layer : TRUE
+
+                  2nd layer of  OSI model.
+
+                  In this layer, data packets are encoded and decoded
+                          into bits often called frames.
+
+                  Sniffers operate at the Data Link layer
+                           can capture the packets from the Data Link layer.
+//////////////////////////////
+
+Application layer :
+
+              Consists of the protocols used by the applications.
+              These applications provide
+                    - user services
+                    - data
+                over the network connections
+                          recognized by the lower layer protocols.
+///////////////////////////
+
+Network layer :
+
+      Responsible for transmitting data from
+
+                          source system
+
+                              to
+
+                          destination system
+
+                                using various ROUTING protocols.
+                                
+////////////////////////////////
+
+Session layer :
+
+      Responsible for :
+            -  establishing
+            -  maintaining
+              sessions between
+                    - source
+                         and
+                    - destination systems.
+
+--------------------------------------------------------------------------------------------------
+
+An attacker wants to monitor a target network traffic
+      on 1 or more ports on the switch.
+ In such a case, which of the following methods can he use?
+
+
+          Wiretapping
+
+          Port mirroring : TRUE
+                  Switched port analyzer (SPAN) is a Cisco switch feature,
+                          also known as “port mirroring,” that
+                                  monitors network traffic on 1 or more ports on the switch.
+                  Port configured to receive a
+                          copy of every packet that passes through a switch.
+                  Helps to
+                      analyze
+                      debug data,
+                      identify errors, and
+                      investigate unauthorized network access on a network.
+
+
+          Lawful interception
+
+          Active sniffing
+
+--------------------------------------------------------------------------------------------------
+
+Which of the following protocols is not vulnerable to sniffing?
+
+
+            Post Office Protocol (POP)
+
+            Secure Sockets Layer (SSL) : TRUE
+
+            SSL is used to secure connections between network application clients and servers over an insecure network, such as the Internet.
+
+                      SSL uses a combination of public key and symmetric key encryption to
+                                      secure a connection between two machines, typically a
+
+                                                                    web or mail server a
+                                                                and
+                                                                    client system,
+
+                                              communicating over the Internet or another TCP/IP network.
+
+                      SSL provides a mechanism to
+                            encrypt & authenticate data sent between
+                                processes running on a client and server.
+
+            Hyper Text Transfer Protocol (HTTP)
+
+            Telnet and Rlogin
+
+--------------------------------------------------------------------------------------------------
+Sniffers work at which of the following open systems interconnect (OSI) layers?
+
+
+            Transport layer
+
+            Data link layer : TRUE
+
+            Presentation layer
+
+            Application layer
+
+--------------------------------------------------------------------------------------------------
