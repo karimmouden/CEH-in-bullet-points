@@ -13,8 +13,7 @@ If a user forgets the password, it can be easily retrieved using the hash key st
 
 
 
-## After gaining access to the password hashes used to protect access to a web-based application, 
-## the knowledge of which cryptographic algorithms would be useful to gain access to the application?
+## After gaining access to the password hashes used to protect access to a web-based application, the knowledge of which cryptographic algorithms would be useful to gain access to the application?
 
 ### SHA1
 
