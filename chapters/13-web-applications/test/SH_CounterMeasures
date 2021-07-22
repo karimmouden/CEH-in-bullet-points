@@ -1,0 +1,306 @@
+
+Susan works for “CustomData Intl.” and she has to deploy a guest Wi-Fi.
+
+She did everything by the manual and deployed the guest Wi-Fi successfully.
+
+The deployed guest Wi-Fi is separated from the company network,
+it is protected with WPA2
+every user wants to use the Wi-Fi has to ask for a username and password.
+
+There is one problem though—after a few months she noticed that
+    the users connecting to the guest Wi-Fi
+        are being attacked with MitM attacks.
+
+She identified that the MitM attack was initiated with ARP spoofing.
+
+She found that someone is stealing users’ web application credentials, including Windows system credentials in some cases.
+
+Unfortunately, internal users have also become prey to these attacks since they used guest Wi-Fi because it was more open than their internal network.
+
+So, only external guests are not being compromised.
+
+She wanted to mitigate this issue and the first step she took was to ban all internal users from guest using Wi-Fi network.
+
+What, according to you, is the easiest and probably the best way to prevent the ARP spoofing attacks on Wi-Fi networks?
+
+
+
+        It’s impossible to protect WiFi from ARP spoofing
+
+        Use HTTPS all the time
+
+        Use IPsec on WiFi
+
+        Use Client isolation WiFi feature : TRUE
+
+Explanation:
+
+Client isolation Wi-Fi feature
+
+    will prevent clients to see each other on Wi-Fi network, effectively preventing ARP spoofing.
+
+    will also prevent clients to see any other machine on the network, but since this is only used to surf the Internet it is obviously the easiest and the best way to do.
+
+There are still some attacks that could be used over HTTPS,
+
+IPsec is not a solution that could be easily implemented on Wi-Fi connecting to Internet.
+
+------------------------------------------------------------
+
+Out of the following, which session hijacking DETECTION TECHNIQUE involves
+
+    using packet-sniffing software such as
+
+        - Wireshark
+        - SteelCentral packet analyzer
+
+    to monitor session hijacking attacks?
+
+
+                Automatic method
+
+                Normal Telnet session
+
+                Forcing an ARP entry
+
+                Manual method : TRUE
+
+                    The manual method involves using packet-sniffing software such as Wireshark and SteelCentral packet analyzer to monitor session hijacking attacks.
+
+                    The packet sniffer captures packets in transit across the network, which is then analyzed.
+
+-------------------------------------------------
+
+Which of the following technique allows users to authenticate web servers?
+
+
+        HTTPS
+
+        HPKP : TRUE
+
+        SFTP
+
+        SSH
+
+        Explanation:
+
+           HTTP Public Key Pinning (HPKP)
+
+                    - security feature
+                    - tells a web client to associate
+
+                              a specific cryptographic public key
+                                          with
+                              a certain web server
+
+                      to decrease the risk of MITM attacks
+                                  with forged certificates.
+
+                    - allows users authenticate web servers.
+
+HTTPS: HTTPS is the secure version of HTTP, the protocol over which data is sent between a browser and a website.
+
+SSH: SSH is a network protocol used to remotely access and manage a device.
+
+SFTP: SFTP is a separate protocol packaged with SSH that works in a similar way over a secure connection.
+
+
+-----------------------------------------------------
+A tester wants to test an organization’s network against session hijacking attacks. Which of the following tools can he use to detect session hijacking attacks?
+
+
+
+FOCA
+
+Recon-ng
+
+LogRhythm :
+
+  LogRhythm’s Advanced Intelligence Engine can be used to
+                                        detect session hijacking attacks.
+
+
+Nmap
+
+--------------------------------------------------------
+
+OpenSSH or SSH is a more secure solution to which of the following protocol?
+
+
+Telnet, rlogin : TRUE
+                OpenSSH or SSH is a more secure solution to Telnet, rlogin.
+
+                SSH sends encrypted data
+                    makes it difficult for the attacker to
+                            send the correctly encrypted data if a session is hijacked.
+
+HTTP
+
+IP
+
+SMB
+
+--------------------------------------------------
+
+Which of the following protocols is used to implement virtual private networks (VPNs)?
+
+
+        IPsec : TRUE
+
+        HTTPS
+
+        HPKP
+
+        Token binding
+
+Explanation:
+
+Internet protocol security (IPsec) supports the
+
+              secure exchange of packets at the IP layer.
+
+
+      -  ensures interoperable cryptographically based security for IP protocols (IPv4 and IPv6).  -  supports:
+                network-level peer authentication,
+                data origin authentication,
+                data integrity,
+                data confidentiality (encryption),
+                replay protection.
+
+      -  widely used to implement virtual private networks (VPNs)
+      -  used for remote user access through dial-up connection to private networks.
+
+      - supports :
+          - transport mode
+          - tunnel encryption mode,
+
+          though sending and receiving devices must share a public key.
+
+----------------------------------------------
+
+Out of the following, which is not a component of the IPsec protocol?
+
+
+        HPKP  : TRUE
+
+        IKE
+
+        IPsec policy agent
+
+        Oakley
+
+  Explanation:
+
+  HTTP public key pinning (HPKP) :
+        a trust on first use (TOFU) technique used in an HTTP header.
+        security feature
+        tells a web client to associate
+            a specific cryptographic public key
+              with
+            a certain webserver
+                  to decrease the risk of MITM attacks with forged certificates.
+
+------------------------------------------------
+
+Which protocol defines
+      payload formats,
+      types of exchange,
+      naming conventions
+
+for security information such as
+
+          cryptographic algorithm
+          or
+          security policies.
+
+Identify from the following options.
+
+
+          AH
+
+          DOI : TRUE
+
+          ESP
+
+          ISAKMP
+
+
+    Explanation:
+
+    IPsec DOI instantiates
+
+        ISAKMP
+
+            for use with IP
+                    when IP uses ISAKMP
+
+                            to negotiate security associations.
+
+    A DOI document defines many things:
+
+            a naming scheme for DOI-specific protocol identifiers,
+
+            the contents of the situation field of the ISAKMP SA payload,
+
+            the attributes that IKE negotiates in a quick mode,
+
+            and any specific characteristics that IKE needs to convey.
+
+---------------------------------------
+
+Which of the following tools can be used by a pentester to
+
+            test the security of web applications?
+
+
+          BetterCAP
+
+          MITMf
+
+          Fiddler : TRUE
+
+          Cain & Abel
+
+
+    Explanation:
+
+    Fiddler :
+      used for security testing of web applications such as
+            - decrypting HTTPS traffic,
+            - manipulating requests using a MITM decryption technique.
+
+
+    BetterCAP, MITMf, and Cain & Abel
+
+            are ARP poisoning tools.
+
+
+---------------------------------------
+
+A user wants to securely establish a
+
+      remote connection to a system
+          without any interference from perpetrators.
+
+Which of the following methods should he incorporate in order to do so?
+
+
+          SFTP
+
+          VPN    : TRUE
+
+          SMB Signing
+
+          HTTPS
+
+
+  He should be implementing encrypted VPN such as :
+
+              PPTP,
+              L2PT,
+              IPSec,
+              etc.
+
+  as a remote connection prevents session hijacking.
+
+------------------------------------

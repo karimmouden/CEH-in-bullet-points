@@ -1,0 +1,247 @@
+A security engineer has been asked to deploy a
+
+    secure remote access solution
+
+that will allow employees
+    to connect to the company’s internal network.
+
+Which of the following can be implemented to minimize the opportunity for a man-in-the-middle attack to occur?
+
+
+      SSL
+
+      Mutual authentication
+
+      IPSec :
+                IPSec is a protocol suite developed by the IETF
+                for securing IP communications by
+                    - authenticating
+                    &
+                    - encrypting
+
+                each IP packet of a communication session.
+
+                It is deployed widely
+                    - to implement virtual private networks (VPNs)
+                    - for remote user access through dial-up connection to private networks.
+
+      Static IP addresses
+
+--------------------------------------
+
+John, a malicious attacker, was intercepting packets during transmission between the client and server in a TCP and UDP session, what is this type of attack called?
+
+
+        Session hijacking
+
+        Network level hijacking : TRUE
+
+              Network-level hijacking is the interception of packets during transmission between the client and server in a TCP and UDP session.
+
+
+        Application level hijacking
+
+              Application-level hijacking is about taking control over the https user session by obtaining the session IDs.
+
+        Intrusion
+
+------------------------------------
+
+Network-level session hijacking attacks ____________ level protocols.
+
+
+        Transport and internet level protocols : TRUE
+
+        Data link level protocols
+
+        Network or Internet level protocols
+
+        Application level protocols
+
+
+---------------------------------
+
+Which of the following is not a type of network-level hijacking?
+
+
+        Session Hijacking  : TRUE
+
+        UDP Hijacking
+
+        Man-in-the-Middle: Packet Sniffer
+
+        Blind Hijacking
+
+Explanation:
+Session hijacking is one of the threats of ARP poisoning and not a network-level hijacking alone.
+
+Blind Hijacking, Man-in-the-Middle: Packet Sniffer along with Forged ICMP and ARP Spoofing, and UDP Hijacking are types of network-level hijacking attacks.
+
+-----------------------------------------
+
+If an attacker intercepts an established connection between two communicating parties using spoofed packets, and then pretends to be one of them, then which network-level hijacking is he performing?
+
+
+              RST hijacking
+
+              TCP/IP hijacking : TRUE
+
+              Man-in-the-middle: packet sniffer
+
+              IP spoofing
+
+Explanation:
+In TCP/IP hijacking, an attacker
+        intercepts an established connection between 2 communicating parties using spoofed packets, and then pretends to be one of them.
+
+In this approach, the attacker uses spoofed packets
+          to redirect the TCP traffic to his/her own machine.
+Once this is successful, the victim’s connection hangs
+and the attacker is able to communicate with the host’s machine on behalf of the victim.
+
+
+---------------------------
+
+Out of the following, which network-level session hijacking technique is useful in gaining unauthorized access to a computer with the help of a trusted host’s IP address?
+
+
+          IP Spoofing: Source Routed Packets  : TRUE
+
+          Bling Hijacking
+
+          UDP Hijacking
+
+          TCP/IP Hijacking
+
+Explanation:
+
+The source-routed packets technique is useful in
+  gaining unauthorized access to a computer
+    with the help of a trusted host’s IP address.
+
+This type of hijacking allows attackers to
+          create their own acceptable packets
+                to insert into the TCP session.
+
+First, the attacker spoofs the trusted host’s IP address
+  so that the server managing a session with the host,
+    accepts the packets from the attacker.
+
+-----------------------
+
+Which of the following tools can be used to perform RST hijacking on a network?
+
+
+
+      Recon-ng
+
+      Nmap
+
+      FOCA
+
+      Colasoft’s Packet Builder   : TRUE
+
+  Explanation:
+
+  RST hijacking involves
+          injecting an authentic-looking reset (RST) packet
+          using spoofed source address
+          and predicting the acknowledgment number.
+
+  The hacker can reset the victim’s connection if it uses
+      an accurate acknowledgment number.
+
+  The victim believes that the source has sent the reset packet
+      and resets the connection.
+
+  RST Hijacking can be carried out using
+
+      a packet crafting tool such as
+        Colasoft’s Packet Builder
+
+    and TCP/IP analysis tool such as
+        tcpdump.
+
+----------------------------------
+
+Maira wants to establish a connection with a server using the 3-way handshake.
+
+As a first step she sends a packet to the server with the
+SYN flag set.
+
+In the second step, as a response for SYN,
+she receives packet with a flag set.
+
+Which flag does she receive from the server?
+
+
+        FIN
+
+        RST
+
+        SYN+ACK : TRUE
+
+        ACK
+
+----------------------------
+
+Out of the following, which network-level session hijacking technique can be used
+to inject malicious data or commands
+  into the intercepted communications in a TCP session?
+
+
+          RST Hijacking
+
+          Blind Hijacking : TRUE
+
+          UDP Hijacking
+
+          TCP/IP Hijacking :
+          In TCP/IP hijacking, an attacker intercepts an established connection between two communicating parties using spoofed packets, and then pretends to be one of them.
+          In this approach, the attacker uses spoofed packets to redirect the TCP traffic to his/her own machine.
+          Once this is successful, the victim's connection hangs and the attacker is able to communicate with the host’s machine on behalf of the victim.
+
+          Explanation:
+
+          In blind hijacking, a hacker can inject
+              malicious data or commands
+
+                into the intercepted communications in a TCP session,
+                    even if the victim disables source routing.
+
+          Here, an attacker correctly guesses the next ISN of a computer attempting
+          to establish a connection;
+
+          the attacker sends malicious data or a command,
+                such as password setting
+                        to allow access from another location on the network,
+
+          but the attacker can never see the response. !!!!!
+          To be able to see the response,
+                      a man-in-the-middle attack works much better.
+
+----------------------------------------
+
+Which of the following protocols is an extension of IP to send error messages? An attacker can use it to send messages to fool the client and the server.
+
+
+SSL
+
+ICMP : TRUE
+      ICMP (Internet control message protocol) is an extension of IP to send error messages
+
+      Attacker can use it to send messages to fool the client and the server.
+
+      The technique used is to forge ICMP (Internet control message protocol) packets to
+          redirect traffic between  client and  host
+            through the hijacker’s host.
+
+      The hacker’s packets send error messages, indicating problems in processing packets through the original connection.
+      This fools the server and client into routing through hijacker’s path instead.
+
+ARP
+
+FTP
+
+
+-----------------------

