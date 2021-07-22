@@ -1,0 +1,273 @@
+Which of the following Bluetooth attack allows attacker to gain remote access to a target Bluetooth-enabled device without the victim being aware of it?
+
+
+Bluebugging: TRUE
+            Attack in which an attacker
+                - gains remote access to a
+                      target Bluetooth-enabled device
+                            without the victim being aware of it.
+            In this attack, an attacker
+                 - sniffs sensitive information
+                 - perform malicious activities such as
+                        intercepting phone calls and messages,
+                        forwarding calls and text messages, etc.
+
+Bluesmacking:
+
+            A Bluesmacking attack occurs when an attacker sends an oversized ping packet to a victim's device, causing a buffer overflow.
+              This type of attack is similar to an ICMP ping of death.
+
+BluePrinting:
+            BluePrinting is a footprinting technique performed by an attacker in order to determine the make and model of the target Bluetooth-enabled device.
+            Attackers collect this information to create infographics of the model, manufacturer, etc.
+                       analyze them in an attempt to find out whether the devices are in the range of vulnerability to exploit.
+
+Bluejacking:
+          Bluejacking is the use of Bluetooth to send messages to users without the recipient's consent, similar to email spamming.
+          Prior to any Bluetooth communication, the device initiating connection must provide a name that is displayed on the recipient's screen.
+          As this name is user-defined, it can be set to be an annoying message or advertisement.
+          Strictly speaking, Bluejacking does not cause any damage to the receiving device. However, it may be irritating and disruptive to the victims.
+
+
+----------------
+
+Thomas is a cyber thief trying to hack Bluetooth-enabled devices at public places. He decided to hack Bluetooth-enabled devices by using a DoS attack. He started sending an oversized ping packet to a victim’s device, causing a buffer overflow and finally succeeded. What type of Bluetooth device attack is Thomas most likely performing?
+
+
+Bluesmacking: TRUE
+
+          A Bluesmacking attack occurs when an attacker sends an
+                      oversized ping packet to
+                                a victim's device, causing a buffer overflow.
+          This type of attack is similar to an ICMP ping of death.
+
+Bluejacking:
+
+          Bluejacking is the use of Bluetooth to send messages to users without the recipient's consent, similar to email spamming.
+          Prior to any Bluetooth communication, the device initiating connection must provide a name that is displayed on the recipient's screen.
+          As this name is user-defined, it can be set to be an annoying message or advertisement.
+          Strictly speaking, Bluejacking does not cause any damage to the receiving device.
+          However, it may be irritating and disruptive to the victims.
+
+Blue Snarfing:
+          Bluesnarfing is a method of gaining access to sensitive data in a Bluetooth-enabled device.
+          An attacker who is within range of a target can use special software to obtain the data stored on the victim's device.
+
+Bluebugging:
+          Bluebugging is an attack in which an attacker gains remote access to a target Bluetooth-enabled device without the victim being aware of it.
+          In this attack, an attacker sniffs sensitive information and might perform
+                    malicious activities such as
+                              intercepting phone calls and messages,
+                              forwarding calls and
+                              text messages, etc.
+
+
+------------------------
+
+Which of the following bluetooth mode
+    filters out
+          non-matched IACs
+  & reveals itself
+          only to those that matched?
+
+   Limited discoverable:
+            Bluetooth devices are discoverable only for
+                    a limited period, for a specific event, or during temporary conditions.
+            When a device is set to the limited discoverable mode,
+                  it filters out non-matched IACs and reveals itself only to those that matched.
+
+   Discoverable: When Bluetooth devices are in discoverable mode, they are
+                                  visible to other Bluetooth-enabled devices.
+
+
+   Non-discoverable:
+                    Setting the Bluetooth device to non-discoverable mode prevents that device from
+                                appearing on the list during a Bluetooth-enabled device search process.
+
+   Pairable mode:
+              In pairable mode, the Bluetooth device accepts the pairing request when asked, and
+                          establishes a connection with the pair requesting device.
+
+
+-------------------
+
+Which of the following terms is used to describe an attack in which an attacker gains remote access to
+      a target Bluetooth-enabled device
+without the victim being aware of it?
+
+
+Bluebugging : TRUE
+            Attack in which an attacker
+                - gains remote access to a
+                      target Bluetooth-enabled device
+                            without the victim being aware of it.
+            In this attack, an attacker
+                 - sniffs sensitive information
+                 - perform malicious activities such as
+                        intercepting phone calls and messages,
+                        forwarding calls and text messages, etc.
+
+
+Bluesnarfing
+
+Bluejacking
+
+Bluesmacking
+
+--------------------
+
+Which of the following protocols is used by
+
+      BlueJacking to send
+
+          anonymous messages to
+                  other Bluetooth-equipped devices?
+
+OBEX: (True)
+
+  Object Exchange protocol
+  Used for communicating binary objects between devices.
+
+  BlueJacking is sending
+        anonymous messages to
+              other Bluetooth-equipped devices
+                    via the OBEX protocol.
+
+Link management protocol (LMP):
+
+        Is used for
+            - control of the radio link between two devices,
+            - handling matters such as link establishment,
+            - querying device abilities
+            - power control.
+
+        It is implemented on the controller.
+
+Logical link control and adaptation protocol (L2CAP):
+
+      L2CAP passes packets
+          to either
+                the Host Controller Interface (HCI)
+          or on
+                a hostless system, directly to the Link Manager/ACL link.
+
+Service discovery protocol (SDP):
+
+          Is used to allow devices to discover
+                              - what services each other support,
+                              - what parameters to use to connect to them.
+
+----------------
+
+An attacker collects the make and model of target Bluetooth-enabled devices analyzes them in an attempt to find out whether the devices are in the range of vulnerability to exploit. Identify which type of attack is performed on Bluetooth devices.
+
+
+BlueSniff:
+
+            Proof of concept code for a Bluetooth wardriving utility.
+            Useful for finding
+
+                    hidden and discoverable Bluetooth devices.
+
+Bluebugging
+
+BluePrinting : True
+
+             Footprinting technique
+             Performed by an attacker in order to determine
+                      the make and model of the target Bluetooth-enabled device.
+             Attackers
+                  collect this information to identify
+                          model, manufacturer, etc. and
+                  analyze them in an attempt to find out
+                          whether the devices are in the range of vulnerability to exploit.
+
+MAC Spoofing Attack :
+
+            Passive attack in which attackers spoof the MAC address of the target Bluetooth-enabled device, in order to
+                      intercept or manipulate
+                            data sent towards the target device.
+
+
+-------------------
+
+In which of the following attacks does the attacker exploit the vulnerability in the
+Object Exchange (OBEX) protocol that Bluetooth uses to exchange information?
+
+
+Bluesnarfing : TRUE
+
+BlueSniff
+
+Bluebugging
+
+Bluejacking
+
+Explanation:
+In Bluesnarf, an attacker exploits the vulnerability in the
+        Object Exchange (OBEX) protocol that Bluetooth uses to exchange information.
+The attacker
+             connects with the target
+             performs a GET operation for files with correctly guessed or known names,
+             such as
+                          /pb.vcf for the device's phonebook
+                                  or
+                          telecom /cal.vcs for the device's calendar file.
+
+------------------
+
+
+In which type of bluetooth threat does an attacker trick Bluetooth users to lower security or disable authentication for Bluetooth connections in order to pair with them and steal information?
+
+
+Bugging Devices: Attackers could instruct the user to make a phone call to other phones without any user interaction. They could even record the user’s conversation.
+
+Remote Control: Hackers can remotely control a phone to make phone calls or connect to the Internet.
+
+Social Engineering: TRUE
+                    Attackers trick Bluetooth users to
+                        lower security or disable authentication for
+                                Bluetooth connections in order to
+                                         pair with them and steal information.
+
+Malicious Code: Mobile phone worms can exploit a Bluetooth connection to replicate and spread themselves.
+
+
+--------------
+
+A large company intends to use Blackberry for corporate mobile phones and a security analyst is assigned to evaluate the possible threats. The analyst will use the Blackjacking attack method to demonstrate how an attacker could circumvent perimeter defenses and gain access to the corporate network. What tool should the analyst use to perform a Blackjacking attack?
+
+
+Paros Proxy is a Java-based web proxy for assessing web application vulnerability. It supports editing/viewing HTTP/HTTPS messages on-the-fly to change items such as cookies and form fields.
+
+BBproxy : TRUE
+          Security assessment tool that is written in Java and runs on Blackberry devices.
+          Allows the device to be used as a proxy between the Internet and an internal network.
+
+bbcrack: (Balbucrack) is a tool to crack typical malware obfuscation such as XOR, ROL, ADD (and many combinations), by brute forcing all possible keys and checking for specific patterns (IP addresses, domain names, URLs, known file headers and strings, etc) using the balbuzard engine.
+
+Blooover is a J2ME Phone Auditing Tool. Since Adam Laurie's BlueSnarf experiment and the
+        subsequent BlueBug experiment it is proven that some Bluetooth-enabled phones have security issues.
+
+
+-----------
+
+Fill in the blank.
+_________ is the art of collecting information about Bluetooth enabled devices such as manufacturer, device model and firmware version.
+
+
+BluePrinting: True
+              Footprinting technique performed by an attacker in order to determine the make, device model, firmware version, etc. of the target Bluetooth-enabled device. Attackers collect such information from remote bluetooth devices and analyze them in an attempt to find out whether the devices are in the range of vulnerability to exploit.
+
+Bluejacking: Bluejacking is the use of Bluetooth to send messages to users without the recipient's consent, similar to email spamming.
+              Prior to any Bluetooth communication, the device initiating connection must provide a name that is displayed on the recipient's screen.
+              As this name is user-defined, it can be set to be an annoying message or advertisement.
+              Strictly speaking, Bluejacking does not cause any damage to the receiving device.
+              However, it may be irritating and disruptive to the victims.
+
+Bluebugging: Bluebugging is an attack in which an attacker gains remote access to a target Bluetooth-enabled device without the victim being aware of it.
+                In this attack, an attacker sniffs sensitive information and might perform malicious activities such as
+                      intercepting phone calls and messages,
+                      forwarding calls and text messages, etc.
+
+BlueSniff: BlueSniff is a proof of concept code for a Bluetooth wardriving utility. It is useful for finding hidden and discoverable Bluetooth devices. It operates on Linux.

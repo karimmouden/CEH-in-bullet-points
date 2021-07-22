@@ -1,0 +1,337 @@
+In which of the following is the original data signal
+  multiplied with a
+    pseudo random noise spreading code?
+
+
+Direct-sequence Spread Spectrum (DSSS) : TRUE
+
+      DSSS is a spread spectrum technique that multiplies
+                  the original data signal
+                          with
+                  a pseudo random noise spreading code.
+                  Also referred to as a
+                            data transmission scheme
+                            or
+                            modulation scheme,
+
+                   the technique protects signals against
+                          interference
+                          or
+                          jamming.
+
+Frequency-hopping Spread Spectrum (FHSS)
+
+Multiple input, multiple output orthogonal frequency-division multiplexing (MIMO-OFDM)
+
+Orthogonal Frequency-division Multiplexing (OFDM)
+
+-------------
+
+Which of the following types of antennas is useful for transmitting
+      weak radio signals
+          over very long distances – on the order of 10 miles?
+
+
+Uni-directional
+
+Bi-directional
+
+Omnidirectional
+
+Parabolic grid : TRUE
+
+A parabolic grid antenna uses the same principle as that of
+          a satellite dish,
+          but it does not have a solid backing.
+
+It consists of a semidish that is
+    in the form of a
+        grid made of aluminum wire.
+
+These parabolic grid antennas can achieve
+      very long-distance Wi-Fi transmissions
+          by using a highly focused radio beam.
+
+This type of antenna is useful for
+        transmitting weak radio signals
+            over very long distances – on the order of 10 miles.
+
+This enables attackers to get better signal quality,
+    resulting in
+        more data on which to eavesdrop,
+        more bandwidth to abuse, and higher power output that is essential
+            in layer 1 denial of service (DoS) and
+                      man-in-the-middle (MITM) attacks.
+The design of this antenna
+      saves weight & space,
+      can pick up Wi-Fi signals that are
+              either horizontally
+                  or vertically
+              polarized.
+-----------------
+Which type of antenna is used in wireless communication?
+
+
+Parabolic
+
+Uni-directional
+
+Omnidirectional : TRUE
+
+  Omnidirectional antennas radiate electromagnetic energy in all directions.
+  They usually uniformly radiate strong waves in two dimensions,
+  but not as strong in the third.
+  A good example of an omnidirectional antenna is one used by
+      radio stations.
+  These antennas are effective for radio signal transmission
+      because the receiver may not be stationary.
+  Therefore, a radio can receive a signal
+      regardless of where it is.
+
+Bi-directional
+
+-------------
+
+
+True or False.
+In LAN-to-LAN Wireless Network, the APs provide wireless connectivity to
+local computers, & computers
+on different networks that can be interconnected?
+
+False
+
+True : In LAN-to-LAN Wireless Network, APs provide
+              wireless connectivity to local computers, and computers on
+                different networks can also be interconnected.
+        All hardware APs have the capability to interconnect with
+              other hardware APs.
+        However, interconnecting LANs over wireless connections is
+              a complex task.
+
+-------------------
+
+Which of the following describes the amount of information that may be broadcasted over a connection?
+
+
+Hotspot
+
+BSSID
+
+Bandwidth :
+    Amount of information that may be broadcasted over a connection.
+
+    Usually, a bandwidth refers to the
+                rate of data transfer.
+
+    The unit of measuring the bandwidth is
+                bits (amount of data) per second (bps).
+
+Association
+
+---------------
+
+Which of the following is used to
+connect wireless devices to a wireless/wired network?
+
+
+Bandwidth:
+    It describes the amount of information that
+        may be broadcasted over a connection.
+    Usually, bandwidth refers to the data transfer rate.
+    he unit of measuring the bandwidth is
+    bits (amount of data) per second (bps)
+
+Hotspot:
+    Places where wireless networks are available for public use.
+    Hotspots refer to areas with Wi-Fi availability, where users
+        can enable Wi-Fi on their devices
+        and connect to the Internet through a hotspot.
+
+Access point (AP):
+    Access point (AP) is used to connect wireless devices to a wireless/wired network.
+    It allows wireless communication devices to connect to a
+        wireless network through
+              wireless standards such as
+                  - Bluetooth
+                  - Wi-Fi.
+    It serves as a switch or a hub between the wired LAN and wireless network.
+
+Association: The process of connecting a wireless device to an AP
+
+Answer is access point.
+
+--------------
+
+In which of the following processes
+    do the station & access point use
+        the same WEP key to provide authentication,
+ which means that this key should be
+        enabled and configured manually on
+            both the access point and the client?
+
+
+WEP encryption
+
+Open-system authentication process
+
+WPA encryption
+
+Shared key authentication process : True
+
+In a shared key authentication process, each wireless station receives a
+      shared secret key over a secure channel that is distinct from
+                the 802.11 wireless network communication channels.
+The following steps illustrate the establishment of connection
+        in the shared key authentication process:
+
+?	The station sends an authentication frame to the AP.
+
+?	The AP sends a challenge text to the station.
+
+?	The station encrypts the challenge text by making use of
+          its configured 64- or 128-bit key,
+      and it sends the encrypted text to the AP.
+
+?	The AP uses its configured WEP key to
+        decrypt  encrypted text.
+  The AP compares the decrypted text with
+        the original challenge text.
+  If the decrypted text matches
+        the original challenge text,
+  the AP authenticates the station.
+
+?	The station connects to the network.
+
+-----------------
+
+Which of the following is considered as a token to identify
+      a 802.11 (Wi-Fi) network
+      (by default it is the part of the frame header sent over
+          a wireless local area network (WLAN))?
+
+
+Access Point
+
+SSID : True
+
+Human-readable text string with a maximum length of 32 bytes.
+The SSID is a token to identify an 802.11 (Wi-Fi) network; by default,
+
+    Part of the frame header sent over a wireless local area network (WLAN).
+
+Acts as a single shared identifier between the
+    AP & clients.
+If the SSID of the network is changed,
+  reconfiguration of the SSID on every host is required,
+    as every user of the network
+        configures the SSID into their system.
+
+
+Hotspot
+
+Association
+
+--------------------------
+
+Which of the following networks is used for very long-distance communication?
+
+
+WiMax : TRUE
+
+      IEEE 802.16 standard is a wireless communications standard designed
+          to provide multiple
+              - physical layer (PHY)
+              - media access control (MAC) options.
+      Known as WiMax.
+      Standard is a specification for
+                  fixed broadband wireless metropolitan access networks (MANs)
+                            that use a point-to-multipoint architecture.
+      It has a range of 1609.34 – 9656.06 kilometers (1–6 miles).
+
+Bluetooth
+
+Wi-Fi
+
+ZigBee
+
+------------------------
+
+Which of the following is considered as the method of transmitting radio signals by
+    rapidly switching a carrier
+        among many frequency channels?
+
+
+Orthogonal Frequency-division Multiplexing (OFDM):
+
+    OFDM is a method of digital modulation of data in which a signal,
+          at a chosen frequency, is split into
+                multiple carrier frequencies that are
+                    orthogonal (occurring at right angles) to each other.
+          - maps information on the changes in the
+               - carrier phase,
+               - frequency,
+            or - amplitude,
+          or a combination of these,
+          - Shares bandwidth with other independent channels.
+          - Produces a transmission scheme that supports
+                  higher bit rates than a parallel channel operation.
+          - Method of encoding digital data on
+                  multiple carrier frequencies.
+
+
+
+Multiple input, multiple output-orthogonal frequency-division multiplexing (MIMO-OFDM):
+
+      MIMO-OFDM influences
+            spectral efficiency of
+                4G and 5G wireless communication services.
+
+      Adopting the MIMO-OFDM technique
+            - reduces the interference
+            - increases how robust the channel is.
+
+
+
+Direct-sequence Spread Spectrum (DSSS):
+
+    Spread spectrum technique that multiplies
+              the original data signal
+                    with
+               pseudo random noise spreading code.
+    Also referred to as a
+          data transmission scheme
+      or
+          modulation scheme,
+    Protects signals against interference or jamming.
+
+
+/////////////////
+Frequency-hopping Spread Spectrum (FHSS): (TRUE)
+        Method of transmitting radio signals by
+          rapidly switching a carrier
+              among many frequency channels.
+//////////////
+
+///////////////
+Direct-sequence Spread Spectrum (DSSS) refers to the
+              original data signal and
+               is multiplied with
+                  a pseudo random noise spreading code.
+
+///////////
+Multiple input, multiple output orthogonal frequency-division multiplexing
+              (MIMO-OFDM) is
+                      an air interface for
+                            4G and 5G broadband wireless communications
+/////////
+
+////////
+Orthogonal Frequency-division Multiplexing (OFDM) is the method of
+            encoding digital data on
+                multiple carrier frequencies.
+/////////
+
+
+Answer is Frequency-hopping Spread Spectrum (FHSS).
+
+---------------------

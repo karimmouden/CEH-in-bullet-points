@@ -1,0 +1,240 @@
+Mark is working as a penetration tester in InfoSEC, Inc. One day, he notices that the traffic on the internal wireless router suddenly increases by more than 50%. He knows that the company is using a wireless 802.11 a/b/g/n/ac network. He decided to capture live packets and browse the traffic to investigate the issue to find out the actual cause. Which of the following tools should Mark use to monitor the wireless network?
+
+
+CommView for WiFi:   'True'
+      CommView for Wi-Fi is a wireless network monitor and analyzer for 802.11 a/b/g/n networks.
+      It captures packets to display important information such as the list of APs and stations, per-node and per-channel statistics, signal strength, a list of packets and network connections, protocol distribution charts, etc. By providing this information, CommView for Wi-Fi can view and examine packets, pinpoint network problems, and troubleshoot software and hardware.
+
+WiFiFoFum:
+        WiFiFoFum is a wardriving app to locate, display and map found WiFi networks.
+        WiFiFoFum scans for 802.11 Wi-Fi networks and displays information about each including: SSID, MAC, RSSI, channel, and security.
+        WiFiFoFum also allows you to connect to networks you find and log the location using the GPS.
+        KML logs can be emailed.
+
+BlueScan:
+        Bash script that implements a scanner to detect Bluetooth devices that are within the range of our system.
+        BlueScan works in a non-intrusive way, that is, without establishing a connection with the devices found and without being detected.
+        Superuser privileges are not necessary to execute it.
+
+WiFish Finder:
+        WiFish Finder is a tool for assessing whether WiFi devices active in the air are vulnerable to ‘Wi-Fishing’ attacks.
+        Assessment is performed through a combination of passive traffic sniffing and active probing techniques.
+        Most WiFi clients keep a memory of networks (SSIDs) they have connected to in the past.
+        Wi-Fish Finder first builds a list of probed networks and then using a set of
+              clever techniques also determines security setting of each probed network.
+        A client is a fishing target if it is actively seeking to connect to an OPEN or a WEP network.
+
+-----------------
+
+Andrew, a professional penetration tester, was hired by ABC Security, Inc.,
+a small IT-based firm in the United States to
+    conduct a test of the company’s wireless network.
+
+During the information-gathering process,
+    Andrew discovers that the company is using
+          the 802.11 g wireless standard.
+
+Using the NetSurveyor Wi-Fi network discovery tool,
+    Andrew starts gathering information about wireless APs.
+After trying several times, he is not able to detect a single AP.
+What do you think is the reason behind this?
+
+
+    Andrew must be doing something wrong, as there is no reason for him to not detect access points.
+
+    NetSurveyor does not work against 802.11g.
+
+    SSID broadcast feature must be disabled, so APs cannot be detected. : TRUE
+
+    MAC address filtering feature must be disabled on APs or router.
+
+Explanation:
+  NetSurveyor is an 802.11 (Wi-Fi) network discovery tool that
+
+          gathers information about nearby wireless access points in real time
+          displays it in useful ways.
+
+  It is a network discovery tool that
+          reports the SSID for each wireless network it detects,
+                along with the channel used by the AP servicing that network.
+  In a secure business environment, this tool is used for detecting the presence of rogue APs.
+
+  A Wi-Fi network discovery tool
+              will not be able to detect SSID and a wireless network
+                        if the SSID broadcast feature is disabled in the AP.
+
+----------------
+
+Which of the following countermeasure helps in defending against KRACK attack?
+
+
+        Choose Wired Equivalent Privacy (WEP) instead of Wi-Fi Protected Access (WPA)
+
+        Turn On auto-updates for all the wireless devices and patch the device firmware   :TRUE
+
+        Enable MAC address filtering on access points or routers
+
+        Enable SSID broadcasts
+
+  Explanation:
+  The Key Reinstallation Attack (KRACK)
+        breaks the WPA2 protocol by
+          forcing nonce reuse in
+              encryption algorithms used by Wi-Fi.
+
+  Following are some of the countermeasures to prevent KRACK attack:
+
+          Update all the routers and Wi-Fi devices with the latest security patches
+
+          Turn On auto-updates for all the wireless devices and patch the device firmware
+
+          Avoid using public Wi-Fi networks
+
+          Browse only secured websites and do not access the sensitive resource when your device is connected to an unprotected network
+
+          If you own IoT devices, audit the devices and do not connect to the insecure Wi-Fi routers
+
+          Always enable HTTPS Everywhere extension
+
+          Make sure to enable two-factor authentication
+
+  -----------------------
+
+  Which of the following device is used to analyze and monitor the RF spectrum?
+
+
+Switch
+
+WIDS : Wireless Intrusion Detection System (WIDS) analyzes and monitors the RF spectrum.
+       Alarm generation helps in
+            detecting unauthorized wireless devices that
+                  violate security policies of the network.
+
+Firewall
+
+Router
+
+--------------------------
+
+In which of the following layers of wireless security
+    does per frame/packet authentication provide
+          protection against MITM attacks?
+
+
+Device Security
+
+Connection Security :
+        Per frame/packet authentication provides protection against MITM attacks.
+         It does not allow the attacker to sniff data when
+                      two genuine users are communicating with each other,
+                            -> thereby securing the connection.
+
+Data Protection
+
+Wireless Signal Security
+
+---------------------------
+
+Which of the following countermeasures helps in defending against WPA/WPA2 cracking?
+
+
+Change the default SSID after WLAN configuration
+
+Make sure to enable two factor authentication
+
+Select a random passphrase that is not made up of dictionary words : TRUE
+
+Avoid using public Wi-Fi networks
+
+------------------------
+
+Which of the following countermeasures helps in defending against Bluetooth hacking?
+
+
+Use non-regular patterns as PIN keys while pairing a device. :TRUE
+Use those key combinations that are non-sequential on the keypad.   : TRUE
+
+Implement an additional technique for encrypting traffic, such as IPSEC over wireless.
+
+Check the wireless devices for configuration or setup problems regularly.
+
+Place a firewall or packet filter between the AP and the corporate intranet.
+
+
+SSID Settings Best Practices
+?	Use SSID cloaking to keep certain default wireless messages from broadcasting the ID to everyone.
+?	Do not use your SSID, company name, network name, or any easy to guess string in passphrases.
+?	Place a firewall or packet filter in between the AP and the corporate Intranet.
+?	Limit the strength of the wireless network so it cannot be detected outside the bounds of your organization.
+?	Check the wireless devices for configuration or setup problems regularly.
+?	Implement an additional technique for encrypting traffic, such as IPSEC over wireless.
+
+
+Some of the countermeasures to defend against Bluetooth hacking:
+?	Use non-regular patterns as PIN keys while pairing a device. Use those key combinations which are non-sequential on the keypad.
+?	Keep BT in the disabled state, enable it only when needed and disable immediately after the intended task is completed.
+?	Keep the device in non-discoverable (hidden) mode.
+?	DO NOT accept any unknown and unexpected request for pairing your device.
+?	 Keep a check of all paired devices in the past from time to time and delete any paired device that you are not sure about.
+?	Always enable encryption when establishing BT connection to your PC.
+?	Set Bluetooth-enabled device network range to the lowest and perform pairing only in a secure area.
+?	Install antivirus that supports host-based security software on Bluetooth-enabled devices.
+
+If multiple wireless communications are being used,
+          make sure that encryption is empowered
+                on each link in the communication chain.
+
+--------------------
+
+Which of the following techniques is used to detect rogue APs?
+
+RF Scanning : True
+              Re-purposed APs that do only packet capturing and analysis (RF sensors)
+                are plugged in all over the wired network to
+                      - detect
+                      - warn
+                     WLAN administrator about
+                        any wireless devices operating in the area.
+
+Passphrases : used to defend against WPA/WPA2 cracking
+
+AES/CCMP encryption : used to defend against WPA/WPA2 cracking.
+
+Non-discoverable mode :
+              Setting the Bluetooth device to non-discoverable mode prevents that device from appearing on the list during a Bluetooth-enabled device search process.
+              However, it is still visible to those users and devices who paired with the Bluetooth device previously or who know the MAC address of the Bluetooth device.
+
+----------------------
+Which of the following techniques is used by network management software to detect rogue APs?
+
+
+AP scanning
+
+Wired side inputs : True
+
+RF scanning
+
+Virtual-private-network
+
+-----------------
+
+Which of the following is to be used to keep certain default wireless messages from broadcasting the ID to everyone?
+
+SSID Cloaking:
+      Technique used to provide wireless security by hiding the SSID and network name from public broadcasting.
+      Use SSID cloaking to keep certain default wireless messages from broadcasting the ID to everyone.
+
+Bluejacking:
+      Use of Bluetooth to send messages to users
+            without the recipient's consent,
+                similar to email spamming.
+
+Bluesmacking:
+      Attack occurs when  attacker sends  oversized ping packet
+                    to a victim's device,
+                          causing a buffer overflow.
+
+MAC Spoofing:
+      Passive attack in which attackers spoof the MAC address of the target Bluetooth-enabled device, in order to
+                          intercept or manipulate
+                                data sent towards the target device.

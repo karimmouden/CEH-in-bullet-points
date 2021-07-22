@@ -1,0 +1,255 @@
+Donald works as a network administrator with ABCSecurity, Inc., a small IT based firm in San Francisco. He was asked to set up a wireless network in the company premises which provides strong encryption to protect the wireless network against attacks. After doing some research, Donald decided to use a wireless security protocol which has the following features:
+
+Provides stronger data protection and network access control
+Uses AES encryption algorithm for strong wireless encryption]
+Counter Mode Cipher Block Chaining Message Authentication Code Protocol (CCMP)
+Which of the following wireless security protocol did Donald decide to use?
+
+
+
+WPA2 : TRUE
+
+Explanation:
+WPA2 (Wi-Fi Protected Access 2) Encryption: WPA2 (Wi-Fi Protected Access 2) is a
+security protocol used to safeguard the wireless networks and
+has replaced WPA technology in 2006.
+It is compatible with the 802.11i standard and supports
+many security features that WPA does not support.
+WPA2 introduces the use of
+      the National Institute of Standards and Technology (NIST) FIPS 140-2-compliant
+        -  AES encryption algorithm, a strong wireless encryption, and
+        -  CCMP Counter Mode
+                Cipher Block Chaining
+                Message Authentication Code
+                Protocol .
+
+    Provides :
+      - stronger data protection
+      - network access control.
+
+Gives High level of security to
+Wi-Fi connections, so that
+      -> only authorized users can access it.
+////////////////
+WPA has better data encryption security than WEP, as messages pass through a
+      Message Integrity Check (MIC) using the Temporal Key Integrity Protocol (TKIP).
+It uses a Temporal Key Integrity Protocol (TKIP) that utilizes
+
+        RC4 stream cipher encryption
+              with
+      128-bit keys and 64-bit MIC integrity check
+
+  to provide stronger encryption, and authentication.
+
+////////////////
+WEP utilizes an encryption mechanism at the data link layer for
+        minimizing unauthorized access on the WLAN.
+
+This is accomplished by
+        encrypting data with
+              symmetric RC4 encryption algorithm—a cryptographic mechanism used to defend against threats.
+
+/////////////
+TKIP:
+    Security protocol used in WPA as a replacement for WEP.
+
+----------------------------
+
+Which of the following Encryption techniques is used in WEP?
+
+
+RC4 : TRUE
+
+TKIP
+
+DES
+
+AES
+
+
+Explanation:
+WEP utilizes an encryption mechanism at
+    the data link layer for
+        minimizing unauthorized access on the WLAN.
+
+This is accomplished by encrypting data with
+      the symmetric RC4 encryption algorithm—a cryptographic mechanism used to defend against threats.
+
+TKIP, AES and DES are some of the other types of encryptions.
+
+-----------------
+
+Which of the following Encryption technique is used in WPA?
+
+
+RSA : type of encryption
+
+AES : type of encryption
+
+DES : type of encryption
+
+TKIP : Temporal Key Integrity Protocol used by WPA.
+
+    WPA has better data encryption security than WEP,
+            as messages pass through
+                a Message Integrity Check (MIC) using
+                      the Temporal Key Integrity Protocol (TKIP).
+
+      WPA Uses a Temporal Key Integrity Protocol (TKIP) that
+            utilizes
+                  - 128-bit keys    RC4 stream cipher encryption
+                  - 64-bit          MIC integrity check
+
+            to provide :
+                  - stronger encryption,
+                  - stronger authentication.
+
+------------------
+
+Which of the following does not provide cryptographic integrity protection?
+
+
+WPA2
+
+WPA
+
+TKIP
+
+WEP    : WEP does not provide cryptographic integrity protection.
+         By capturing two packets, an attacker can
+              - flip a bit in the encrypted stream
+              - modify the checksum
+              so that the packet is accepted.
+---------------------------------
+
+Which of the following protocol encapsulates the EAP within an encrypted and authenticated Transport Layer Security (TLS) tunnel?
+
+PEAP: TRUE
+  Protocol that encapsulates the EAP within
+              an encrypted & authenticated
+                    Transport Layer Security (TLS) tunnel.
+
+RADIUS: Centralized authentication & authorization
+            management system.
+
+LEAP: Proprietary version of
+          EAP
+            developed by Cisco.
+
+CCMP: It is an encryption protocol used in WPA2 for
+            - stronger encryption
+            - stonger authentication.
+------------------------------------
+
+Which of the following consists of 40/104 bit Encryption Key Length?
+
+
+WEP : TRUE
+
+WPA2
+
+RSA
+
+WPA
+
+The length of the WEP and the secret key are:
+?        64-bit WEP uses a 40-bit key
+?        128-bit WEP uses a 104-bit key size
+?        256-bit WEP uses 232-bit key size
+WEP normally uses a
+        40-bit
+          or
+        104-bit
+    encryption key,
+
+        whereas
+
+TKIP protocol in WPA  uses
+      128-bit keys for
+          each packet.
+      The message integrity check (MIC) for WPA avoids
+                the chances of the attacker
+                      changing
+                          or        the packets.
+                      resending
+----------------
+Which of the following includes mandatory support for Counter Mode with Cipher Block Chaining Message Authentication Code Protocol (CCMP)?
+
+
+TKIP
+
+WPA2 : TRUE
+       Wi-Fi Protected Access 2
+       security protocol
+
+       Used to safeguard  wireless networks
+
+       Replaced WPA technology in 2006.
+       Compatible with the 802.11i standard
+
+       Supports many security features that WPA does not support.
+       WPA2 introduces the use of
+             the National Institute of Standards and Technology (NIST) FIPS 140-2-compliant
+               -  AES encryption algorithm, a strong wireless encryption, and
+               -  CCMP Counter Mode
+                       Cipher Block Chaining
+                       Message Authentication Code
+                       Protocol .
+
+           Provides :
+             - stronger data protection
+             - network access control.
+
+       Gives High level of security to
+       Wi-Fi connections, so that
+             -> only authorized users can access it.
+
+WEP
+
+WPA
+
+-------------
+
+Which of the following is a standard for
+        Wireless Local Area Networks (WLANs) that provides
+                  improved encryption for networks that use
+                          802.11a, 802.11b, and 802.11g standards?
+
+
+802.11d
+
+802.11i : TRUE
+
+802.11n
+
+802.11e
+
+Explanation:
+802.11n: The IEEE 802.11n is a revision that enhances the earlier 802.11g standards with multiple-input multiple-output (MIMO) antennas. It works in both the 2.4 GHz and 5 GHz bands. This is an IEEE industry standard for Wi-Fi wireless local network transportations. Digital Audio Broadcasting (DAB) and Wireless LAN use OFDM.
+802.11i: The IEEE 802.11i standard improves WLAN security by implementing new encryption protocols such as TKIP and AES. It is a standard for wireless local area networks (WLANs) that provides improved encryption for networks that use the popular 802.11a, 802.11b (which includes Wi-Fi) and 802.11g standards.
+802.11d: The 802.11d is an enhanced version of 802.11a and 802.11b. The standard supports regulatory domains. The particulars of this standard can be set at the media access control (MAC) layer.
+802.11e: It is used for real-time applications such as voice, VoIP, and video. To ensure that these time-sensitive applications have the network resources they need, 802.11e defines mechanisms to ensure Quality of Service (QoS) to Layer 2 of the reference model, the medium-access layer, or MAC.
+
+-------------
+Which of the following cryptographic algorithms is used by CCMP?
+
+
+TKIP
+
+DES
+
+RC4
+
+AES : TRUE
+
+CCMP is an encryption protocol used in
+      WPA2 for stronger encryption and authentication.
+WPA2 is an upgrade to WPA using
+
+          AES
+    and
+          CCMP
+
+    for wireless data encryption.
+
+-----------------
