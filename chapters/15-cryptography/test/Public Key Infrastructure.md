@@ -163,4 +163,18 @@ b. Self-signed certificate
 
 a. Validation authority (VA)
 
+
+--------------------------------------------------------------------------------------------------------------------
+
+## Steve is the new CISO for a global corporation; he hired Dayna as a security consultant to do a security assessment. Steve wants to protect the corporate webpage with encryption and asks Dayna about the procedure to do that. Which of the following is the correct option?
+
+
+You need to use quantum encryption.
+
+You need to use digital signature.
+
+You need to use Blowfish encryption.
+
+### You need to use digital certificates.
+
  
