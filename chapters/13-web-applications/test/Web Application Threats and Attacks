@@ -1,0 +1,220 @@
+What technique is used to perform a Connection Stream Parameter Pollution (CSPP) attack?
+
+
+            Inserting malicious Javascript code into input parameters
+
+            Setting a user's session identifier (SID) to an explicit known value
+
+            Injecting parameters into a connection string using semicolons as a separator  : TRUE
+
+            Adding multiple parameters with the same name in HTTP requests
+
+
+-------------------------------------------------------------------------------------------------
+
+Which of the following is a common Service Oriented Architecture (SOA) vulnerability?
+
+
+                SQL injection
+
+                XML denial of service issues : TRUE
+
+                VPath injection
+
+                Cross-site scripting
+
+Explanation:
+
+XML is a versatile data-encoding standard.
+
+In XML security issues can be raised as parsing XML complex.
+
+One common issue is a denial of service (DOS) against a web service.
+
+A user can identify whether a DOS attack has occurred or not by an XML message.
+
+If XML provides a very large payload of malicious external entities then DOS can occur.
+
+Cross-site scripting, SQL injection, and VPath injection have nothing to do with SOA)vulnerability.
+
+--------------------------------------------------------------------------------------------------
+
+While testing web applications, you attempt to insert the following test script into the search area on the company’s web site:
+
+<script>alert(‘Testing Testing Testing’)</script>
+
+Afterwards, when you press the search button, a pop up box appears on your screen with the text “Testing Testing Testing”.
+What vulnerability is detected in the web application here?
+
+
+
+        Cross Site Scripting : TRUE
+
+        Password attacks
+
+        A buffer overflow
+
+        A hybrid attack
+
+
+-------------------------------------------------------------------------------------------------
+
+The security analyst for Danels Company arrives this morning to his office and verifies the primary home page of the company.
+
+He notes that the page has the logo of the competition and writings that do not correspond to the true page. What kind of attack do the observed signals correspond to?
+
+
+          Defacement   : TRUE
+
+          DDoS
+
+          Phishing
+
+          Http Attack
+
+-------------------------------------------------------------------------------
+
+Which of the following attack is not selected as OWASP Top 10 Application Security Risks in the year 2017?
+
+
+        XML External Entity (XXE) attacks
+
+        Insecure Deserialization attacks
+
+        DDoS attacks   : TRUE
+
+        Injection attacks
+
+-------------------------------------------------------------------------------
+
+Which of the following involves injection of malicious code through a web application?
+
+
+        SQL Injection
+
+        Shell Injection
+
+        Command Injection : TRUE
+
+        LDAP Injection
+
+------------------------------------------------------------------------------
+
+Which of the following attacks can take place due to flaws such as
+        insecure cryptographic storage
+        and
+        information leakage?
+
+
+        SQL injection
+
+        Shell injection
+
+        Command injection
+
+        Sensitive data exposure : TRUE
+
+------------------------------------------------------------------------
+
+An attacker exploits a web application by
+
+    tampering with the
+
+            form
+            &
+            parameter
+
+     of the web application
+
+    and he is successful in exploiting the web application and gaining access.
+
+Which type of vulnerability did the attacker exploit?
+
+
+        Security misconfiguration : TRUE
+
+        Sensitive data exposure
+
+        Broken access control
+
+        SQL injection
+
+
+
+Explanation:
+
+Using misconfiguration vulnerabilities such as
+
+      - unvalidated inputs,
+      - parameter/form tampering,
+      - improper error handling,
+      - insufficient transport layer protection, and so on,
+
+attackers  :
+      gain unauthorized accesses to default accounts,
+      read unused pages,
+      read/write unprotected files and directories, and so on.
+
+Security misconfiguration can occur
+
+        at any level of an application stack,
+              including the platform,
+                            webserver,
+                            application server,
+                            framework, and
+                            custom code.
+
+--------------------------------------------------------------
+
+If a threat detection software
+  installed in any organization network
+
+      either
+            does not record the malicious event
+      or
+            ignores the important details about the event,
+
+then what kind of vulnerability is it?
+
+
+      Broken Access Control
+
+      Security Misconfiguration
+
+      Insufficient Logging and Monitoring : TRUE
+
+      Sensitive Data Exposure
+
+Explanation:
+
+Web applications maintain logs
+      to track usage patterns such as
+              user login credentials
+              admin login credentials.
+
+Insufficient logging and monitoring
+        detection software
+            either does not record the malicious event
+            or     ignores the important details about the event.
+
+Attackers usually
+          inject,
+          delete,
+      or  tamper with web application logs to
+                      - engage in malicious activities
+                      - hide their identities.
+
+Any threat detection software with an insufficient logging and monitoring vulnerability makes the detection of malicious attempts of the attacker more difficult to identify and allows the attacker to perform malicious attacks like password brute force etc. to steal confidential passwords.
+
+--------------------------------------------------------------------------------------------
+
+Which of the following attacks exploits vulnerabilities in dynamically generated webpages, which enables malicious attackers to inject client-side scripts into webpages viewed by other users?
+
+
+Security misconfiguration
+
+Cross-site scripting    : TRUE
+
+Sensitive data exposure
+
+Broken access control
