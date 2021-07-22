@@ -64,7 +64,7 @@ Validation authority (VA)
 
 End user
 
-## Certificate authority (CA)
+### Certificate authority (CA)
 
 Registration authority (RA)
 
