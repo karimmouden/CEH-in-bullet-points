@@ -1,0 +1,179 @@
+A security engineer at a medium-sized accounting firm has been tasked with discovering how much information can be obtained from the firm’s public facing webservers.
+The engineer decides to start by using netcat to port 80.
+The engineer receives this output:
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/6
+Expires: Tue, 17 Jan 2017 01:41:33 GMT
+Date: Mon, 16 Jan 2017 01:41:33 GMT
+Content-Type: text/html
+Accept-Ranges: bytes
+Last-Modified: Wed, 28 Dec 2010 15:32:21 GMT
+ETag: "b0aac0542e25c31:89d"
+Content-Length: 7369
+
+Which of the following is an example of what the engineer performed?
+
+
+      Whois database query
+
+      SQL injection
+
+      Banner grabbing   : TRUE
+
+      Cross-site scripting
+
+------------------------------------------------------------
+
+How can telnet be used to fingerprint a web server?
+
+
+
+      telnet webserverAddress 80 HEAD / HTTP/2.0
+
+      telnet webserverAddress 80 PUT / HTTP/1.0
+
+      telnet webserverAddress 80 HEAD / HTTP/1.0 : TRUE
+
+      telnet webserverAddress 80 PUT / HTTP/2.0
+
+
+
+----------------------------------------------------------
+
+Which of the following tools is not used to perform
+        webserver information gathering?
+
+
+        Netcraft  :
+
+        Nmap
+
+        Whois
+
+        Wireshark : TRUE
+
+    Explanation:
+
+    Among the options,
+
+        Nmap, Netcraft and Whois are the tools used to
+
+                              perform footprinting of webservers,
+    whereas
+        Wireshark is a network sniffing tool.
+
+
+---------------------------------------------
+
+Which of the following tools is not used to perform OS banner grabbing?
+
+
+          Netcat
+
+          Wireshark : TRUE
+
+          Telnet
+
+          Nmap
+
+------------------------------------------
+
+Which of the following commands does an attacker use to
+
+        detect HTTP Trace?
+
+
+      nmap -p80 --script http-userdir -enum localhost
+
+      nmap --script hostmap <host>
+
+      nmap --script http-enum -p80 <host>
+
+      nmap -p80 --script http-trace <host>   : TRUE
+
+
+------------------------------------
+
+Which of the following command does an attacker use to
+
+          enumerate common web applications?
+
+
+
+      nmap --script http-trace -p80 localhost
+
+      nmap -p80 --script http-userdir -enum localhost
+
+      nmap -p80 --script http-trace <host>
+
+      nmap --script http-enum -p80 <host>    : TRUE
+
+
+--------------------------------------
+
+Which of the following tools is used by an attacker to perform website mirroring?
+
+
+        Hydra
+
+        Netcraft
+
+        HTTrack : TRUE
+
+        Nessus
+
+---------------------------------------
+
+An attacker wants to exploit a target machine.
+In order to do this, he needs to
+
+        identify potential vulnerabilities that are present in the target machine.
+
+What tool should he use to achieve his objective?
+
+
+        Nessus  : TRUE
+
+        Netcraft
+
+        Hydra
+
+        HTTrack
+
+
+---------------------------------------------------------
+
+An attacker wants to perform a
+
+      session hijacking attack.
+
+ What tool should he use to achieve his objective?
+
+
+            Nessus
+
+            Hydra
+
+            Netcraft
+
+            Burp Suite :  TRUE
+
+---------------------------------------------------------------
+
+An attacker wants to
+
+      crack passwords using attack techniques like
+
+            brute-forcing, dictionary attack, and password guessing attack.
+
+What tool should he use to achieve his objective?
+
+
+          Nessus
+
+          Burp suite
+
+          Hydra : TRUE
+
+          Netcraft

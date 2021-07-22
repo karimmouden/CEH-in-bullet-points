@@ -1,0 +1,231 @@
+Which statement best describes a server type under an N-tier architecture?
+
+
+        A group of servers with a unique role   : TRUE
+
+        A single server with a specific role
+
+        A group of servers at a specific layer
+
+        A single server at a specific layer
+
+Explanation:
+
+N-tier architecture
+
+    - provides solutions on
+                  scalability,
+                  security,
+                  fault tolerance,
+                  reusability, &
+                  maintainability
+                                    to support enterprise level client-server applications.
+
+    - has 3 separate logical parts,
+              each of which is located on a separate physical server.
+
+    - main advantage : each part or a group of servers is
+                              responsible for specific functionality or role.
+
+  =>  In the  N-tier architecture,
+              several machines or clusters of machines are deployed,
+                    ensuring that services are provided
+                              without resources being shared
+                              and performing specific functionality.
+
+------------------------------------------------------------------------------------------------
+Which of the following stores critical HTML files
+                      related to the webpages of a domain name
+                              that will be served in response to requests?
+
+
+                  Virtual document tree
+
+                  Server root
+
+                  Document root         :  TRUE
+
+                  Web proxy
+
+
+Explanation:
+
+  DOCUMENT ROOT
+
+    -  1 of  WEBSERVER’s ROOT file directories
+
+    -  stores critical HTML files
+                  related to webpages of a domain name that
+                                will serve in response to requests.
+
+    For example, if the requested URL is
+                          www.certifiedhacker.com
+                  & the DOCUMENT ROOT is named as "certroot"
+                                          & is stored in "/admin/web" directory,
+                  then
+                        /admin/web/certroot is the document directory address.
+
+        If the complete request is
+                "www.certifiedhacker.com/P-folio/index.html",
+
+        the server will search for the file path
+                    ""/admin/web/certroot/P-folio/index.html"
+---------------------------------------------------------------------------------------------
+
+Which of the following stores a server’s
+          configuration, error, executable, & log files?
+
+
+              Server root :                 TRUE
+
+              Virtual document tree
+
+              Document root
+
+              Web proxy
+
+Explanation:
+
+SERVER ROOT
+
+      - top-level root directory
+      - under the directory tree in which server's
+               configuration
+               error ,
+               executable,
+               log files
+
+                          are stored.
+
+
+
+The SERVER ROOT , in general, consists of 4 files
+
+  1 :  File dedicated to the
+
+          CODE
+
+            that implements the server
+
+& following subdirectories :
+
+  2 :  -conf  :   used for configuration information
+
+  3 :  -logs :    used to store logs
+
+  4 :  -cgi-bin:  used for executables.
+
+
+------------------------------------------------------------------
+
+Which of the following provides storage on a different machine or disk after the original disk is filled up?
+
+
+          Virtual document tree :       TRUE
+
+          Virtual hosting
+
+          Document root
+
+          Server root
+
+  Explanation:
+
+  VIRTUAL DOCUMENT TREE
+
+      - provides storage on a different machine or a disk after the original disk is filled up.
+
+      - case sensitive
+
+      - provide object-level security.
+
+  In the example under document root,
+  
+      for a request of www.certifiedhacker.com/P-folio/index.html,
+      the server can also search for the file path
+              /admin/web/certroot/P-folio/index.html
+      if
+              admin/web/certroot
+                      is stored in another disk.
+
+
+-----------------------------------------------------------------------
+
+An attacker sends numerous fake requests to the webserver
+    from various random systems
+        that results in the webserver crashing
+                                   or becoming unavailable
+        to the legitimate users.
+Which attack did the attacker perform?
+
+
+              DNS server hijacking
+
+              HTTP response splitting attack
+
+              DoS attack                            : TRUE
+
+              DNS amplification attack
+
+-----------------------------------------------------------------------
+
+If an attacker
+        compromises a DNS server &
+        changes the DNS settings so that
+              all requests coming to the target webserver are
+                      redirected to his/her own malicious server,
+then which attack did he perform?
+
+
+        DoS attack
+
+        DNS server hijacking         : TRUE
+
+        DNS amplification attack
+
+        HTTP response splitting attack
+
+-----------------------------------------------------------------
+
+If an attacker uses ../ (dot-dot-slash) sequence to access restricted directories outside of the webserver root directory, then which attack did he perform?
+
+
+            Directory traversal attack   : TRUE
+
+            HTTP response splitting attack
+
+            DNS amplification attack
+
+            DoS attack
+
+
+-------------------------------------------------------------------
+
+Which of the following attacks allows an attacker to
+    access sensitive information by intercepting & altering communications
+      between an end user and webservers?
+
+
+          HTTP response splitting attack
+
+          Man-in-the-middle attack     :  TRUE
+
+          DoS attack
+
+          Directory traversal attack
+
+
+---------------------------------------------------------------------
+
+Which of the following attacks occurs when an intruder
+      maliciously alters the visual appearance of a webpage by
+                  inserting or substituting provocative, and frequently, offending data?
+
+
+        Website defacement      :      TRUE
+
+        Directory traversal attack
+
+        HTTP response splitting attack
+
+        Man-in-the-middle attack

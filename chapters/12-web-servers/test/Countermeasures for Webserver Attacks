@@ -1,0 +1,241 @@
+Which of the following tools can be used to detect web server hacking attempts and alert you through emails?
+
+
+
+        Nessus
+
+        Netcraft
+
+        WebsiteCDS : TRUE
+                      website change detection system
+                      can detect hacking attempts on the web server.
+                      script that
+                                  goes through your entire web folder
+                                & detects any changes made to your code base
+                                & alerts you using email.
+
+        Nmap
+
+----------------------------------
+
+Which of the following is
+            NOT a DEFENSIVE measure for web server attacks
+              while implementing
+                Machine.config?
+
+
+
+
+      Restrict code access security policy settings
+
+      Ensure that tracing is enabled <trace enable="true"/>
+                            and debug compiles are turned on                  : TRUE
+
+      Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL)
+
+      Encrypt or restrict intranet traffic
+
+
+Explanation:
+
+Machine.config is the mechanism of
+
+             securing information by
+
+                      changing the machine LEVEL SETTINGS.
+
+This effect applies to all other applications.
+
+Machine.config file includes
+
+            machine settings for the .Net framework
+                                              that affects the security.
+
+While implementing Machine.config,
+
+          always ensure that TRACING is DISABLED, that is,
+
+                        <trace enable="false"/>
+
+                in order to defend against web server attacks,
+
+            and meanwhile you must also ensure that the
+
+                        DEBUG COMPILES are turned OFF.
+
+-------------------------------------------------------------------------------------
+
+Which of the following is NOT a DEFENSIVE measure for web server attacks?
+
+
+
+              Ensure that  : PROTECTED RESOURCES are mapped to HttpForbiddenHandler
+                           & unused HttpModules are removed
+
+              Configure IIS to accept URLs with "../"                 : TRUE
+
+              Limit inbound traffic to port 80 for HTTP and port 443 for HTTPS (SSL)
+
+              Encrypt or restrict intranet traffic
+
+----------------------------------------------------------
+
+Which of the following security tools helps to prevent potentially harmful HTTP requests from reaching applications on the server?
+
+
+        URLScan  : TRUE
+
+        Nmap
+
+        Netcraft
+
+        Nessus
+
+-----------------------------------------------------------
+
+Which of the following is NOT a best approach to protect your firm against web server attacks?
+
+
+
+        Remove unnecessary ISAPI filters from the web server
+
+        Apply restricted ACLs
+
+        Allow remote registry administration  :       TRUE
+
+        Secure the SAM (Stand-alone Servers Only)
+
+
+----------------------------------------------------
+
+Choose an ICANN accredited registrar and encourage them to
+
+    set registrar-lock on the domain name in order to avoid which attack?
+
+
+
+        Denial-of-Service Attack
+
+        Man-in-the-Middle Attack
+
+        DNS Hijacking Attack :                  TRUE
+
+        Session Hijacking Attack
+
+
+-------------------------------------------------------
+
+
+Which of the following technique defends servers against BLIND RESPONSE FORGERY?
+
+
+      UDP source port randomization                                   : TRUE
+
+      Removal of carriage returns (CRs) and linefeeds (LFs)
+
+      Disallow carriage return (%0d or \r) and line feed (%0a or \n) characters
+
+      Restriction of web application access to unique IPs
+
+
+  Explanation:
+
+  UDP source port randomization
+          technique
+          defends servers against blind response forgery.
+          Limit the number of simultaneous recursive queries
+          Increase the times-to-live (TTL) of legitimate records.
+
+  Following are some of the methods to defend against HTTP response-splitting and web cache poisoning:
+
+      Server Admin:
+
+      Use latest web server software
+      Regularly update/patch OS and web server
+      Run web vulnerability scanner
+      Application Developers:
+
+      Restrict web application access to unique IPs
+      Disallow carriage return (%0d or \r) and line feed (%0a or \n) characters
+      Comply to RFC 2616 specifications for HTTP/1.1
+
+
+------------------------------------------------------------------------------------------
+
+Which of the following is NOT a best approach to
+    protect your firm against web server files and directories?
+
+
+
+        Disable serving certain file types by creating a resource mapping
+
+        Avoid mapping virtual directories between two different servers, or over a network
+
+        Enable serving of directory listings     : TRUE
+
+        Eliminate unnecessary files within the .jar files
+
+
+
+---------------------------------------------------------------------------------------------
+
+Where should a web server be placed in a network in order to provide the most security?
+
+
+
+
+        Outside an unsecured network
+
+        Inside an unsecured network
+
+        Inside DeMilitarized Zones (DMZ) : TRUE
+
+        Outside a secure network
+
+----------------------------------------------------------------------------------------------
+
+Which of the following is not a session hijacking technique?
+
+
+
+
+      DNS hijacking               :       TRUE
+
+      Session fixation
+
+      Session sidejacking
+
+      Cross-site scripting
+
+
+---------------------------------------------------------------------------------------------
+
+Attackers use GET and CONNECT requests to use vulnerable web servers as which of the following?
+
+
+
+
+          Proxies :             TRUE
+
+          None of the above
+
+          DNS Servers
+
+          Application Servers
+
+
+  Explanation:
+
+  Sometimes, web servers are configured to perform functions such as
+                forwarding or reverse HTTP proxy.
+
+  Web servers with these functions enabled are employed by the attackers
+    to perform following attacks:
+
+        Attacking 3rd-party systems on internet
+        Connecting to arbitrary hosts on the organization’s internal network
+        Connecting back to other services running on the proxy host itself
+        Attackers use GET and CONNECT requests to
+                use vulnerable web servers as proxies
+                          to connect and obtain information from target systems
+                                                        through these proxy web servers.

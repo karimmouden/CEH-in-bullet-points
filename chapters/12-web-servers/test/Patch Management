@@ -1,0 +1,215 @@
+Which of the following teams has the responsibility to check for updates and patches regularly?
+
+
+Patch management team       : TRUE
+
+Vulnerability assessment team
+
+Security software development team
+
+Red Team
+
+//////////////////
+Explanation:
+In an organization,
+
+  Patch management team :
+
+              Check for UPDATES & PATCHES regularly.
+
+  Security software development team :
+
+              Develop SECURITY-related SOFTWARE that can be used
+                          for testing the security infrastructure of the organization.
+
+  Vulnerability assessment team :
+
+              Assess the VULNERABILITIES in an organization
+
+
+  Red team :  part of penetration testing team
+              provides security to the organization by
+                            performing OFFENSIVE security methods.
+
+  --------------------------------------------------------------------------------
+
+
+A security administrator is looking for a
+
+          patch management tool
+
+which
+    scans the organization's network
+&   manages security & non-security patches.
+
+Which of the following patch management tool, he/she can use in order to perform the required task?
+
+
+          Burp suite
+
+          Netscan Pro
+
+          GFI LanGuard    : TRUE
+
+          Nikto
+
+Explanation:
+
+GFI LanGuard
+
+      - patch management tool
+      - scans your network automatically
+      - installs & manages security and non-security patches.
+      - supports machines across Microsoft®, MAC OS X®, and Linux® operating systems as well as many 3rd-party applications.
+
+Netscan Pro
+
+      - network scanning tool.
+
+Nikto
+
+      - vulnerability assessment tool.
+
+Burp suite
+
+      - session hijacking tool.
+
+-------------------------------------------------------------------------------------------
+
+Which of the following is not a webserver security tool?
+
+
+      Retina CS
+
+      NetIQ Secure configuration manager
+
+      Fortify WebInspect
+
+      Netcraft  : TRUE
+
+-----------------------------------------------------------------------------------------------
+
+Which of the following is not a patch management tool?
+
+
+      GFI LanGuard
+
+      Software vulnerability manager
+
+      Symantec client management suite
+
+      Burp suite :        TRUE
+
+-----------------------------------------------------------------------------------------------
+
+Which of the following is true for automated patch management process?
+
+
+Assess -> Detect -> Acquire -> Deploy -> Test -> Maintain
+
+Acquire -> Assess -> Detect -> Test -> Deploy -> Maintain
+
+Acquire -> Assess -> Detect -> Deploy -> Test -> Maintain
+
+Detect -> Assess -> Acquire -> Test -> Deploy -> Maintain   :  TRUE
+
+
+--------------------------------------------------------------------------------------------
+
+Which of the following is considered as a repair job to a programming problem?
+
+
+        Penetration Test
+
+        Assessment
+
+        Patch    : TRUE
+
+        Vulnerability
+
+---------------------------------------------------------------------------------------------
+
+A network administrator has observed that the computers in his network have
+              Windows 7 operating system.
+The administrator has learned that the  WannaCry ransomeware is affecting
+        Windows 7 Systems across the globe.
+
+Which of the following is the best option that the network administrator has to provide efficient security and defend his network?
+
+
+        Perform penetration testing on all the Machines in the network
+
+        Remove all the Windows 7 machines from the network
+
+        Conduct vulnerability assessment of all the machines in the network
+
+        Update Security Patches and fixes provided by Microsoft : TRUE
+
+-----------------------------------------------------------------------------------------------
+
+Which of the following is defined as a package that
+      is used to
+            address a critical defect in a live environment,
+  and contains
+            a fix for a single issue?
+
+
+        Penetration test
+
+        Hotfix :          TRUE
+
+        Patch
+
+        Vulnerability
+
+Explanation:
+
+A hotfix :
+      - package
+      - used to address a critical defect in a live environment
+      - contains a fix for a single issue.
+      - updates a specific version of a product.
+      - provide solutions faster
+      - ensure that issues are resolved.
+
+--------------------------------------------------------------------------------------------------
+
+Andrew, a software developer in CyberTech organization has released a
+      security update that acts as a defensive technique against
+              the vulnerabilities in the software product the company has released earlier.
+
+Identify the technique used by Andrew to resolve the software vulnerabilities?
+
+
+        Vulnerability Management
+
+        Patch Management    :  TRUE
+
+        Risk Management
+
+        Product Management
+
+
+----------------------------------------------------------------------------------------------------
+
+Which of the following terms refers to a set of hotfixes packed together?
+
+
+      Hotfix pack
+
+      Service pack    :      TRUE
+
+      Repair pack
+
+      Patch
+
+Explanation:
+
+Hotfixes
+      are an update to fix a specific customer issue
+          and not always distributed outside the customer organization.
+          Vendors occasionally deliver hotfixes as a set of fixes called a
+                  combined hotfix or service pack.
+
+A patch is a small piece of software designed to fix problems, security vulnerabilities, and bugs, and improve the usability or performance of a computer program or its supporting data.
+A patch can be considered as a repair job done to a programming problem.
