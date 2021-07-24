@@ -19,8 +19,13 @@ Chosen-plaintext attack
     
     This is actually a very useful attack if one can obtain the plaintext and matching ciphertext. 
     
-    The attack requires that the differing keys be closely related, 
-    for example, in a wireless environment where subsequent keys might be derived from previous keys. 
+    The attack requires that the 'differing keys' 
+            
+                be *closely related*, 
+    
+    for example, in a wireless environment 
+                
+               where subsequent keys might be derived from previous keys. 
     
     Then, while the keys are different, they are close. 
     
@@ -69,7 +74,9 @@ MITM attack
         In a side channel attack, an attacker :
             
             - monitors channels (environmental factors) 
-        &   - tries to acquire the information useful for cryptanalysis. 
+        &   
+            - tries to acquire the information useful for cryptanalysis. 
+        
         
         The information collected in this process is termed as side channel information.
         
@@ -84,6 +91,56 @@ MITM attack
 
 
 --------------------------------------------------------------------------------------
+
+### Which of the following attacks mainly affects any hardware/software using an ANSI X9.31 random number generator (RNG)?
+
+
+Rainbow table attack
+
+Hash collision attack
+
+Side channel attack
+
+#### DUHK attack 
+
+    DUHK (don't use hard-coded keys):
+
+        -  cryptographic vulnerability 
+        
+         - allows attackers to obtain encryption keys used to secure VPNs and web sessions. 
+        
+        -  mainly affects any *hardware/software* using 
+            
+                    -> an "ANSI X9.31" RNG (random number generator). 
+
+    PRNGs algorithm  : 
+    
+            - The PseudoRandom Number Generators  
+    
+            - generate "random sequences of bits" based on the :
+            
+                        - *Seed *  (initial secret value) 
+                      & 
+                        - *current state*. 
+            
+            - generates "cryptographic keys" that are used to :
+                    
+                        *establish a secure communication channel over VPN network*.
+            
+       Vulnerability cause :
+                
+                    !!! In some cases, the *seed key* is "hardcoded" into the implementation. !!!!!
+            
+            Both the factors are the key issues of DUHK attack as
+                    
+                    any attacker could combine : 
+                    
+                            - ANSI X9.31
+                            with 
+                            - the hard coded seed key 
+                     
+                     to decrypt the encrypted data sent or received by that device.
+
 
 --------------------------------------------------------------------------------------
 
