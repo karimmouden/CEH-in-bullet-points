@@ -7,7 +7,7 @@ Adaptive chosen-plaintext attack
 
 Chosen-plaintext attack
 
-#### Related-key attack
+### Related-key attack
 
     Explanation:
 
@@ -65,7 +65,7 @@ DUHK attack
 
 MITM attack
 
-#### Side channel attack
+### Side channel attack
 
     Explanation:
 
@@ -101,7 +101,7 @@ Hash collision attack
 
 Side channel attack
 
-#### DUHK attack 
+### DUHK attack 
 
     DUHK (don't use hard-coded keys):
 
@@ -144,8 +144,160 @@ Side channel attack
 
 --------------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------------
+### Out of the following, identify the attack that is used for cracking a cryptographic algorithm using multiple keys for encryption.
+
+
+Side Channel Attack
+
+Rainbow Table Attack
+
+### Meet-in-the-middle Attack
+
+DUHK Attack
+
+    Explanation:
+    
+    Meet-in-the-middle attack :
+        
+        - best attack method for cryptographic algorithms using "multiple keys" for encryption.
+       
+        - reduces the number of brute force permutations needed to decode text encrypted by more than one key 
+        
+        - conducted mainly for forging signatures on mixed type digital signatures. 
+        
+        - uses "space–time tradeoff"
+        
+        - it is a "birthday attack" because it exploits the mathematics behind the "birthday paradox".
+        
+        - It is called a "meet-in-the-middle" attack because it works by :
+                
+                - encrypting from one end 
+                & 
+                - decrypting from the other end, 
+             
+            thus meeting “in the middle.”
+
+        - attacker uses a "known plaintext message" :
+                he has access to both  :
+                
+                    - the "plaintext" 
+                    &
+                    - respective "encrypted" text. 
+    
+        - takes less time than an exhaustive attack 
+        
+        - used by attackers for forging signatures, 
+            
+                -> even on "digital signatures" that use the "multiple-encryption scheme".
 
 --------------------------------------------------------------------------------------
 
+### Which of the following cryptography attack methods is usually performed without the use of a computer?
+
+
+Ciphertext-only attack
+
+### Rubber hose attack
+
+Chosen key attack
+
+Rainbow table attack
+
 --------------------------------------------------------------------------------------
+
+### An attacker sniffs encrypted traffic from the network and is subsequently able to decrypt it. Which cryptanalytic technique can the attacker use now in his attempt to discover the encryption key?
+
+
+### Chosen ciphertext attack
+
+Birthday attack
+
+Meet in the middle attack
+
+Known plaintext attack
+
+    Explanation:
+    
+        - Chosen ciphertext attack: 
+        
+                - cryptanalysis attack
+
+                - attacker obtains the plaintexts corresponding to an arbitrary set of ciphertexts of his own choice.
+
+                - Using this information, the attacker tries to recover the key used to encrypt the plaintext.
+    
+        - Birthday attack: 
+        
+                - class of brute-force attacks against cryptographic hashes 
+
+                - makes the brute forcing easier
+
+                - depends on  Birthday paradox : 
+
+                            - probability that 2 or more people in a group of 23 
+                                   share the same birthday is
+
+                                      -> greater than 1/2.
+
+        - Known plaintext attack: 
+            
+            - cryptanalysis attack
+            
+            - the only information available to the attacker is 
+                    
+                        - some plaintext blocks 
+                        
+                        along with 
+                        
+                        - corresponding ciphertext 
+                        
+                        and  ????????????
+                        
+                        - algorithm used to encrypt and decrypt the text. 
+               
+               Using this information, the key used to generate ciphertext that is deduced so as to decipher other messages.
+
+        
+        - Meet-in-the-middle attack: 
+        
+                - best attack method for cryptographic algorithms using "multiple keys" for encryption.
+
+                - reduces the number of brute force permutations needed to decode text encrypted by more than one key 
+                
+                - conducted mainly for forging signatures on mixed type digital signatures. 
+
+                - uses "space–time tradeoff"
+
+                - it is a "birthday attack" because it exploits the mathematics behind the "birthday paradox".
+
+                - It is called a "meet-in-the-middle" attack because it works by :
+
+                        - encrypting from one end 
+                        & 
+                        - decrypting from the other end, 
+
+                    thus meeting “in the middle.”
+
+
+
+--------------------------------------------------------------------------------------
+
+### An attacker has captured a target file that is encrypted with public key cryptography. Which of the attacks below is likely to be used to crack the target file?
+
+
+Memory trade-off attack
+
+### Chosen plain-text attack 
+
+Replay attack
+
+Timing attack
+
+    Explanation:
+    
+                Timing attack: It is based on repeatedly measuring the exact execution times of modular exponentiation operations. The attacker tries to break the ciphertext by analyzing the time taken to execute the encryption and decryption algorithm for various inputs. In a computer, the time taken to execute a logical operation may vary based on the input given. The attacker by giving varying inputs tries to extract the plaintext.
+    
+    Replay attack: In a replay attack, packets and authentication tokens are captured using a sniffer. After the relevant info is extracted, the tokens are placed back on the network to gain access. The attacker uses this type of attack to replay bank transactions or other similar types of data transfer, in the hope of replicating and/or altering activities, such as banking deposits or transfers.
+    
+    Chosen-plaintext attack: Chosen plaintext attack is a very effective type of cryptanalysis attack. In this attack, the attacker obtains the ciphertexts corresponding to a set of plaintexts of his own choosing. This can allow the attacker to attempt to derive the key used and thus decrypt other messages encrypted with that key. Basically, since the attacker knows the plaintext and the resultant ciphertext, he has a lot of insight into the key used. This technique can be difficult but is not impossible.
+        The circumstances by which an attacker may obtain ciphertexts for given plaintexts are rare. However, modern cryptography is implemented in software or hardware and is used for a diverse range of applications; for many cases, a chosen-plaintext attack is often very feasible. Chosen-plaintext attacks become extremely important in the context of public key cryptography, where the encryption key is public and so attackers can encrypt any plaintext they choose.
