@@ -13,7 +13,7 @@ Chosen-plaintext attack
 
     Related-key attack: 
     
-      -  similar to the chosen plaintext attack, 
+      -  similar to the "chosen plaintext" attack, 
           
           except that the attacker can obtain ciphertexts encrypted under two different keys. 
     
@@ -322,4 +322,48 @@ Timing attack
               in the hope of replicating and/or altering activities, 
               such as banking deposits or transfers.
     
+------------------------------------------------------------------------------------------------
+
+### Which of the following cryptanalysis methods is applicable to symmetric key algorithms?
+
+
+Linear cryptanalysis
+
+Frequency Cryptanalysis
+
+Integral cryptanalysis
+
+### Differential cryptanalysis
+
+
+    Explanation:
+
+        Differential cryptanalysis :
+        
+            - form of cryptanalysis 
+            
+            - applicable to "symmetric key algorithms". 
+            
+            -  examination of differences in an input 
+                    and how that affects the resultant difference in the output. 
+                    
+            - It originally worked only with *chosen plaintext*. 
+            
+            - It can also work only with "known plaintext" and "known ciphertext".
+
+------------------------------------------------------------------------------------------------
+
+### An attacker tries to recover the plaintext of a message without knowing the required key in advance. For this he may first try to recover the key, or may go after the message itself by trying every possible combination of characters. Which code breaking method is he using?
+
+
+### Brute force
+
+Trickery and deceit
+
+Frequency analysis
+
+One-time pad
+
+---------------------------------------------------------------------------------------------
+
 
