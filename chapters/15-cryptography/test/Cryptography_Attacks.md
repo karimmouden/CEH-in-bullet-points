@@ -295,9 +295,31 @@ Timing attack
 
     Explanation:
     
-                Timing attack: It is based on repeatedly measuring the exact execution times of modular exponentiation operations. The attacker tries to break the ciphertext by analyzing the time taken to execute the encryption and decryption algorithm for various inputs. In a computer, the time taken to execute a logical operation may vary based on the input given. The attacker by giving varying inputs tries to extract the plaintext.
+      - Chosen-plaintext attack: 
+      
+           - very effective type of cryptanalysis attack. 
+           - attacker obtains the ciphertexts corresponding to a set of plaintexts of his own choosing. 
+           - This can allow the attacker to attempt to derive the key used and thus decrypt other messages encrypted with that key. 
+           - Basically, since the attacker knows the plaintext and the resultant ciphertext, he has a lot of insight into the key used. 
+           - This technique can be difficult but is not impossible.
+           - The circumstances by which an attacker may obtain ciphertexts for given plaintexts are rare. 
+           - However, modern cryptography is implemented in software or hardware and is used for a diverse range of applications; 
+           - for many cases, a chosen-plaintext attack is often very feasible.
+           - *important* in the context of *public key cryptography*, where the encryption key is public and so attackers can encrypt any plaintext they choose.
+
+     - Timing attack: 
+            - based on "repeatedly measuring" the exact "execution times" of modular exponentiation operations. 
+            - attacker tries to "break the ciphertext" by 
+                    -> analyzing the time taken to execute  
+                            encryption and decryption algorithm for various inputs. 
+            - In a computer, the time taken to execute a logical operation may vary based on the input given. 
+            - The attacker by giving varying inputs tries to extract the plaintext.
     
-    Replay attack: In a replay attack, packets and authentication tokens are captured using a sniffer. After the relevant info is extracted, the tokens are placed back on the network to gain access. The attacker uses this type of attack to replay bank transactions or other similar types of data transfer, in the hope of replicating and/or altering activities, such as banking deposits or transfers.
+    - Replay attack: 
+            - packets & authentication Tokens are captured using a sniffer. 
+            - After the relevant info is extracted, the tokens are placed back on the network to gain access. 
+            - The attacker uses this type of attack to replay bank transactions or other similar types of data transfer, 
+              in the hope of replicating and/or altering activities, 
+              such as banking deposits or transfers.
     
-    Chosen-plaintext attack: Chosen plaintext attack is a very effective type of cryptanalysis attack. In this attack, the attacker obtains the ciphertexts corresponding to a set of plaintexts of his own choosing. This can allow the attacker to attempt to derive the key used and thus decrypt other messages encrypted with that key. Basically, since the attacker knows the plaintext and the resultant ciphertext, he has a lot of insight into the key used. This technique can be difficult but is not impossible.
-        The circumstances by which an attacker may obtain ciphertexts for given plaintexts are rare. However, modern cryptography is implemented in software or hardware and is used for a diverse range of applications; for many cases, a chosen-plaintext attack is often very feasible. Chosen-plaintext attacks become extremely important in the context of public key cryptography, where the encryption key is public and so attackers can encrypt any plaintext they choose.
+
