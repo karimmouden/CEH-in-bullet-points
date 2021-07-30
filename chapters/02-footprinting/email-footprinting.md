@@ -31,9 +31,12 @@
 
 #### SPF: Sender Policy Framework
 
-- SPF :  - great technique to **add authentication to your emails**.
-         - SPF is one of the authentication techniques on which DMARC is based 
-         - However it has some limitations which you need to be aware of : 
+- SPF : 
+    - great technique to **add authentication to your emails**.
+
+    - SPF is one of the authentication techniques on which DMARC is based 
+
+    - However it has some limitations which you need to be aware of : 
 
                  -  SPF does not validate the “From” header. 
                       This header is shown in most clients as the actual sender of the message. 
@@ -46,6 +49,7 @@
 
 
 - SPF record : 
+
     - DNS record that has to be added to the DNS zone of your domain. 
     
     - In this SPF record you can specify which IP addresses and/or hostnames are authorized to send email from the specific domain.
@@ -80,13 +84,21 @@
 
 - E.g. `PASS` or `FAIL`
 - Combines 2 protocols **SPF + DKIM**
-- It builds on them and adds more policy
+
+- It builds on them and **adds more policy**
+
 - uses the **result of the SPF checks** and add a check on the alignment of the domains to determine its results.
+
 - email validation system designed to protect your company’s email domain from being used for email spoofing, phishing scams and other cybercrimes. 
+
 - DMARC leverages the existing email authentication techniques SPF (Sender Policy Framework) DKIM (Domain Keys Identified Mail). 
+
 - DMARC **adds** an important function, **reporting**. 
+
 - When a domain owner publishes a DMARC record into their DNS record, they will gain insight in who is sending email on behalf of their domain. 
+
 - This information can be used to get detailed information about the email channel. 
+
 - With this information a domain owner can get control over the email sent on his behalf. You can use DMARC to protect your domains against abuse in phishing or spoofing attacks.
 
 ## Verifying email legitimity
