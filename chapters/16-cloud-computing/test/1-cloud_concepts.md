@@ -163,7 +163,9 @@ Private Cloud:
 
 Community Cloud: 
 		
-		- multi-tenant infrastructure
+		- multi-tenant infrastructure   :   
+			
+			Multi-Tenant – Multi-tenancy means that a **single instance** of the software and its supporting infrastructure **serves multiple customers**.
 												
 		- shared among organizations from a specific community 
 
