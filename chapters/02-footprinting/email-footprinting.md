@@ -31,6 +31,34 @@
 
 #### SPF: Sender Policy Framework
 
+- SPF :  - great technique to **add authentication to your emails**.
+         - SPF is one of the authentication techniques on which DMARC is based 
+         - However it has some limitations which you need to be aware of : 
+
+                 -  SPF does not validate the “From” header. 
+                      This header is shown in most clients as the actual sender of the message. 
+                      SPF does not validate the “header from”, but uses the “envelope from” to determine the sending domain
+                      
+                 - SPF will break when an email is forwarded. 
+                      At this point the ‘forwarder’ becomes the new ‘sender’ of the message and will fail the SPF checks performed by the new destination.
+                  
+                  - SPF lacks reporting which makes it harder to maintain 
+
+
+- SPF record : 
+    - DNS record that has to be added to the DNS zone of your domain. 
+    
+    - In this SPF record you can specify which IP addresses and/or hostnames are authorized to send email from the specific domain.
+    
+    - The **mail receiver** will use the **“envelope from” address** of the mail (mostly the Return-Path header) to 
+            
+              confirm that the sending IP address was allowed to do so. 
+    
+    - This will happen **before receiving the body** of the message. 
+    
+    - When the sending email server isn’t included in the SPF record from a specific domain the email from this server will be marked as suspicious and can be rejected by the email receiver
+
+
 - E.g. `'PASS' with IP 209.85.220.69` or `'NEUTRAL' ...`
 - Verifies if the domain of the e-mail owned by the sending server.
   - If not passed, many e-mail providers just block it.
@@ -38,14 +66,28 @@
 
 #### DKIM: DomainKeys Identified Mail
 
+- **email authentication technique** 
+- allows the receiver to check that an email was indeed sent and authorized by the owner of that domain. 
+- done by giving the email a **digital signature**. 
+- This **DKIM signature** is a **header** that is *added to the message* and is **secured with encryption**.
+- DKIM signatures are **not visible to end-users**
+-   =>  the validation is done on a **server level**.
+
 - E.g. `'PASS' with domain accounts.google.com`
 - Allows the receiver to verify that an email claimed to have come from a specific domain was authorized by the owner of that domain using a digital signature on the domain.
 
 #### DMARC: Domain-based Message Authentication, Reporting and Conformance
 
 - E.g. `PASS` or `FAIL`
-- Combination of two protocols SPF + DKIM
+- Combines 2 protocols **SPF + DKIM**
 - It builds on them and adds more policy
+- uses the **result of the SPF checks** and add a check on the alignment of the domains to determine its results.
+- email validation system designed to protect your company’s email domain from being used for email spoofing, phishing scams and other cybercrimes. 
+- DMARC leverages the existing email authentication techniques SPF (Sender Policy Framework) DKIM (Domain Keys Identified Mail). 
+- DMARC **adds** an important function, **reporting**. 
+- When a domain owner publishes a DMARC record into their DNS record, they will gain insight in who is sending email on behalf of their domain. 
+- This information can be used to get detailed information about the email channel. 
+- With this information a domain owner can get control over the email sent on his behalf. You can use DMARC to protect your domains against abuse in phishing or spoofing attacks.
 
 ## Verifying email legitimity
 
