@@ -44,14 +44,25 @@
 ## A privilege escalation threat is caused due to which of the following weaknesses?
 
 #### privilege escalation: 
-                      A mistake in the access allocation system such as coding errors, design flaws, and others can result in a customer,
-                      third party, or employee obtaining more access rights than required.
+                      A mistake in the 
+                        
+                                ACCESS ALLOCATION SYSTEM such as :
+                                        
+                                        - coding errors, 
+                                        - design flaws,...
+                       can result in
+                                       - a customer, 
+                                       - 3rd party, 
+                                       - or employee 
+          
+                        obtaining more access rights than needed.
+                        
                       
                       This threat arises because of - AAA (authentication, authorization, and accountability) vulnerabilities,
                                                     - user-provisioning and de-provisioning vulnerabilities,
                                                     - hypervisor vulnerabilities,
                                                     - unclear roles and responsibilities,
-                                                    - misconfiguration, and others.
+                                                    - misconfiguration, ......
                                                     
 #### Illegal Access to the Cloud: 
         
