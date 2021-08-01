@@ -126,8 +126,12 @@
                         - and then launches a side channel attack.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
-## An attacker runs a virtual machine on the same physical host as the victim’s virtual machine and takes
-## advantage of shared physical resources (processor cache) to steal data (cryptographic key) from the victim.
+### An attacker 
+
+  ### runs a virtual machine on the same physical host as the victim’s virtual machine & 
+  ### takes advantage of shared physical resources (processor cache) to
+        
+                steal data (cryptographic key) from the victim.
 
 ## Which of the following attacks he is performing?
 
@@ -169,28 +173,57 @@
         Attackers exploit 'flaws present in the cryptography algorithm' to carry out cryptanalysis attacks.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-In which of the following attacks does an attacker ride an active computer session by sending an email or tricking the user into visiting a
-malicious web page while they are logged into the targeted site?
+## In which of the following attacks does an attacker 
+##      ride an active computer session by 
+##              sending an email or tricking the user into visiting a malicious web page 
+## while they are logged into the targeted site?
 
-#### Session Hijacking Using Session Riding: Attackers exploit websites by engaging in cross-site request forgeries to transmit unauthorized commands. In session riding, attackers “ride” an active computer session by sending an email or tricking users to visit a malicious web page, during login, to an actual target site. When users click the malicious link, the website executes the request as if the user had already authenticated it. Commands used include modifying or deleting user data, performing online transactions, resetting passwords, and others.
+#### Session Hijacking Using Session Riding: 
 
-#### Wrapping Attack: It is performed during the translation of SOAP messages in the TLS layer, where attackers duplicate the body of the message and send it
-to the server as a legitimate user.
-#### DNS Attack: The attacker performs DNS attacks to obtain authentication credentials from Internet users.
-#### Side Channel Attack: The attacker compromises the cloud by placing a malicious virtual machine near a target cloud server and then launches
- a side channel attack.
+        Attackers exploit websites by engaging in CRSF (cross-site request forgeries)
+                - to transmit unauthorized commands. 
+                
+        In session riding, attackers “ride” an 'active computer session' by
+                - sending an email or tricking users to 
+
+                        - visit a malicious web page, !!during login!!, to an actual target site. 
+                
+        When users click the malicious link,
+                - the website executes the request as if the user had already authenticated it. 
+                
+        Commands used include :
+                - modifying or deleting user data, 
+                - performing online transactions, 
+                - resetting passwords, 
+                - and others.
+
+#### Wrapping Attack: 
+        
+        It is performed during the translation of SOAP messages in the TLS layer, 
+        where attackers :
+        
+                - duplicate the body of the message 
+                - & send it to the server as a legitimate user.
+
+#### DNS Attack:
+
+        The attacker performs DNS attacks to obtain authentication credentials from Internet users.
+        
+#### Side Channel Attack: 
+
+        The attacker compromises the cloud by placing a malicious virtual machine near a target cloud server and then launches a side channel attack.
 
  --------------------------------------------------------------------------------------------------------------------------------------------------
- Which of the following is not a type of DNS attack?
+ ## Which of the following is not a type of DNS attack?
 
- #### Domain Snipping-, 
-         type of DNS attacks.
+ #### Domain Snipping
+                type of DNS attacks.
 
- #### Domain Hijacking-, 
-         type of DNS attacks.
+ #### Domain Hijacking
+                type of DNS attacks.
 
  #### Cybersquatting
-        type of DNS attacks.
+                type of DNS attacks.
  
  #### Session hijacking 
         is not a type of DNS attack.
@@ -208,14 +241,23 @@ to the server as a legitimate user.
         type of side-channel attack
 
 #### Cybersquatting :
+        
         type of DNS attack.
-        involves conducting phishing scams by registering a domain name that is similar to a cloud service provider.
+        
+        involves conducting 'phishing scams' by
+        
+                - registering a "domain name" that is 
+                        
+                        - 'similar' to a cloud service provider.
 
 ### Side-Channel Attack definition : 
+
          - Attacker compromises the cloud by 'placing a MALICIOUS VM near a target cloud server' 
+
          - & then launch side channel attack.
          
           - attacker runs a virtual machine on the same physical host of the victim’s virtual machine 
+          
           - & takes advantage of :
           
                         - shared physical resources (processor cache) to 
@@ -235,7 +277,11 @@ to the server as a legitimate user.
 
 #### Cybersquatting: 
 
-        Involves conducting phishing scams by registering a domain name that is similar to a cloud service provider.
+        Involves conducting "phishing scams" by
+                
+                       - registering a "domain name" that is 
+                        
+                                - similar to a cloud service provider.
 
 #### Domain hijacking: 
 
@@ -246,7 +292,7 @@ to the server as a legitimate user.
         Involves registering an elapsed domain name.
 
 --------------------------------------------------------------------------------------------------------
-Which of the following is not a legitimate cloud computing attack?
+## Which of the following is not a legitimate cloud computing attack?
 
 
 #### Privilege Escalation
@@ -259,21 +305,61 @@ Which of the following is not a legitimate cloud computing attack?
         Port scanning is correct because it is not an attack
 
 ----------------------------------------------------------------------------------------------------------
-## In which of the following cloud computing threats does an attacker try to control operations of other cloud customers to gain illegal access to the data?
+## In which of the following cloud computing threats does 
+
+##      an attacker try to control operations of other cloud customers to gain illegal access to the data?
 
 #### Isolation Failure: 
 
-         Multi-tenancy and shared resources are the characteristics of cloud computing.
-         Strong isolation or compartmentalization of storage, memory, routing, and reputation among different tenants is lacking.
+         Multi-tenancy & shared resources are 
+                the characteristics of cloud computing.
+                
+         Strong isolation or compartmentalization of  :
+                - storage, 
+                - memory, 
+                - routing, 
+                - & reputation among different tenants 
+          is lacking.
+          
          Because of isolation failure, attackers try to control operations of other cloud customers to gain illegal access to the data.
  
 #### Privilege Escalation: 
 
-        A mistake in the access allocation system causes a customer, third party, or employee to get more access rights than needed.
+        A mistake in the 
+        
+                    ACCESS ALLOCATION SYSTEM 
+              
+         causes :
+                - a customer, 
+                - 3rd party, 
+                - or employee 
+          
+          to get more access rights than needed.
 
 #### Illegal Access to the cloud: 
 
-        Attackers can exploit weak authentication and authorization to get illegal access, thereby compromising confidential and critical data stored in the cloud.
+        Attackers can exploit : 
+                
+                - weak Authentication 
+                - weak Authorization 
+         
+        to get illegal access, thereby 
+        
+                compromising confidential & critical data stored in the cloud.
 
 #### Supply Chain Failure: 
-        A disruption in the chain may lead to loss of data privacy and integrity, unavailability of services, violation of SLA, economic and reputational losses resulting in failure to meet customer demand, and cascading failure.
+
+        A disruption in the chain may lead to 
+        
+                - loss of  :
+                        - data  privacy 
+                        - data  integrity, 
+                        
+                - unavailability of services, 
+                
+                - violation of SLA, 
+                
+                - economic & reputational losses resulting in :
+                
+                        - failure to meet customer demand, 
+                        - & cascading failure.
