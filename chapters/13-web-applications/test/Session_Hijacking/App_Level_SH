@@ -8,18 +8,22 @@ Knowing that HTTPS traffic is encrypted and cannot be sniffed normally,
 
 
 
-      Sslstrip tool is exploiting certificate signing and it is sending its own certificate instead of the original one, allowing for the traffic to be easily decrypted
+      Sslstrip tool is exploiting certificate signing and it is sending its own certificate instead of the original one, 
+                  allowing for the traffic to be easily decrypted
 
-      Sslstrip tool is exploiting an older or in HTTPS protocol, allowing it to gracefully decrypt http traffic by intercepting HTTP 403 denied messages and sending user HTTP 200 OK messages
+      Sslstrip tool is exploiting an older or in HTTPS protocol, allowing it to gracefully decrypt http traffic by intercepting HTTP 403 denied messages 
+                  and sending user HTTP 200 OK messages
 
       TRUE :
-      Sslstrip tool is exploiting user behavior and if a user does not type https:// in front of the link, and the website has redirection from HTTP to HTTPS, it will intercept HTTP 302 redirection and send the user exactly what the user asked for, i.e. HTTPsite
+      Sslstrip tool is exploiting user behavior and if a user does not type https:// in front of the link, 
+            and the website has redirection from HTTP to HTTPS, 
+            it will intercept HTTP 302 redirection and send the user exactly what the user asked for, i.e. HTTPsite
 
       Sslstrip tool is exploiting network bug, which allows it to decrypt HTTPS protocols (TLS and SSL) by sending gratuitous ARP packets to all the nodes on the network
 
 Explanation:
 
-The correct answer is “a” because sslstrip is intercepting 302 REDIRECT messages if the traffic is not initially encrypted.
+sslstrip is intercepting 302 REDIRECT messages if the traffic is not initially encrypted.
 If the traffic is initially encrypted because the user has typed https:// in front of the link – Sslstrip cannot see the traffic.
 
 -------------------------------------------
