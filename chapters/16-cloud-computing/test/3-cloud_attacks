@@ -1,9 +1,19 @@
 An attacker creates anonymous access to the cloud services to carry out various attacks such as password and key cracking,
-hosting malicious data, and DDoS attack. Which of the following threats is he posing to the cloud platform?
+hosting malicious data, and DDoS attack. 
+
+Which of the following threats is he posing to the cloud platform?
 
 Abuse and Nefarious Use of Cloud services:
-        - Presence of weak registration systems in the cloud-computing environment gives rise to this threat.
-        - Attackers create anonymous access to cloud services and perpetrate various attacks such as password and critical cracking, building rainbow tables, CAPTCHA-solving farms, launching dynamic attack points, hosting exploits on cloud platforms, hosting malicious data, Botnet command or control, DDoS, etc.
+        - Presence of WEAK REGISTRATION systems in the cloud-computing environment gives rise to this threat.
+        - Attackers create anonymous access to cloud services and perpetrate various attacks such as :
+                        - password and critical cracking, 
+                        - building rainbow tables, 
+                        - CAPTCHA-solving farms, 
+                        - launching dynamic attack points, 
+                        - hosting exploits on cloud platforms, 
+                        - hosting malicious data, 
+                        - Botnet command or control, 
+                        - DDoS, etc.
 
 Insecure Interface and APIs: Attackers exploit :
                                 - user defined policies
@@ -23,8 +33,10 @@ Insufficient Due Diligence: Ignorance of CSP’s cloud environment poses risks i
 ----------------------------------------------------------------------------------------------------------------------------------
 A privilege escalation threat is caused due to which of the following weaknesses?
 
-privilege escalation: A mistake in the access allocation system such as coding errors, design flaws, and others can result in a customer,
+privilege escalation: 
+                      A mistake in the access allocation system such as coding errors, design flaws, and others can result in a customer,
                       third party, or employee obtaining more access rights than required.
+                      
                       This threat arises because of - AAA (authentication, authorization, and accountability) vulnerabilities,
                                                     - user-provisioning and de-provisioning vulnerabilities,
                                                     - hypervisor vulnerabilities,
