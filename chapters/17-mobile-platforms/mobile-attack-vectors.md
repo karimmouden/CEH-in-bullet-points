@@ -132,22 +132,22 @@ vulnerabilities from spreading
 
 ##### Untethered jailbreak
 
-- Does not require to reboot with a connection to your computer
-- Exploit bypass the iBoot sequence
+- Does not require a connection to your computer in order to REBOOT
+- Exploit **bypass the iBoot sequence**
 
 ##### Tethered jailbreak
 
-- Need a connection to your computer to reboot, without it, the boot stuck with an Apple logo
-- Offers complete jailbreak features
+- **Requires a connection to your computer** to reboot, without it, the boot stuck with an Apple logo
+- Offers **complete jailbreak features**
 
 ##### Semi-Untethered jailbreak
 
-- Allows to boot into the iOS device, but with limited functionality
-- The jailbreak functions will be disabled until the launch of a jailbreak app
+- Allows to boot into the iOS device, but with **limited functionality**
+- The jailbreak functions will be **disabled until the launch of a jailbreak app**
 
 #### Semi-Tethered jailbreak
 
-- Allows you to boot with limited functionality
+- Allows you to boot with **limited functionality**
 - To get the full functionality, a reboot with a tethered jailbreak required
 - Tethered jailbreak + a package to allow reboot with limited functionality
 - ❗ A reboot no longer retains the patched kernel
