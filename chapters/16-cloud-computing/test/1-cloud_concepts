@@ -444,3 +444,41 @@ Virtualization characteristics in cloud computing technology:{PIE}
 
 Storage is not a characteristic of virtualization in cloud computing technology, as it is a type of virtualization.
 
+-----------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------
+
+Out of the following types of virtualizations, which type of virtualization is used in increasing space utilization and reducing the hardware maintenance cost?
+
+
+Storage Virtualization
+
+Resource Virtualization
+
+Network Virtualization
+
+Server Virtualization
+
+
+Explanation:
+
+Types of virtualization
+
+1) Storage Virtualization
+	It combines storage devices from multiple networks into a single storage device and helps in:
+       Expanding the storage capacity
+       Making changes to store configuration easy
+
+ 
+
+2) Network Virtualization
+	It combines all network resources, both hardware, and software into a single virtual network and is used to:
+        Optimize reliability and security
+         Improves network resource usage
+
+3) Server Virtualization
+	It splits a physical server into multiple smaller virtual servers. Storage utilization is used to:
+        Increase the space utilization
+        Reduces the hardware maintenance cost
+
+4) Resource Virtualization
+	It is not a type of virtualization.
