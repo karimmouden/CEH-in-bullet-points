@@ -1,8 +1,6 @@
-## Identify the services provided by the
-
-##          application layer of
-
-##                  the cloud security control model?
+## Identify the services provided by the    
+  ## application layer of
+   ## the cloud security control model?
 
 ### Cloud Security Control Layers
 
@@ -36,21 +34,40 @@
 ### Trusted Computing
 
       Trust computing defines secured computational environment that implements :
-          internal control, auditability, and maintenance to ensure :
+      
+          internal control, auditability, &  maintenance to ensure :
+      
                     - availability
-                    - integrity of cloud operations.
+                    - integrity 
+                   
+                   of cloud operations.
+                   
+#### Hardware & software RoT & API's 
+      
+      are few security controls for trusted computing.
+      
+##### Roots of Trust (RoT) 
+      
+      - set of functions 
+      
+            in the trusted computing module that is
+            
+                  "always trusted" by the computer’s operating system (OS).
 
-      Hardware and software RoT & API's are few security controls for trusted computing.
-      Roots of Trust (RoT) is a set of functions in the trusted computing module that is always trusted by the computer’s operating system (OS).
-
-         The RoT serves as separate compute engine controlling
-                    the trusted computing platform cryptographic processor
-                                     on the PC or mobile device
-                                          it is embedded in.
+       - The RoT serves as
+            
+            - separate compute engine 
+                    
+                    - controlling the trusted computing platform cryptographic processor
+                                     
+                             - on the PC or mobile device
+                             
+                                    - it is embedded in.
 
          The RoT provides the functionality behind trusted computing features including
+         
            -> On the fly drive encryption.
-           -> Detection and reporting of unauthorized changes to the operating system or programs.
+           -> Detection and reporting of unauthorized changes to the OS or programs.
            -> Detection of rootkits.
            -> Memory curtaining to prevent programs from inappropriately reading from or writing to another program's memory.
 
@@ -61,6 +78,7 @@
 ### Physical Layer
 
       includes security measures for :
+      
           - cloud infrastructure
           - data centers
           - physical resources.
@@ -81,19 +99,21 @@
 
 ### Application Layer
 
-      To harden the application layer, establish 
-          - policies that match with industry adoption security standards, 
-          for example, OWASP for a web application.
+      - To harden the application layer, establish 
+      
+            - policies that match with industry adoption security standards, 
+      
+                  for example, OWASP for a web application.
           
-      It should meet and comply with appropriate regulatory and business requirements.
+      - It should meet and comply with appropriate regulatory and business requirements.
       
-      Application layer controls include : 
-      
-          - SDLC, 
-          - binary analysis, 
-          - scanners, 
-          - web app firewalls, 
-          - transactional sec, ....
+      - Application layer controls include : 
+
+                - SDLC, 
+                - binary analysis, 
+                - scanners, 
+                - web app firewalls, 
+                - transactional sec, ....
           
           
 --------------------------------------------------------------------------------------------------------------------------------------------
@@ -117,25 +137,73 @@
 
 #### Application Layer
 
-          To harden the application layer, establish the policies that match with industry adoption security standards,
-          for example, OWASP for a web application.
-          It should meet and comply with appropriate regulatory and business requirements.
-          Some of the application layer controls include SDLC, binary analysis, scanners, web app firewalls, transactional sec, etc.
+      - To harden the application layer, establish 
+      
+            - policies that match with industry adoption security standards, 
+      
+                  for example, OWASP for a web application.
+          
+      - It should meet and comply with appropriate regulatory and business requirements.
+      
+      - Application layer controls include : 
+
+                - SDLC, 
+                - binary analysis, 
+                - scanners, 
+                - web app firewalls, 
+                - transactional sec, ....
 
 #### Management Layer
 
-           This layer covers the cloud security administrative tasks, which can facilitate continued, uninterrupted, and effective services of the cloud.
+           This layer covers the cloud security administrative tasks, 
+            
+                  - which can facilitate :
+                        - continued, 
+                        - uninterrupted, & 
+                        - effective 
+                        
+                     services of the cloud.
+                     
            Cloud consumers should look for the above-mentioned policies to avail better services.
-           Some of the management layer security controls include GRC, IAM, VA/VM, patch management, configuration management, monitoring, etc.
+           
+            Management layer security controls include 
+                        
+                        - GRC, 
+                        - IAM, 
+                        - VA/VM, 
+                        - patch management, 
+                        - configuration management, 
+                        - monitoring, etc.
 
 #### Computation and Storage
 
-          In cloud due to the lack of physical control of the data and the machine, the service provider may be unable to manage the data and computation and
-          lose the trust of the cloud consumers.
+          In cloud,
+            
+               due to the lack of physical control of the data & the machine :
+            
+                  -> the service provider :
+                        - may be unable to manage the data and computation
+                                    and
+                        - lose the trust of the cloud consumers.
+          
           Cloud provider must establish policies and procedures for data storage and retention.
-          Cloud provider should implement appropriate backup mechanisms to ensure availability and continuity of services that meet with statutory,
-          regulatory, contractual, or business requirements and compliance. Host-based firewalls, HIDS/HIPS, integrity and file/log management,
-          encryption, masking are some security controls in computation and storage.
+          
+          Cloud provider should implement appropriate backup mechanisms to 
+                  
+                  - ensure availability & continuity of services that meet with 
+                  
+                        - statutory,
+                        - regulatory, 
+                        - contractual, or 
+                        - business requirements and compliance. 
+          
+          some security controls in computation and storage : 
+          
+                Host-based firewalls, 
+                HIDS/HIPS, 
+                integrity & file/log management,
+                encryption, 
+                masking 
 
 ----------------------------------------------------------------------------------------------------------------------------
 ## Which of the following mechanisms 
@@ -256,8 +324,16 @@ Preventing unauthorized server access using security checkpoints
 #### Employing IDSs and IPSs
 
 Explanation:
-Detective controls: These controls detect and react appropriately to the incidents that happen.
-For Example, employing IDSs, IPSs, and so on helps to detect attacks on cloud systems.
+
+                  Detective controls: 
+                        
+                              These controls detect & react appropriately to the incidents that happen.
+                  
+                  For Example, employing 
+                  
+                        IDSs, IPSs, and so on 
+                   
+                   helps to detect attacks on cloud systems.
 -----------------------------------------------------------------------------------------------------------------------------------------
 ## In which of the following cloud security control layers do the security controls DNSSEC, OAuth operates?
 
