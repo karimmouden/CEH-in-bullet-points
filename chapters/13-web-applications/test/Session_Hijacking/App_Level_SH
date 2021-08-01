@@ -1,4 +1,10 @@
-During the penetration testing in company “Credit Cards Rus Ltd.” Marin was using the sslstrip tool in order to sniff HTTPS traffic. Knowing that HTTPS traffic is encrypted and cannot be sniffed normally, explain the reason why it is possible to see the traffic in cleartext.
+During the penetration testing in company “Credit Cards Rus Ltd.” 
+
+Marin was using the sslstrip tool in order to sniff HTTPS traffic. 
+
+Knowing that HTTPS traffic is encrypted and cannot be sniffed normally, 
+      
+      explain the reason why it is possible to see the traffic in cleartext.
 
 
 
