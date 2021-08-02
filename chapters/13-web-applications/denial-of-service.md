@@ -35,22 +35,22 @@
 - **ICMP flood attack** or **Ping flood**
   - Flooding with ICMP echo request packets.
 
-##### Smurf attack
+    ##### Smurf attack
 
-- 📝 Flooding a IP broadcast network with ICMP echo request packets with victim IP address as source
-- Causes hosts in the network respond to received requests/responds targeting the victim.
-- Leads to server overloads in victim caused by too many replies.
-- The reason to attack broadcast address is to send so many ICMP requests going to the target that all its resources are taken up.
-- Mitigated by either
-  - configuring routers/hosts to not respond to ICMP broadcasts/requests
-  - configuring routers to not forward packets directed to broadcast addresses
-- See also [Broadcast ICMP ping](./../03-scanning-networks/scanning-techniques.md#broadcast-icmp-ping)
+    - 📝 Flooding a IP broadcast network with ICMP echo request packets with victim IP address as source
+    - Causes hosts in the network respond to received requests/responds targeting the victim.
+    - Leads to server overloads in victim caused by too many replies.
+    - The reason to attack broadcast address is to send so many ICMP requests going to the target that all its resources are taken up.
+    - Mitigated by either
+      - configuring routers/hosts to not respond to ICMP broadcasts/requests
+      - configuring routers to not forward packets directed to broadcast addresses
+    - See also [Broadcast ICMP ping](./../03-scanning-networks/scanning-techniques.md#broadcast-icmp-ping)
 
-##### Ping of death attack
+    ##### Ping of death attack
 
-- 📝 Sending irregular or big packets using `ping` command
-- Attacker fragments ICMP message to send to target.
-- When the fragments are reassembled, the resultant ICMP packet is larger than max size and crashes the system
+    - 📝 Sending irregular or big packets using `ping` command
+    - Attacker fragments ICMP message to send to target.
+    - When the fragments are reassembled, the resultant ICMP packet is larger than max size and crashes the system
 
 ### Protocol attacks
 
