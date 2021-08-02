@@ -1,32 +1,32 @@
-During the penetration test, 
-Marin is using the "MITMF" tool to inject the arbitrary data 
-            into an HTTP communication channel 
-                  between the clients on the internal network and web servers 
-                  
- in order                to steal the cookies and, 
-            if possible, establish a remote shell on the victim’s computer.
+            During the penetration test, 
+            Marin is using the "MITMF" tool to 
+            
+            inject the arbitrary data 
+                   into an HTTP communication channel 
+                          between the clients on the internal network and web servers 
 
-He successfully injects XSS JavaScript into the session, 
+             in order to 
+                    - steal the cookies
+                    - establish a remote shell on the victim’s computer.
 
-and with BeeF he has a control over the user browser.
+            He successfully injects XSS JavaScript 
+                        into the session, 
 
-Command used with the MITMF tool:
+            Using "BeeF",  he has a 
+                        control over the "user browser".
 
-There is no 0-day vulnerability against the client browser (at least not the one Marin knows about).
+            Command used with the MITMF tool:
+
+            There is no 0-day vulnerability against the client browser (at least not the one Marin knows about).
 
 Is it possible to gain the remote shell access to the remote machine without
 browser/javascript/flash etc. vulnerability?
 
 
-      No. Marin needs 0 day in order to escalate to remote shell
 
       TRUE :
       Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), 
             and try to fool the user into clicking on the malicious payload
-
-      No. This is impossible to be done over XSS and BeeF
-
-      Yes. There is an exploit in BeeF that always works; afterall Marin has access to the remote browser
 
 
 Explanation:
@@ -48,21 +48,24 @@ The most popular ones are
  Explain how MitB attack works.
 
 
-          Malware is injected between the browser and network.dll, enabling to see the data before it is sent to the network and while it is being received from the network.
 
-          TRUE  : Malware is injected between the
-                              
-                              browser     &      OS API,
+
+          TRUE  : 
           
-                        enabling to see the data  :
+          Malware is injected between the
+                              
+                              browser     
+                           &      
+                              OS API,
+          
+          enabling to see the data  :
                         
-                              - before encryption (when data is sent from the machine) 
-                              and 
-                              -after decryption (when data is being received by the machine).
+                  - Before encryption 
+                        (when data is sent from the machine) 
+              & 
+                  - After decryption 
+                        (when data is being received by the machine).
 
-          Malware is injected between the browser and keyboard driver, enabling to see all the keystrokes.
-
-          Man-in-the-Browser is just another name for sslstrip MitM attack.
 
           Explanation:
           
@@ -71,7 +74,7 @@ The most popular ones are
             malware is injected between 
             
                   the browser 
-                  & 
+                 & 
                   wininet.dll,  ( wininet.dll is exposing APIs to use https etc.)
            
            which allows it to see the data before encryption 
@@ -93,13 +96,9 @@ Explain how the SEQ and aCK numbers are incremented during the 3-way handshake p
 
 
         TRUE :
+        
         Sequence and acknowledgment numbers are incremented by 1 during the 3-way handshake process
 
-        Sequence number is not incremented and acknowledgment number is incremented by one during the 3-way handshake process
-
-        Sequence and acknowledgment numbers are incremented by two during the 3-way handshake process
-
-        Sequence number is incremented by one and acknowledge number is not incremented during the 3-way handshake process
 
         Explanation:
         
@@ -308,15 +307,8 @@ There is no 0-day vulnerability against the client browser (at least not the one
 Is it possible to gain the remote shell access to the remote machine without browser/javascript/flash etc. vulnerability?
 
 
+                                   Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), and try to fool the user into clicking on the malicious payload : TRUE
 
-              No. Marin needs 0 day in order to escalate to remote shell
-
-              Yes. There is an exploit in BeeF that always works;
-                    afterall Marin has access to the remote browser
-
-              Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), and try to fool the user into clicking on the malicious payload : TRUE
-
-              No. This is impossible to be done over XSS and BeeF
 
 
 -----------------------------
