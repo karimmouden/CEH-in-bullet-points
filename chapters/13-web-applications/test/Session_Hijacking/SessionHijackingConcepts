@@ -1,6 +1,14 @@
-During the penetration test, Marin is using the MITMF tool to inject the arbitrary data into an HTTP communication channel between the clients on the internal network and web servers in order to steal the cookies and, if possible, establish a remote shell on the victim’s computer.
+During the penetration test, 
+Marin is using the "MITMF" tool to inject the arbitrary data 
+            into an HTTP communication channel 
+                  between the clients on the internal network and web servers 
+                  
+ in order                to steal the cookies and, 
+            if possible, establish a remote shell on the victim’s computer.
 
-He successfully injects XSS JavaScript into the session, and with BeeF he has a control over the user browser, as shown in the following images.
+He successfully injects XSS JavaScript into the session, 
+
+and with BeeF he has a control over the user browser.
 
 Command used with the MITMF tool:
 
@@ -13,7 +21,8 @@ browser/javascript/flash etc. vulnerability?
       No. Marin needs 0 day in order to escalate to remote shell
 
       TRUE :
-      Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), and try to fool the user into clicking on the malicious payload
+      Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), 
+            and try to fool the user into clicking on the malicious payload
 
       No. This is impossible to be done over XSS and BeeF
 
@@ -22,35 +31,69 @@ browser/javascript/flash etc. vulnerability?
 
 Explanation:
 The correct answer is
-    “Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), and try to fool the user into clicking on the malicious payload”.
+    “Yes. Marin can try to use social engineering attacks (like “Fake Flash Update”), 
+      
+            and try to fool the user into clicking on the malicious payload”.
 
     If the user is naïve enough, Marin can always make him click on malicious payload with social engineering payloads in BeeF.
     There is no magical exploit that always works even if there is no 0-day.
 
 ------------------------------------
 
-MitB (Man in the Browser) is a session hijacking technique heavily used by e-banking Trojans. The most popular ones are Zeus and Gameover Zeus. Explain how MitB attack works.
+MitB (Man in the Browser) is a session hijacking technique heavily used by e-banking Trojans. 
+The most popular ones are 
+      - Zeus 
+      - Gameover Zeus. 
+ 
+ Explain how MitB attack works.
 
 
           Malware is injected between the browser and network.dll, enabling to see the data before it is sent to the network and while it is being received from the network.
 
-          TRUE  : Malware is injected between the browser and OS API, enabling to see the data before    encryption (when data is sent from the machine) and after decryption (when data is being received by the machine).
+          TRUE  : Malware is injected between the
+                              
+                              browser     &      OS API,
+          
+                        enabling to see the data  :
+                        
+                              - before encryption (when data is sent from the machine) 
+                              and 
+                              -after decryption (when data is being received by the machine).
 
           Malware is injected between the browser and keyboard driver, enabling to see all the keystrokes.
 
           Man-in-the-Browser is just another name for sslstrip MitM attack.
 
           Explanation:
-          On Windows OS, malware is injected between the browser and wininet.dll, which allows it to see the data before encryption (wininet.dll is exposing APIs to use https etc.)
+          
+          On Windows OS, 
+            
+            malware is injected between 
+            
+                  the browser 
+                  & 
+                  wininet.dll,  ( wininet.dll is exposing APIs to use https etc.)
+           
+           which allows it to see the data before encryption 
 
 -------------------------------------
 
-In order to hijack TCP traffic, an attacker has to understand the next sequence and the acknowledge number that the remote computer expects. Explain how the sequence and acknowledgment numbers are incremented during the 3-way handshake process.
+In order to hijack TCP traffic, 
+
+      an attacker has to understand 
+      
+            - the next SEQ sequence number 
+            &
+            - the ACK acknowledge number 
+  
+that the remote computer expects. 
+
+Explain how the SEQ and aCK numbers are incremented during the 3-way handshake process.
 
 
 
         TRUE :
-        Sequence and acknowledgment numbers are incremented by one during the 3-way handshake process
+        Sequence and acknowledgment numbers are incremented by 1 during the 3-way handshake process
 
         Sequence number is not incremented and acknowledgment number is incremented by one during the 3-way handshake process
 
@@ -59,14 +102,19 @@ In order to hijack TCP traffic, an attacker has to understand the next sequence 
         Sequence number is incremented by one and acknowledge number is not incremented during the 3-way handshake process
 
         Explanation:
-        During the 3-way handshake, sequence and acknowledgment numbers are (relatively) incremented by one. After that acknowledge number will be incremented for the size of the packet received.
+        
+        During the 3-way handshake, SEQ and ACK numbers are (relatively) incremented by 1.
+        
+            After that ACK number will be incremented for the size of the packet received.
 
 ----------------------------------------
 
 Which of the following is considered to be a session hijacking attack?
 
 
-Taking over a TCP session : TRUE
+Taking over a TCP session : 
+      
+            TRUE
 
 Monitoring a TCP session
 
@@ -77,7 +125,13 @@ Taking over a UDP session
 
 ---------------------------------
 
-When a person (or software) steals, can calculate, or can guess part of the communication channel between client and the server application or protocols used in the communication, he can hijack the ______.
+When a person (or software) 
+
+      steals, can calculate, or can guess 
+            
+            part of the communication channel 
+      
+      between client &  server application or protocols used in the communication, he can hijack the ______.
 
 
 TCP protocol
@@ -90,7 +144,11 @@ Channel
 
 ----------------------------------
 
-An attacker is using session hijacking on the victim system to perform further exploitation on the target network. Identify the type of attacks an attacker can perform using session hijacking?
+An attacker is using session hijacking on the victim system 
+      
+            to perform further exploitation on the target network. 
+            
+ Identify the type of attacks an attacker can perform using session hijacking?
 
 
 Sniffing  : TRUE
@@ -104,16 +162,35 @@ Piggybacking
 
 --------------------------------
 
-During a penetration test, Marin identified a web application that could be exploited to gain a root shell on the remote machine.
+During a penetration test, Marin identified a web application that
+      
+      could be exploited to gain a 
+            
+            root shell on the remote machine.
 
-The only problem was that in order to do that he would have to know at least one valid username and password that could be used in the application. Unfortunately, guessing usernames and brute-forcing passwords did not work.
+The only problem was that in order to do that 
+
+      he would have to know at least 
+      
+            one valid username & password that could be used in the application.
+  
+Unfortunately, guessing usernames and brute-forcing passwords did not work.
 
 Marin does not want to give up his attempts.
-Since this web application is being used by almost all users in the company, and moreover it was using the http protocol, so he decided to use the Cain&Abel tool in order to identify at least one username and password.
 
-Morin found that the network was using layer 2 switches with no configuration or management features.
+Since this web application is being used by almost all users in the company, 
+            
+            and moreover it was using the "http protocol", 
+                  
+                  so he decided to use the "Cain&Abel tool" 
+                        
+                        in order to identify at least 1 username & password.
+
+Morin found that the network was using "layer 2 switches "
+            
+                  with no configuration or management features.
+                  
 What could be the easiest way to start an attack in this case?
-
 
 
 
@@ -126,11 +203,33 @@ What could be the easiest way to start an attack in this case?
         DNS spoofing
 
 
----------------------------------------
+---------------------------------------------------------------------------------------------------------------
 
-During the penetration testing, Marin identified a web application that could be exploited to gain the root shell on the remote machine. The only problem was that in order to do that he would have to know at least one username and password usable in the application. Unfortunately, guessing usernames and brute-forcing passwords did not work. Marin does not want to give up his attempts. Since this web application,was being used by almost all users in the company and was using http protocol, so he decided to use Cain & Abel tool in order to identify at least one username and password.
+During the penetration testing, 
+      
+      Marin identified a web application that could be exploited to
+            
+                  gain the root shell on the remote machine. 
+                  
+      The only problem was that in order to do that he would have to 
+      
+            know at least 1 username and password usable in the application. 
+            
+      Unfortunately, guessing usernames and brute-forcing passwords did not work. 
+            
+       Marin does not want to give up his attempts. 
+       
+       Since this web application,
+       
+            was being used by almost all users in the company and was using "http protocol", 
+                  
+                  so he decided to use "Cain & Abel tool" 
+                        
+                        in order to identify at least 1 username and password.
 
-After a few minutes, the first username and password popped-up and he successfully exploited the web application and the physical machine.
+After a few minutes, the first username & password popped-up 
+      
+            and he successfully exploited the web application and the physical machine.
 
  What type of attack did he use in order to find the username and password to access the web application?
 
@@ -148,8 +247,13 @@ Explanation:
 
 ARP spoofing is the correct answer, and
 
-    since there are no configuration or management options on switches
-          => it means that there is no ARP spoofing protection.
+    since there are 
+      
+        "no configuration or management options"  on switches
+    
+          => it means that there is
+          
+                        "no ARP spoofing protection".
 
  DNS spoofing is more complex and it is never the first option.
 
@@ -157,7 +261,15 @@ ARP spoofing is the correct answer, and
 
 --------------------------------
 
-During a penetration test, Marin exploited a blind SQLi and exfiltrated session tokens from the database. What can he do with this data?
+During a penetration test, 
+      
+      Marin exploited a blind SQLi 
+            
+            and exfiltrated session tokens
+     
+     from the database. 
+     
+     What can he do with this data?
 
 
 
@@ -170,12 +282,20 @@ During a penetration test, Marin exploited a blind SQLi and exfiltrated session 
 
       Marin can do CSRF (Cross-Site Request Forgery)
 
------------------------------
+----------------------------------------------------------------------------
 
 
-During the penetration test, Marin is using the MITMF tool to inject the arbitrary data into an HTTP communication channel between the clients on the internal network and web servers in order to steal the cookies and, if possible, establish a remote shell on the victim’s computer.
+During the penetration test, 
+      
+      Marin is using the "MITMF tool" to inject the arbitrary data 
+            
+               into an HTTP communication channel between the clients on the internal network and web servers 
+            
+         in order to steal the cookies and, 
+         if possible, establish a remote shell on the victim’s computer.
 
-He successfully injects XSS JavaScript into the session, and with BeeF he has a control over the user browser, as shown in the following images.
+      He successfully injects XSS JavaScript into the session, 
+      and with BeeF he has a control over the user browser, 
 
 Command used with the MITMF tool:
 
@@ -184,7 +304,8 @@ mitmf -i eth0 --spoof --arp --gateway 192.168.132.2 --targets 192.168.132.196 --
 
 
 
-There is no 0-day vulnerability against the client browser (at least not the one Marin knows about). Is it possible to gain the remote shell access to the remote machine without browser/javascript/flash etc. vulnerability?
+There is no 0-day vulnerability against the client browser (at least not the one Marin knows about). 
+Is it possible to gain the remote shell access to the remote machine without browser/javascript/flash etc. vulnerability?
 
 
 
