@@ -13,11 +13,11 @@
 
 - Stands for **R**emote **A**uthentication **D**ial **I**n **U**ser **S**ervice
 - 📝 Commonly used for "Access Control" by :
--       
+       
     -  ISPs (Internet Service Providers) 
     &
     - corporations 
--       
+      
 - Primarily used to manage access to the internet or other networks
   - Networks can employ a variety of networking technologies, including analog modems, DSL, wireless local area networks (WLANs), and VPNs.
 - Based on UDP (User Datagram Protocol)
