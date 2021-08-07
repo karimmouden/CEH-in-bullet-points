@@ -138,8 +138,8 @@
 
 - **802.11 Specifications**
 
-  | |Standard | Distance | Speed |
-  |-|---------|----------|-------|
+  |Standard | Distance | Speed |
+  |---------|----------|-------|
   | WiFi | Medium (20-250 m) | Started slow (2 Mbit/s) but fast now (1300 Mbit/s)  |
   | ZigBee | Smallest (1-100 m) | Slow (up to 0.25 Mbit/s) |
   | WiMax | Biggest (1.6 - 9.6 km) | Fast (up to 1 Gbit/s) |
