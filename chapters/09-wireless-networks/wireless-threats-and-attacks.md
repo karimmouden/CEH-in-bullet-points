@@ -55,9 +55,15 @@
 
 ### Sinkhole attack
 
-- Compromised node tries to attract network traffic by advertise its fake routing update.
+- Compromised node tries to 
+        
+     -> attract network traffic by advertise its fake routing update.
+
 - Allows traffic to be directed away from its target.
-- Can be used to launch other attacks like dropping or altering routing information.
+- 
+- Can be used to launch other attacks like
+
+     dropping or altering routing information.
 
 #### DNS sinkhole
 
@@ -103,8 +109,11 @@
   - Get reused frequently
   - Are sent in clear text during transmission
 - Can take a few seconds to discover the shared secret key.
-- The goal is to collect as many IVs as possible
+
+- !!!!!!!!!!!!!!!!!!!!!!!!!         The goal is to collect as many IVs as possible !!!!!!!!!!!!!!!!!
+
   - 💡 Inject packets to speed it up
+  
 - 📝 Can be cracked using Aircrack-ng:
   1. Listen to the traffic
      - Start a compatible adapter with injection and sniffing capabilities
